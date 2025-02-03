@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nome do vídeo</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/tecnicos_senac.css" rel="stylesheet">
+    <link href="css/cores.css" rel="stylesheet">
+    <link href="css/sncload.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <!--<link href="custom.css" type="text/css" rel="stylesheet"> -->
+    <!-- css necessario para o print -->
+    <link href="css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="css/print.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46916800.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+  <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+  <header id="topo" class="senac no-print">
+      <div  class="header-tecnicos container">
+          <h1 id="nome-curso">Nome do Curso</h1>
+          <div id="logo-senac"><img src="images/logo-senac.png" alt="logo do senac"></div>
+      </div>
+      <div id="sombra"></div>
+  </header>
+
+  <div class="player">
+    <iframe src="https://www.youtube.com/embed/ByDO16_91WU?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="aviso">
+    <p><i class="fa fa-television"></i> Deite seu dispositivo para visualizar o vídeo.</p>
+  </div>
+<style media="screen" type="text/css">
+html, body {
+  height: 100%;
+}
+.aviso {
+  background-color: rgba(0,0,0,0.45);
+  color: white;
+  position: fixed;
+  left: 0px; top: 0px;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+}
+.aviso p {
+  background-color: #333;
+  margin-top: 0px; padding: 25px;
+}
+  body {
+    background: url(images/player-bg.jpg) top left repeat #fff;
+    padding-top: 140px;
+  }
+  .player iframe {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    max-width: 851px;
+    width: 100%;
+    height: 479px;
+
+  }
+.over-loader {top: 0px;}
+  .player {
+
+    overflow: hidden;
+    background: url(images/player-tv-bg.png) top center no-repeat;
+    height: 686px;
+  }
+  @media only screen and (max-width: 991px){
+    .player {background: none; width: 100%; height: 100%; }
+    .player iframe {
+      margin-top: 0px;
+      max-width: unset;
+      width:100%;
+      height: 100%;
+    }
+
+    body {
+      padding-top: 80px;
+    }
+  }
+
+  @media only screen and (max-width: 991px) and (orientation: portrait) {
+    .aviso { display: block;}
+  }
+</style>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+</body>
+</html>

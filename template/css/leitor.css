@@ -1,0 +1,324 @@
+/**,
+*:before,
+*:after,
+*:first-letter,*/
+p:first-line,
+div:first-line,
+blockquote:first-line,
+li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+#booklet .paginas .pagina {
+  display: block !important;
+}
+
+body {
+  background-color: #f2f2f2
+}
+
+div#booklet {
+margin-top: 80px;
+max-width: 900px;
+margin-left: auto;
+margin-right: auto;
+}
+h1 {
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 10px;
+      font-size: 25pt;
+}
+h2 {
+  font-size: 22pt;
+
+}
+h3 {
+  font-size: 20pt;
+}
+h4 {
+  font-size: 18pt;
+}
+h5 {
+  font-size: 16pt;
+}
+
+.pagina {
+    border-top: 50px solid #f2f2f2;
+    background-color: white;
+    padding: 50px;
+
+}
+.pagina:nth-child(2) {
+    border-top: 0px none;
+    padding-top: 0px;
+}
+#booklet h1 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  }
+
+
+p{
+	font-size:12pt;
+	font-family:'robotoregular', Arial , Verdana, Helvetica;
+	margin:1.4em 0 1.4em 0;
+	line-height:1.7em;
+}
+.ico-div-loader {
+  position: absolute;
+  left: -100%;
+  width: 1px;
+  height:1px;
+  overflow: hidden;
+
+}
+
+h1,h2,h3,h4,h5{
+
+}
+h4{
+	margin-top:1.5em;
+	margin-bottom:2.5em;
+}
+ul,ol{
+	font-size:1.2em;
+	margin-bottom:2em;
+	margin-left:1.7em;
+}
+ul * {
+	font-size:inherit;
+}
+
+ol * {
+	font-size:inherit;
+}
+li{
+	margin-bottom:0.8em;
+	list-style-image:url(../images/marcador.png);
+}
+ol li{
+	list-style-image:none;
+}
+table.senac {
+	margin:0 1.5em 2em;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	border:6px solid;
+	margin-top:2em;
+	margin-bottom:2em;
+}
+button, a {
+  outline:none !important
+}
+table.senac th{
+	background-color:#8e44ad;
+	text-align:center;
+	padding:0.5em;
+	border:1px solid;
+}
+table.senac td{
+	text-align:center;
+	padding:0.5em;
+	border:1px solid;
+	text-align:left;
+}
+
+.table-lg {
+  font-size: 14px !important;
+}
+
+.table-responsive {
+  overflow-x: visible;
+  
+}
+
+header.senac{
+	height:80px;
+	z-index:99;
+	margin-top:0;
+	top:0;
+	padding-top:0;
+	position:absolute;
+	width:100%;
+
+}
+.bg-topo-print
+{
+    z-index: 9999999999999999;
+    position: fixed;
+    top: 0px; left: 0px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: white;
+}
+
+/*----------------*/
+
+
+
+.postit {
+  padding: 0px !important;
+  border-top: unset !important;
+  background-color: unset !important;
+  width: 100% !important;
+  margin: 1.4em 0 1.4em 0 !important;
+  line-height: 0.75cm !important;
+  vertical-align: unset !important;
+  text-align: justify !important;
+  text-align-last: left !important;
+  -webkit-box-shadow: unset !important;
+  -moz-box-shadow: unset !important;
+  box-shadow: unset !important;
+  display: block !important;
+}
+
+.carousel-indicators, .carousel-control, .btn-group, .nav-tabs, .nav-pills, .dropdown-menu, nav .pagination, nav .pager, .progress, .navbar, iframe, .embed-responsive, .modal-footer, .pagination  {
+  display: none !important;
+}
+
+.modal.fade {
+  display: block !important;
+  position: relative !important;
+  opacity: 1;
+}
+
+.modal.fade .modal-dialog {
+  width: 100% !important;
+}
+.modal.fade .modal-dialog .modal-content {
+  box-shadow: unset !important;
+  border-radius: 0px !important;
+  background: none !important;
+}
+.tab-content .tab-pane, .tab-content .tab-pane ul, .tab-content > .tab-pane, .tab-content > .tab-pane.fade {
+  display: block !important;
+}
+.tab-content .tab-pane ul li{
+  display: list-item !important;
+}
+
+.taqb-content {
+  page-break-inside: avoid !important;
+}
+.tab-content > .tab-pane.fade {
+  opacity: 1 !important;
+}
+.carousel-inner .item {
+  display: block !important;
+  transition: unset !important;
+  transform: unset !important;
+  position: relative !important;
+  left: 0px !important;
+  page-break-inside: avoid !important;
+  page-break-after: always !important;
+}
+
+.carousel-inner .item.active.left {
+  transform: translate3d(0,0,0) !important;
+}
+.carousel-caption {
+  position: absolute !important;
+  right: 15% !important;
+  bottom: 20px !important;
+  left: 15% !important;
+  z-index: 10 !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  color: #fff !important;
+  text-align: center !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6) !important;
+  color: #000 !important;
+  text-shadow: unset !important;
+}
+.paper {
+  background: none !important;
+  font-size: 12pt !important;
+  font-family: arial, serif !important;
+  width: 70% !important;
+  line-height: unset !important;
+  margin: unset !important;
+  text-align: left !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: 3px solid #ccc !important;
+  background-color: none !important;
+  padding: 25pt !important;
+}
+.postit {
+  padding: 20px !important;
+  border-top: unset !important;
+  background-color: none !important;
+  border-width: 3px !important;
+  width: 400px !important;
+  margin: 10px auto !important;
+  -ms-transform: unset !important;
+  -webkit-transform: unset !important;
+  transform: unset !important;
+  -webkit-box-shadow: unset !important;
+  -moz-box-shadow: unset !important;
+  box-shadow: unset !important;
+  font-size: 12pt !important;
+  font-family: arial !important;
+  line-height: unset !important;
+}
+.jornal {
+  background-image: unset !important;
+  width: 100% !important;
+  margin: 10px auto !important;
+  padding: 35px !important;
+  font-size: 12pt !important;
+  color: #404040 !important;
+  text-align: justify !important;
+  border: 3px solid #d0d0d0 !important;
+  font-family: arial, serif !important;
+  -webkit-box-shadow: unset !important;
+  -moz-box-shadow: unset !important;
+  box-shadow: unset !important;
+  -ms-transform: unset !important;
+  -webkit-transform: unset !important;
+  transform: unset !important;
+  max-width: 650px !important;
+  background-color: none !important;
+
+}
+
+.parallax-window {
+  display: none !important;
+}
+
+.caixa-aling-right, .caixa-aling-left {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.close {
+  display: none !important;
+}
+
+ .print, .only-print, .apenas-print, .imprimir, .apenas-imprimir {
+  display: block !important;
+
+}
+
+  .no-print, .nao-imprimir {
+  display: none !important;
+}
+
+.container {
+  max-width: 800px;
+}
+
+p.legenda-imagem{
+  width: 100% !important;
+  margin: 10px auto !important;
+  display: block !important;
+  text-align: center !important;
+}

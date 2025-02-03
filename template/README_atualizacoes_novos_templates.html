@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Template paginado - Atualizações nos novos templates</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/tecnicos_senac.css" rel="stylesheet">
+    <link href="css/cores.css" rel="stylesheet">
+    <!--Extras - novas classes para facilitar-->
+    <link rel="stylesheet" href="css/extras.css">    
+    <link href="css/sncload.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <!--<link href="custom.css" type="text/css" rel="stylesheet"> -->
+    <!-- css necessario para o print -->
+    <link href="css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="css/print.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46916600.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+    <!-- MARCA D´ÁGUA -->
+    <img src="images/logo_senac_colorido.png" id="marcadaguaLogo">
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+    <header id="topo" class="senac no-print">
+        <div  class="header-tecnicos container">
+        	  <h1 id="nome-curso">Nome do Curso</h1>
+            <div id="logo-senac"><img src="images/logo-senac.png" alt="logo do senac"></div>
+        </div>
+        <div id="sombra"></div>
+    </header>
+
+    <div id="booklet" class="container fundo-tecnicos">
+        <header class="no-print">
+          <!-- BTO IMPRIMIR -->
+          <div class="grupo-imprimir no-print">
+            <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+                <span class="fa fa-print"></span> <span>Imprimir</span>
+            </button>
+          </div>
+          <!-- /BTO IMPRIMIR -->
+        </header>
+<!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+        <section class="paginas">
+
+          <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+          <div class="pagina">    
+            <h2>Atualizações nos novos templates de cursos de 2021</h2>
+            <p>De maneira experimental foram adicionadas novas classes pra auxiliar os diagramadores na tarefa de diagramar, neste arquivo está uma compilação das novidades. Apenas os cursos de 2021 contam com estes recursos, mas eles sao portáveis os templates antigos linkando os arquivos corretamente. As classes antigas seguem valendo caso não desejem utilizar as novas aqui definidas, mas certamente essas novas classes facilitam a criação de novos icones que nao constam no template, por exemplo. A sintaxe para usar icones é mais simples, e contamos com classes adicionais para usar as cores da paleta definidas para a UC.</p>        
+            <p>As novas classes e definições encontram-se no arquivo extras.css(aonde é feito um import com os arquivos icones_default.css icones_apoio.css, modal-100.css e custom-accordion.css)</p>
+            <h2>Paleta de cores e novas classes para uso</h2>
+
+            <h3>Paleta de cores do curso</h3>
+            <p>Estas são as cores e os codigos da paleta padrão do curso:</p>
+            <table class="senac">
+              <thead>
+                <th colspan="3">Paleta de cores - códigos das cores</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: center;">Primárias</td>
+                  <td style="text-align: center;">Auxiliares escuras</td>
+                  <td style="text-align: center;">Auxiliares claras</td>
+                </tr>
+                <tr>
+                  <td class="bg-primaria-01">#A9B6C5</td>
+                  <td class="bg-auxiliar-escuro-01">#7B8FA6</td>
+                  <td class="bg-auxiliar-claro-01">#DAE8F7</td>
+                </tr>
+                <tr>
+                  <td class="bg-primaria-02">#FFFFFF</td>
+                  <td class="bg-auxiliar-escuro-02">#D3D5D5</td>
+                  <td class="bg-auxiliar-claro-02">#EEEEEE</td>
+                </tr>
+                <tr>
+                  <td class="bg-primaria-03 texto-primaria-02">#2875C6</td>
+                  <td class="bg-auxiliar-escuro-03  texto-primaria-02">#004B90</td>
+                  <td class="bg-auxiliar-claro-03 texto-primaria-02">#66A4F3</td>
+                </tr>
+              </tbody>
+            </table>
+        
+             <h3>Classes extras para uso de cores</h3>
+             <p>Foram adicionadas algumas classes para facilitar a vida no uso de cores, elas sobrepõem as cores do elemento em que forem usadas, por padrão.</p>
+             <p>caixa destaque default</p>
+             <div class="caixa-destaque">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nesciunt quidem, consectetur modi maiores eius excepturi cupiditate vero incidunt quibusdam rem voluptatum. Beatae voluptates optio fugit voluptatum distinctio! Placeat, totam.
+            </div>
+             <code>classe bg-primaria-01</code>
+             <div class="caixa-destaque bg-primaria-01">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nesciunt quidem, consectetur modi maiores eius excepturi cupiditate vero incidunt quibusdam rem voluptatum. Beatae voluptates optio fugit voluptatum distinctio! Placeat, totam.
+             </div>
+             <code>classe bg-primaria-02</code>
+             <div class="caixa-destaque bg-primaria-02" style="border: 1px solid grey">
+                <p>Neste curso a primaria 02 eh branca</p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nesciunt quidem, consectetur modi maiores eius excepturi cupiditate vero incidunt quibusdam rem voluptatum. Beatae voluptates optio fugit voluptatum distinctio! Placeat, totam.
+            </div>
+            <code>classe bg-primaria-03</code>
+            <div class="caixa-destaque bg-primaria-03">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nesciunt quidem, consectetur modi maiores eius excepturi cupiditate vero incidunt quibusdam rem voluptatum. Beatae voluptates optio fugit voluptatum distinctio! Placeat, totam.
+            </div>
+
+            <code>classe bg-auxiliar-escuro-01</code>
+            <div class="caixa-destaque bg-auxiliar-escuro-01">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nesciunt quidem, consectetur modi maiores eius excepturi cupiditate vero incidunt quibusdam rem voluptatum. Beatae voluptates optio fugit voluptatum distinctio! Placeat, totam.
+            </div>
+            <code>classe bg-auxiliar-escuro-02</code>
+            <div class="caixa-destaque bg-auxiliar-escuro-02">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nesciunt quidem, consectetur modi maiores eius excepturi cupiditate vero incidunt quibusdam rem voluptatum. Beatae voluptates optio fugit voluptatum distinctio! Placeat, totam.
+           </div>
+           <code>classe bg-auxiliar-escuro-03</code>
+           <div class="caixa-destaque bg-auxiliar-escuro-03">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nesciunt quidem, consectetur modi maiores eius excepturi cupiditate vero incidunt quibusdam rem voluptatum. Beatae voluptates optio fugit voluptatum distinctio! Placeat, totam.
+           </div>
+
+           <code>classe bg-auxiliar-claro-01</code>
+           <div class="caixa-destaque bg-auxiliar-claro-01">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nesciunt quidem, consectetur modi maiores eius excepturi cupiditate vero incidunt quibusdam rem voluptatum. Beatae voluptates optio fugit voluptatum distinctio! Placeat, totam.
+           </div>
+           <code>classe bg-auxiliar-claro-02</code>
+           <div class="caixa-destaque bg-auxiliar-claro-02">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nesciunt quidem, consectetur modi maiores eius excepturi cupiditate vero incidunt quibusdam rem voluptatum. Beatae voluptates optio fugit voluptatum distinctio! Placeat, totam.
+          </div>
+          <code>classe bg-auxiliar-claro-03</code>
+          <div class="caixa-destaque bg-auxiliar-claro-03">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nesciunt quidem, consectetur modi maiores eius excepturi cupiditate vero incidunt quibusdam rem voluptatum. Beatae voluptates optio fugit voluptatum distinctio! Placeat, totam.
+          </div>
+
+          <h4>Cores no texto</h4>
+          <p>Segue a mesma lógica, substituindo bg por texto</p>
+          <code>Ex.: class="texto-primaria-01"</code>
+          <p class="texto-primaria-01">texto cor primaria 01</p>
+          <p class="texto-primaria-02 bg-auxiliar-escuro-03">texto cor primaria 02, neste curso a primaria 02 é branca</p>
+          <p class="texto-primaria-03">texto cor primaria 03</p>
+          <p class="texto-auxiliar-escuro-01">texto cor auxiliar escuro 01</p>
+          <p class="texto-auxiliar-escuro-02">texto cor auxiliar escuro 02</p>
+          <p class="texto-auxiliar-escuro-03">texto cor auxiliar escuro 03</p>
+          <p class="texto-auxiliar-claro-01">texto cor auxiliar claro 01</p>
+          <p class="texto-auxiliar-claro-02">texto cor auxiliar claro 02</p>
+          <p class="texto-auxiliar-claro-03">texto cor auxiliar claro 03</p>
+
+          <h4>Bordas</h4>
+          <p>eh possivel também adicionar bordas nas cores desejadas:</p>
+          <code>Ex.: class="borda-primaria-01"</code>
+
+          <p class="borda-primaria-01">borda cor primaria 01</p>
+          <p class="borda-primaria-02">borda cor primaria 02, neste curso a primaria 02 é branca</p>
+          <p class="borda-primaria-03">borda cor primaria 03</p>
+          <p class="borda-auxiliar-escuro-01">borda cor auxiliar escuro 01</p>
+          <p class="borda-auxiliar-escuro-02">borda cor auxiliar escuro 02</p>
+          <p class="borda-auxiliar-escuro-03">borda cor auxiliar escuro 03</p>
+          <p class="borda-auxiliar-claro-01">borda cor auxiliar claro 01</p>
+          <p class="borda-auxiliar-claro-02">borda cor auxiliar claro 02</p>
+          <p class="borda-auxiliar-claro-03">borda cor auxiliar claro 03</p>
+
+          <h4>combinando</h4>
+          <p>As classes de texto e bg podem ser combinadas entre si para melhor contraste nos elementos e obter resultados diferentes</p>
+          <p>Exemplo: <code>class="caixa-destaque texto-auxiliar-claro-02 bg-primaria-03 borda-auxiliar-escuro-03 icone atencao"</code></p>
+          <div class="caixa-destaque texto-auxiliar-claro-02 bg-primaria-03 borda-auxiliar-escuro-03 icone atencao">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde ducimus consequuntur doloremque animi molestias sunt at incidunt quibusdam! Eum mollitia quia quibusdam tenetur laudantium quam corrupti ipsam blanditiis cumque.
+          </div>
+
+          <p class="caixa-destaque borda-primaria-01 icone atencao texto-primaria-01">Aqui defini as cores de hover para os botões baseado na sequencia da paleta, exemplo, se o botao tiver o bg primaria 01 ou aixiliar claro 01, seu hover vai ser a auxiliar escuro 01, e assim sucessivamente. Nas escuras o hover recai para a primaria de mesmo nivel. Esse esquema está como sugestão inicial, mas recomendo customizar classes especificas ou sobrescrever as existentes para os botões no css custom, de acordo com o solicitado pelo designer na uc a ser desenvolvida.
+          </p>
+          <p>Exemplo de botao padrao, utilizando somente com as classes de borda e texto:<code>&lt;div class="botao borda-primaria-01 texto-primaria-01 "&gt;</code></p>
+           
+            <div class="botao borda-auxiliar-claro-01 texto-primaria-01 icone concluindo">Um botao exemplo</div>
+
+        <p>Exemplo de botao com as classes de fundo, borda e texto:</p>
+            <div class="botao borda-auxiliar-claro-01 texto-primaria-03 icone concluindo bg-primaria-01">bg-primaria-01 exemplo</div>
+            <div class="botao borda-auxiliar-claro-01 texto-primaria-01 icone concluindo bg-primaria-02">bg-primaria-02 exemplo</div>
+            <div class="botao borda-auxiliar-claro-01 texto-primaria-01 icone concluindo bg-primaria-03">bg-primaria-03 exemplo</div>
+            <div class="botao borda-auxiliar-claro-01 texto-primaria-01 icone concluindo bg-auxiliar-escuro-01">bg-auxiliar-escuro-01</div>
+            <div class="botao borda-auxiliar-claro-01 texto-primaria-01 icone concluindo bg-auxiliar-escuro-02">bg-auxiliar-escuro-02</div>
+            <div class="botao borda-auxiliar-claro-01 texto-primaria-01 icone concluindo bg-auxiliar-escuro-03">bg-auxiliar-escuro-03</div>
+            <div class="botao borda-auxiliar-claro-01 texto-primaria-01 icone concluindo bg-auxiliar-claro-01">bg-auxiliar-claro-01</div>
+            <div class="botao borda-auxiliar-claro-01 texto-primaria-01 icone concluindo bg-auxiliar-claro-02">bg-auxiliar-claro-02</div>
+            <div class="botao borda-auxiliar-claro-01 texto-primaria-02 icone concluindo bg-auxiliar-claro-03">bg-auxiliar-claro-03</div>
+           <br> <br>
+
+          <h3>Cores dos Marcadores</h3>
+
+          <p>Nestes cursos novos além do marcador padrão, ainda temos a possibildade de variaçoes de cor do bullet, conforme</p>
+          <p>ul simples sem classe(cor padrão):</p>
+          <ul>
+              <li>padrao item 01</li>
+              <li>padrao item 02</li>
+              <li>padrao item 03</li>
+              <li>padrao item 04</li>
+              <li>padrao item 05</li>
+          </ul>
+          <p>ul simples classe cor01:</p>
+          <ul class="cor01">
+              <li>cor01 item 01</li>
+              <li>cor01 item 02</li>
+              <li>cor01 item 03</li>
+              <li>cor01 item 04</li>
+              <li>cor01 item 05</li>
+          </ul>
+          <p>ul simples classe cor02(a cor 2 nesse curso é a branca):</p>
+          <ul class="cor02 bg-primaria-01">
+              <li>cor02 item 01</li>
+              <li>cor02 item 02</li>
+              <li>cor02 item 03</li>
+              <li>cor02 item 04</li>
+              <li>cor02 item 05</li>
+          </ul>
+          <p>ul simples classe cor03:</p>
+          <ul class="cor03">
+              <li>cor03 item 01</li>
+              <li>cor03 item 02</li>
+              <li>cor03 item 03</li>
+              <li>cor03 item 04</li>
+              <li>cor03 item 05</li>
+          </ul>
+
+
+
+          <h3>Classe icone</h3>
+          <p>Foi simplificada a sintaxe: agora para declarar basta adicionar a classe icone e o nome do icone, no exemplo abaixo: <br>
+             <code> class="caixa-destaque icone atencao";</code> <br>              
+          </p>
+
+          <h4>uso em divs comuns</h4>
+
+          <p>As divs normais permitem o icone a esquerda, topo ou direita, mantendo essa posição do icone mesmo no mobile.</p>
+
+          <p><code>Ex.: class="icone concluindo"</code></p>
+
+          <div class="icone concluindo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse beatae mollitia, corporis asperiores quos nostrum consequuntur. Dignissimos, magni quod veniam, tempora sequi quisquam inventore, est dolor repellat amet eveniet eum?
+          </div>
+
+          <p><code>Ex.: class="bg-primaria-01 icone concluindo"</code></p>
+          <div class="bg-primaria-01 icone concluindo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse beatae mollitia, corporis asperiores quos nostrum consequuntur. Dignissimos, magni quod veniam, tempora sequi quisquam inventore, est dolor repellat amet eveniet eum?
+          </div>
+
+          <p>Adicionando a classe topo podemos posicionar o icone no topo da div:</p>
+          <p><code>Ex.: class="icone topo desafio borda-primaria-03"</code></p>        
+          <div class="icone topo desafio borda-primaria-03">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et necessitatibus laborum illum officia. Natus officiis debitis consequatur reprehenderit, eos aspernatur voluptatum praesentium, molestias quo alias ducimus, enim tempora quia quos!
+          </div>
+
+          <p>Adicionando a classe direita podemos posicionar o icone na direita da div:</p>
+          <p><code>Ex.: class="icone direita ideia borda-primaria-01 bg-auxiliar-claro-01"</code></p>
+          <div class="icone direita ideia borda-primaria-01 bg-auxiliar-claro-01">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et necessitatibus laborum illum officia. Natus officiis debitis consequatur reprehenderit, eos aspernatur voluptatum praesentium, molestias quo alias ducimus, enim tempora quia quos!
+          </div>
+       
+          <h4>Uso em caixas de destaque</h4>
+          <p>Por padrao os icones em caixas de destaque aparecem a esquerda da caixa, mudando para cima em rosoluções mobile</p>
+          <div class="caixa-destaque icone atencao">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores similique dolor placeat velit totam magnam. Molestiae distinctio perferendis dolor quae error obcaecati. Reprehenderit optio harum laudantium praesentium iure! Reprehenderit, voluptas.
+          </div>
+
+          <p>  para novos icones basta declarar no css o nome da classe e a imagem de background, por exemplo:</p>
+          <code>
+              icone.exemplo{ <br>
+                  background-image: url(../images/exemplo.png) <br>
+              } <br>
+          </code>
+
+          <p>Porém as classes antigas ainda tem validade não havendo problema em utilizar a sintaxe antiga.</p>
+          
+          <h3>Icones nos títulos</h3>
+          Segue a mesma logica das caixas de destaque, basta adicionar a classe icone, e o nome do icone
+           
+          <h1 class="icone atencao">Exemplo h1</h1>
+          <h2 class="icone audio">Exemplo h2</h2>
+          <h3 class="icone concluindo">Exemplo h3</h3>
+          <h4 class="icone desafio">Exemplo h4</h4>
+          <h5 class="icone fundamental">Exemplo h5</h5>
+          <h6 class="icone dica">Exemplo h6</h6>
+
+
+          <h3>Icones nos parágrafos</h3>
+          <p>Também seguem a mesma lógica classe icone, nome do icone. Atenção ao texto do paragrafo para acabar nao cortanto o icone. <code> &lt;p class="icone desafio"&gt;</code></p>
+          <p class="icone desafio">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet placeat voluptate officia, libero quasi ullam soluta facere aspernatur minus quo doloremque quia cum et ipsum reprehenderit ea alias nisi voluptatem!
+          </p>
+          <p>Em parágrafos muito curtos pode-se adicionar a classe pequeno: <code> class="icone desafio pequeno"</code></p>
+          <p class="icone desafio pequeno">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          </p>
+
+          <h3>utilizando em botoes</h3>
+          <p>Por padrão em botoes e links os icones sao pequenos. Ao utilizarmos a tag button, esse será o resultado:</p>
+           <button class="icone link-pdf">botao normal, sem estilo com icone</button>
+           <button class="botao icone link-pdf">botao do template com icone</button>
+           <button class="btn btn-default icone link-pdf">botao padrao bootstrap com icone</button>
+           <p>Demais tags com a classe botao ou btn(bootstrap):</p>
+           <a href="http://google.com" target="_blank" class="botao icone concluindo"> Link com a classe botao</a>
+           <a href="http://google.com" target="_blank" class="btn btn-danger icone atencao"> Link com a classe btn do bootstrap</a>
+           <div class="botao icone link-pdf">div com a classe botao</div>
+           <a href="" class="icone desafio">Link normal(somente a tag a) com icone</a>
+
+           <div class="caixa-destaque icone atencao">
+              <h4>Comentário</h4>
+              <p>É plenamente possivel estender e customizar de acordo com a necessidade da uc a ser desenvolvida, editando a classe extras.css e adicionando a customização que desejar seguindo a sintaxe ali definida.</p>
+           </div>
+
+           <h3>Ícones extras de apoio</h3>
+           <p>Na pasta imagens temos icones extras de apoio para uso no curso, mapeei alguns no arquivo css icones_apoio, recomendo adicionar ali novas classes para os que serão utilizados, de acordo com o solicitado pelo designer. Basta inserir o novo icone na classe icones_default.css ou na propria custom.css respeitando a sintaxe lá declarada:</p>
+           <code>
+             Ex.: 
+             .icone.apoio001{
+                  background-image: url(../images/icones-apoio/001-aim.png);
+              }
+           </code>
+           <p>Abaixo alguns exemplos de uso:</p>
+           <p><code> class="col-md-2 icone apoio001 topo text-center"</code></p>
+           <div class="row">
+             <div class="col-md-2 icone apoio001 topo text-center">
+               Exemplo icone de apoio 001
+             </div>
+             <div class="col-md-2 icone topo apoio002 text-center">
+              Exemplo icone de apoio 002
+            </div>
+            <div class="col-md-2 icone topo apoio003 text-center">
+              Exemplo icone de apoio 003
+            </div>
+            <div class="col-md-2 icone topo apoio004 text-center">
+              Exemplo icone de apoio 004
+            </div>
+            <div class="col-md-2 icone topo apoio005 text-center">
+              Exemplo icone de apoio 005
+            </div>
+            <div class="col-md-2 icone topo apoio006 text-center">
+              Exemplo icone de apoio 006
+            </div>
+           </div>
+
+           <h3>Modal-100</h3>
+           <p>Foi adicionada uma alternativa utilizando o próprio bootstrap para modal 100%, basta adicionar a classe modal-100 numa modal convencional, mas os diagramadores tem a liberdade de utilizar a tecnica que estiverem mais familizarizados</p>
+            
+           <p><code>&lt;div class="modal  modal-100 fade" id="modal-id"&gt;</code></p>
+           
+           <a class="botao icone ideia borda-primaria-01" data-toggle="modal" href='#modal-id'>Exemplo de Modal 100</a>
+           <div class="modal  modal-100 fade" id="modal-id">
+             <div class="modal-dialog">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                   <h4 class="modal-title">
+                     <div class="container">Exemplo de modal 100%</div>
+                    </h4>
+                 </div>
+                 <div class="modal-body">
+                   <div class="container">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, similique? A ipsam ut aliquam cumque, repellat voluptas eos? Cupiditate nisi necessitatibus soluta est labore quo impedit veniam, reiciendis consectetur sed.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perspiciatis recusandae ducimus non reprehenderit debitis animi distinctio deleniti illo, nemo fugiat sint nobis beatae minus iure atque? Delectus, illum aperiam.</p>
+                    <div class="row">
+                      <div class="col-md-6"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nemo perferendis facere! Natus, reiciendis debitis cupiditate tenetur totam odio, sunt mollitia, consectetur magnam voluptatum at eveniet sapiente iusto? Totam, voluptatibus.</p> </div>
+                      <div class="col-md-6"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sequi, quo dolorum adipisci labore id! Eius maxime ex nostrum, porro facilis reiciendis sequi mollitia, beatae accusantium quod, sint corrupti amet.</p> </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum tempora atque placeat culpa quas nulla laborum. Neque, assumenda aliquam? Libero inventore animi repudiandae enim aliquid, repellat necessitatibus molestias sed porro.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi iste vero ab commodi ducimus mollitia eos totam laborum voluptate similique accusantium vel, suscipit nostrum minus nihil repellat placeat nam! Suscipit.</p>
+                   </div>
+                 
+                 </div>
+                 <div class="modal-footer">
+                   <button type="button" class="botao borda-primaria-03 icone atencao" data-dismiss="modal">fechar</button>
+                 </div>
+               </div>
+             </div>
+           </div> 
+
+           <h3>Accordion (painel gaitinha)</h3>
+           <p>Adicionada uma classe auxiliar pra ajudar na customizaçao dos accordions, ja que eles costumam ter um visual diferenciado ultimamente nas UCS, basta adicionar a classe gaitinha na uc</p>
+           <p>encontra-se em custom-accordion.css, dentro de extras.css</p>
+           <code>Ex.: class="panel-group gaitinha"</code>
+ 
+           <div class="panel-group gaitinha" id="accordion" role="tablist" aria-multiselectable="true">
+             <div class="panel panel-default">
+               <div class="panel-heading" role="tab" id="headingOne">
+                 <h3 class="panel-title">
+                   <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+                     Painel 01
+                   </a>
+                 </h3>
+               </div>
+               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
+                 <div class="panel-body">
+                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                   moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                   Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                   shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                   proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                   aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                 </div>
+               </div>
+             </div>
+             <div class="panel panel-default">
+               <div class="panel-heading" role="tab" id="headingTwo">
+                 <h3 class="panel-title">
+                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     Painel 02
+                   </a>
+                 </h3>
+               </div>
+               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+                 <div class="panel-body">
+                   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                   moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                   Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                   shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                   proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                   aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                 </div>
+               </div>
+             </div>
+             <div class="panel panel-default">
+               <div class="panel-heading" role="tab" id="headingThree">
+                 <h3 class="panel-title">
+                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     Painel 03
+                   </a>
+                 </h3>
+               </div>
+               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+                 <div class="panel-body">
+                   <div class="icone-atencao texto-com-icone">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                     accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                     Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                     squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                     labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                     Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                     heard of them accusamus labore sustainable VHS.</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <h3>Classe para links</h3>
+           <p>No design ficou sugerido um uso de cores para os links, então foi adicionada a classe <b>padrao</b> para aplicarmos nos links que devem ter esse visual (nao interferindo assim em links de elementos do bootstrap ou de objetos que forem criados). </p>
+           <code>&lt;a class="padrao" &gt; </code>
+           <p><a class="padrao" href="#">Exemplo de link usando a classe padrao</a></p>
+           <code>&lt;a class="padrao icone documento" &gt; </code>
+           <p><a class="padrao icone documento" href="#">Exemplo de link usando a classe padrao e com icone</a></p>
+
+          </div>
+
+
+         
+
+
+
+        </section>
+<!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+        <footer class="text-center no-print">
+          <ul class="pagination">
+
+          </ul>
+        </footer>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+<!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+<div class="ico-div-loader">
+	<img src="images/atencao.png">
+    <img src="images/bg-content.jpg">
+    <img src="images/bg-topo.jpg">
+    <img src="images/black-zoom-in-256.png">
+    <img src="images/concluindo.png">
+    <img src="images/curtir.png">
+    <img src="images/desafio.png">
+    <img src="images/dica.png">
+    <img src="images/doc.png">
+    <img src="images/fundamental.png">
+    <img src="images/icon-03.png">
+    <img src="images/importante.png">
+    <img src="images/lightbulb.png">
+    <img src="images/link.png">
+    <img src="images/link_pdf_hover.png">
+    <img src="images/link_pdf_normal.png">
+    <img src="images/logo-senac.png">
+    <img src="images/mark-icon.png">
+    <img src="images/mark-icon02.png">
+    <img src="images/midia.png">
+    <img src="images/monitor.png">
+    <img src="images/nao_curtir.png">
+    <img src="images/pergunta.png">
+    <img src="images/pesquisa.png">
+    <img src="images/play.png">
+    <img src="images/radio_flat.png">
+    <img src="images/refletir.png">
+    <img src="images/saiba_mais.png">
+    <img src="images/senac_loader.png">
+    <img src="images/tanamidia.png">
+    <img src="images/transcricao.png">
+    <img src="images/transcricao_small.png">
+    <img src="images/tv.png">
+    <img src="images/tv_bottom.png">
+    <img src="images/zoom.png">
+    <img src="images/zoom_ie.cur">
+    <img src="images/zoom_ie.png">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/print.js"></script>
+<script src="js/template.config.js"></script>
+<script src="js/images.loader.js"></script>
+<noscript>
+  <style media="screen">
+    .over-loader { display: none;}    
+  </style>
+</noscript>
+</body>
+</html>
+<script>
+	//inicializa zoom na imagem
+	$('.zoom-imagem').magnificPopup({
+	 type: 'image',
+  	 mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+ 	 zoom: {
+		enabled: true, // By default it's false, so don't forget to enable it
+
+		duration: 300, // duration of the effect, in milliseconds
+		easing: 'ease-in-out', // CSS transition easing function
+
+		// The "opener" function should return the element from which popup will be zoomed in
+		// and to which popup will be scaled down
+		// By defailt it looks for an image tag:
+		opener: function(openerElement) {
+		  // openerElement is the element on which popup was initialized, in this case its <a> tag
+		  // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+		  return openerElement.is('img') ? openerElement : openerElement.find('img');
+		}
+	  },
+	   image: {
+		  markup: '<div class="mfp-figure">'+
+					'<div class="mfp-close"></div>'+
+					'<div class="mfp-img"></div>'+ // Floated left
+					'<div class="mfp-bottom-bar">'+'<figcaption>'+'<div class="mfp-title" style="text-align:center"></div>'+
+					  '<div class="mfp-counter"></div>'+'</figcaption>'+
+					'</div>'+
+				  '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+		  cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+		  tError: '<a href="%url%">A imagem</a> não pode ser carregada.' // Error message
+	   }
+	});
+
+	//inicializa popover
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+	//inicializa tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+</script>

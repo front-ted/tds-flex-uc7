@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes sprite {
+ 100% {
+   background-position: -1410px;
+ }
+}
+.over-loader{
+  width:100%;
+  height:100%;
+  background-color:rgba(255,255,255,1);
+  position:fixed;
+  display: table;
+  z-index:9999;
+}
+.over-cell{
+  display: table-cell;
+  text-align: center;
+  vertical-align:middle;
+}
+
+#sncload {
+  width: 234px;
+  height: 234px;
+  display: inline-block;
+  background-image: url("../images/senac_loader.png");
+  animation: sprite .9s steps(6) infinite;
+}

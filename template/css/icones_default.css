@@ -1,0 +1,67 @@
+/*icones default*/
+.icone.anotar{
+    background-image: url(../images/anotar.png);
+}
+.icone.atencao{
+    background-image: url(../images/atencao.png);
+}
+.icone.audio, .icone.icone-podcast{
+    background-image: url(../images/audio.png);
+}
+.icone.concluindo{
+    background-image: url(../images/concluindo.png);
+}
+.icone.curtir{
+    background-image: url(../images/curtir.png);
+}
+.icone.desafio{
+    background-image: url(../images/desafio.png);
+}
+.icone.dica{
+    background-image: url(../images/dica.png);
+}
+.icone.documento{
+    background-image: url(../images/documento.png);
+}
+.icone.fundamental{
+    background-image: url(../images/fundamental.png);
+}
+.icone.ideia{
+    background-image: url(../images/ideia.png);
+}
+.icone.importante{
+    background-image: url(../images/importante.png);
+}
+.icone.link{
+    background-image: url(../images/link.png);
+}
+.icone.link-pdf{
+    background-image: url(../images/link_pdf_normal.png);
+}
+.icone.link-pdf:hover{
+    background-image: url(../images/link_pdf_hover.png);
+}
+.icone.pergunta{
+    background-image: url(../images/pergunta.png);
+}
+.icone.pesquisa{
+    background-image: url(../images/pesquisa.png);
+}
+.icone.play{
+    background-image: url(../images/play.png);
+}
+.icone.refletir{
+    background-image: url(../images/refletir.png);
+}
+.icone.relatorio{
+    background-image: url(../images/relatorio.png);
+}
+.icone.saiba-mais{
+    background-image: url(../images/saibamais.png);
+}
+.icone.transcricao{
+    background-image: url(../images/transcricao.png);
+}
+.icone.tv{
+    background-image: url(../images/tv.png);
+}

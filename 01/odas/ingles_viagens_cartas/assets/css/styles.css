@@ -1,0 +1,240 @@
+.ODA_ingles_viagens_cartas {
+  margin-bottom: 70px;
+  /* Efeito de card no hover */
+}
+.ODA_ingles_viagens_cartas .wrapper {
+  width: fit-content;
+  padding: 20px 70px;
+  display: block;
+  margin: 25px auto;
+  border-radius: 20px;
+  position: relative;
+  background: transparent;
+  height: 840px;
+  width: 905px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.ODA_ingles_viagens_cartas .btn-prev,
+.ODA_ingles_viagens_cartas .btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d8e4ea;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  z-index: 10;
+  opacity: 0.8;
+}
+.ODA_ingles_viagens_cartas .btn-prev:hover,
+.ODA_ingles_viagens_cartas .btn-next:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+.ODA_ingles_viagens_cartas .btn-next {
+  right: 12px;
+}
+.ODA_ingles_viagens_cartas .btn-prev {
+  left: 12px;
+}
+.ODA_ingles_viagens_cartas .tela-inicial {
+  position: absolute;
+  z-index: 1500;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ODA_ingles_viagens_cartas .tela-inicial .msg {
+  background-color: #d8e4ea;
+  width: 650px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+}
+.ODA_ingles_viagens_cartas .tela-inicial .msg h2 {
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.ODA_ingles_viagens_cartas .tela-inicial .msg p {
+  line-height: 26px;
+}
+.ODA_ingles_viagens_cartas .tela-inicial .msg .btn-start {
+  padding: 10px 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.ODA_ingles_viagens_cartas .tela {
+  position: relative;
+  width: 100%;
+}
+.ODA_ingles_viagens_cartas .disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+.ODA_ingles_viagens_cartas .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ODA_ingles_viagens_cartas .card {
+  width: 133px;
+  height: 190px;
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  transition-duration: 0.3s;
+  -webkit-perspective: 600px;
+  perspective: 600px;
+  cursor: pointer;
+}
+.ODA_ingles_viagens_cartas .card:hover:not(.flip) {
+  transform: scale(1.05);
+}
+.ODA_ingles_viagens_cartas .ladoFrente {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: inherit;
+  text-align: center;
+  -webkit-transform: rotateX(0) rotateY(0);
+  transform: rotateX(0) rotateY(0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: url("../img/carta.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ODA_ingles_viagens_cartas .ladoTras {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  width: 100%;
+  height: inherit;
+  -webkit-transform: rotateY(-179deg);
+  transform: rotateY(-179deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background: #fff3cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.ODA_ingles_viagens_cartas .ladoTras p {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline #5f9eb3 dashed;
+  text-decoration-thickness: 2px;
+}
+.ODA_ingles_viagens_cartas .ladoTras button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.ODA_ingles_viagens_cartas .ladoTras button:hover svg {
+  fill: #d8e4ea;
+  transition-duration: 0.1s;
+}
+.ODA_ingles_viagens_cartas .ladoTras button svg {
+  fill: #333;
+  transition-duration: 0.1s;
+}
+.ODA_ingles_viagens_cartas .ladoTras::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border: 2px solid #5f9eb3;
+}
+.ODA_ingles_viagens_cartas .ladoFrente .bg,
+.ODA_ingles_viagens_cartas .ladoTras img {
+  width: 100%;
+}
+.ODA_ingles_viagens_cartas .ladoFrente .nro {
+  width: auto;
+  height: 70px;
+}
+.ODA_ingles_viagens_cartas .card.flip .ladoFrente {
+  z-index: 900;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotateY(179deg);
+  transform: rotateY(179deg);
+}
+.ODA_ingles_viagens_cartas .card.flip .ladoTras {
+  z-index: 1000;
+  -webkit-transform: rotateX(0) rotateY(0);
+  transform: rotateX(0) rotateY(0);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+.ODA_ingles_viagens_cartas .tres .nro {
+  height: 60px;
+}
+.ODA_ingles_viagens_cartas .mil .nro {
+  height: 48px;
+}
+.ODA_ingles_viagens_cartas .smallerFont .ladoTras p {
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .ODA_ingles_viagens_cartas .wrapper {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+  }
+  .ODA_ingles_viagens_cartas .row {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .ODA_ingles_viagens_cartas .wrapper {
+    max-width: 100%;
+    width: 100%;
+    padding: 15px 0;
+    height: auto;
+  }
+  .ODA_ingles_viagens_cartas .row {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

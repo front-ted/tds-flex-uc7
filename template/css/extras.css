@@ -1,0 +1,291 @@
+
+/*no css icones_default estão declarados os icones padrão*/
+@import url("icones_default.css");
+/*no css icones_auxiliares estao icones extras para serem utilizado junto de elementos*/
+@import url("icones_apoio.css");
+
+/*Modais 100%*/
+@import url("modal-100.css");
+
+/*Accordions customizados*/
+@import url("custom-accordion.css");
+
+.botao{
+    cursor: pointer;
+}
+
+
+/*o futuro do uso de icones, uma classe icone, que adicionada ao elemento prepara ele pra usar icone*/
+.icone{
+    background-repeat: no-repeat;
+}
+div.icone:not(.caixa-destaque, .botao, .btn){
+    padding: 1.7rem;
+    padding-left: 100px;
+    background-position: 10px center;
+    background-size: 80px;
+}
+div.icone.topo:not(.caixa-destaque, .botao, .btn){
+    padding: 1.7rem;
+    padding-top: 100px;
+    background-position: center 10px;
+    background-size: 80px;
+}
+div.icone.direita:not(.caixa-destaque, .botao, .btn){
+    padding: 1.7rem;
+    padding-right: 100px;
+    background-position: 98.5% center;
+    background-size: 80px;
+}
+
+
+.caixa-destaque.icone{
+    padding-left: 100px;
+    background-position: 10px center;
+    background-size: 80px;
+}
+
+h1.icone, h2.icone, h3.icone, h4.icone, h5.icone, h6.icone{
+    background-position: left center;
+    background-size: 40px;   
+}
+
+
+h1.icone{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 50px;
+    padding-top: 2px;
+    padding-bottom: 2px; 
+ 
+}
+h2.icone{
+    padding-left: 50px;    
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+h3.icone{
+    padding-left: 50px;    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+h4.icone{   
+    padding-left: 50px;    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: -0.2rem;
+    margin-bottom: 1.5rem;
+}
+h5.icone{   
+    padding-left: 50px;    
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: -0.6rem;
+    margin-bottom: 1.5rem;
+}
+h6.icone{   
+    padding-left: 50px;    
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: -0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+p.icone{
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    background-size: 80px;
+    background-position:left center;
+}
+p.icone.pequeno{
+    background-size: 40px;
+    padding-left: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+button.icone, .botao.icone, .btn.icone ,a.icone{
+    padding-left: 60px;   
+    background-size: 40px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-position: 10px center;
+    text-align: left;
+}
+button.botao{
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+}
+
+/*cores nos botoes*/
+/* cores primarias */
+
+.botao.bg-primaria-01:hover{
+    background-color:#7B8FA6 !important;
+    color: white;
+ }
+ .botao.bg-primaria-02:hover{
+    background-color:#D3D5D5  !important;
+    color: white;
+ }
+ .botao.bg-primaria-03:hover{
+    background-color:#004B90  !important;
+    color: white;
+ }
+ /* cores secundárias escuras */
+ .botao.bg-auxiliar-escuro-01:hover{
+     background-color:#A9B6C5  !important;
+     color: white;
+ }
+ .botao.bg-auxiliar-escuro-02:hover{
+     background-color:#FFFFFF  !important;
+     color: #0c0c0c  !important;
+ }
+ .botao.bg-auxiliar-escuro-03:hover{
+     background-color:#2875C6  !important;
+     color: white;
+ }
+ 
+ /* cores secundárias claras */
+ .botao.bg-auxiliar-claro-01:hover{
+     background-color:#7B8FA6  !important;
+     color: white;
+ }
+ .botao.bg-auxiliar-claro-02:hover{
+     background-color:#D3D5D5  !important;
+     color: white;
+ }
+ .botao.bg-auxiliar-claro-03:hover{
+     background-color:#004B90  !important;
+     color: white;
+ }
+
+.bg-primaria-01{
+    background-color: #A9B6C5 !important;
+}
+.bg-primaria-02{
+    background-color: #FFFFFF !important;
+}
+.bg-primaria-03{
+    background-color: #2875C6 !important;
+}
+
+.bg-auxiliar-escuro-01{
+    background-color: #7B8FA6 !important;
+}
+.bg-auxiliar-escuro-02{
+    background-color: #D3D5D5 !important;
+}
+.bg-auxiliar-escuro-03{
+    background-color: #004B90 !important;
+}
+
+.bg-auxiliar-claro-01{
+    background-color: #DAE8F7 !important;
+}
+.bg-auxiliar-claro-02{
+    background-color: #EEEEEE !important;
+}
+.bg-auxiliar-claro-03{
+    background-color: #66A4F3 !important;
+}
+
+
+.texto-primaria-01{
+    color: #A9B6C5 !important;
+}
+.texto-primaria-02{
+    color: #FFFFFF !important;
+}
+.texto-primaria-03{
+    color: #2875C6 !important;
+}
+
+.texto-auxiliar-escuro-01{
+    color: #7B8FA6 !important;
+}
+.texto-auxiliar-escuro-02{
+    color: #D3D5D5 !important;
+}
+.texto-auxiliar-escuro-03{
+    color: #004B90 !important;
+}
+
+.texto-auxiliar-claro-01{
+    color: #DAE8F7 !important;
+}
+.texto-auxiliar-claro-02{
+    color: #EEEEEE !important;
+}
+.texto-auxiliar-claro-03{
+    color: #66A4F3 !important;
+}
+*[class*="borda-"]{
+    border: 2px solid !important;
+}
+
+.borda-primaria-01{
+    border-color: #A9B6C5 !important;
+}
+.borda-primaria-02{
+    border-color: #FFFFFF !important;
+}
+.borda-primaria-03{
+    border-color: #2875C6 !important;
+}
+
+.borda-auxiliar-escuro-01{
+    border-color: #7B8FA6 !important;
+}
+.borda-auxiliar-escuro-02{
+    border-color: #D3D5D5 !important;
+}
+.borda-auxiliar-escuro-03{
+    border-color: #004B90 !important;
+}
+
+.borda-auxiliar-claro-01{
+    border-color: #DAE8F7 !important;
+}
+.borda-auxiliar-claro-02{
+    border-color: #EEEEEE !important;
+}
+.borda-auxiliar-claro-03{
+    border-color: #66A4F3 !important;
+}
+
+
+ul.cor02 li{
+    list-style-image:url(../images/marcador_branco.png) !important;
+}
+ul.cor03 li{
+    list-style-image:url(../images/marcador_cinza.png) !important;
+}
+ul.cor01 li{
+    list-style-image:url(../images/marcador_azul.png) !important;
+}
+
+
+a.padrao{
+    font-weight: bold;
+    color: #276DB8;
+}
+a.padrao:hover{
+    font-weight: bold;  
+    color: #004B90;
+}
+
+@media screen and (max-width: 700px){
+    div.icone:not(.caixa-destaque, .botao, .btn), .caixa-destaque.icone{
+        padding-left: 2em;
+        padding-top: 100px;
+        background-position: center 10px;
+    }    
+}

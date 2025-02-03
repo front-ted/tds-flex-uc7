@@ -1,0 +1,103 @@
+.ODA_ingles_form {
+  width: fit-content;
+  padding: 15px;
+  margin: 0px auto;
+  /* background: #A1C0EB; */
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+.ODA_ingles_form h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #333;
+}
+.ODA_ingles_form table {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  width: 510px;
+  max-width: 100%;
+  border-radius: 0;
+  border-spacing: 0;
+}
+.ODA_ingles_form table tr {
+  position: relative;
+  background-color: #A1C0EB;
+  transition-duration: 0.2s;
+}
+.ODA_ingles_form table tr.errado {
+  background-color: salmon;
+}
+.ODA_ingles_form table tr.errado::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/x.svg");
+}
+.ODA_ingles_form table tr.correto {
+  background-color: rgb(110, 220, 128);
+}
+.ODA_ingles_form table tr.correto::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/check.svg");
+}
+.ODA_ingles_form table th {
+  background-color: #272F64;
+  padding: 5px 15px;
+  font-weight: 600;
+  color: white;
+}
+.ODA_ingles_form table td {
+  padding: 5px 10px;
+  border-collapse: collapse;
+  border-bottom: none;
+}
+.ODA_ingles_form select {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #333;
+  padding: 5px;
+  cursor: pointer;
+}
+.ODA_ingles_form select:hover {
+  box-shadow: 1px 1px 2px #333;
+}
+.ODA_ingles_form .check {
+  cursor: pointer;
+  background-color: #D8652A;
+  border: 1px solid #D8652A;
+  color: white;
+  padding: 8px 25px;
+  font-size: 15px;
+  margin-top: 15px;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.ODA_ingles_form .check:hover {
+  background-color: white;
+  color: #D8652A;
+  transition-duration: 0.3s;
+}
+
+@media (max-width: 600px) {
+  .ODA_ingles_form {
+    width: unset;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

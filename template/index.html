@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Template paginado</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/tecnicos_senac.css" rel="stylesheet">
+    <link href="css/cores.css" rel="stylesheet">
+      <!--Extras - novas classes para facilitar-->
+      <link rel="stylesheet" href="css/extras.css">    
+    <link href="css/sncload.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <!--<link href="custom.css" type="text/css" rel="stylesheet"> -->
+    <!-- css necessario para o print -->
+    <link href="css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="css/print.css" type="text/css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46916400.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+    <!-- MARCA D´ÁGUA -->
+    <img src="images/logo_senac_colorido.png" id="marcadaguaLogo">
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+    <header id="topo" class="senac no-print">
+        <div  class="header-tecnicos container">
+        	  <h1 id="nome-curso">Nome do Curso</h1>
+            <div id="logo-senac"><img src="images/logo-senac.png" alt="logo do senac"></div>
+        </div>
+        <div id="sombra"></div>
+    </header>
+
+    <div id="booklet" class="container fundo-tecnicos">
+        <header class="no-print">
+          <!-- BTO IMPRIMIR -->
+          <div class="grupo-imprimir no-print">
+            <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+                <span class="fa fa-print"></span> <span>Imprimir</span>
+            </button>
+          </div>
+          <!-- /BTO IMPRIMIR -->
+        </header>
+<!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+        <section class="paginas">
+
+          <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+          <div class="pagina">
+            <h2>Página 1</h2>
+            <p>Texto da página 1</p>
+            <img src="" data-src="http://www.ma.senac.br/wp-content/uploads/2016/07/novasede2.jpg" class="imagesLoader img-responsive" alt="">
+          </div>
+
+          <div class="pagina">
+            <h2>Página 2</h2>
+            <p>Texto da página 2</p>
+            <img src="" data-src="http://www.novonoticias.com/sites/default/files/styles/destaque_da_materia/public/conteudo/field/image/joao_pes2.jpg" class="imagesLoader img-responsive" alt="">
+          </div>
+
+          <div class="pagina">
+            <h2>Página 3</h2>
+            <p>Texto da página 3</p>
+            <img src="" data-src="http://www.ulmaarchitectural.com/mediafiles/imagenes/full/IMG_0969.jpg" class="imagesLoader img-responsive" alt="">
+          </div>
+
+          <div class="pagina">
+            <h2>Página 4</h2>
+            <p>Texto da página 4</p>
+            <img src="" data-src="http://fecomerciorn.com.br/wp-content/uploads/2015/10/Fecome%CC%81rcio-RN-Fachada.jpg" class="imagesLoader img-responsive" alt="">
+          </div>
+
+          <div class="pagina">
+            <h2>Página 5</h2>
+            <p>Texto da página 5</p>
+            <img src="" data-src="http://www.galeriadaarquitetura.com.br/Img/projeto/SF1/206/complexo-fecomercio-sescsenac3214.jpg" class="imagesLoader img-responsive" alt="">
+          </div>
+
+        </section>
+<!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+        <footer class="text-center no-print">
+          <ul class="pagination">
+
+          </ul>
+        </footer>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+<!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+<div class="ico-div-loader">
+	<img src="images/atencao.png">
+    <img src="images/bg-content.jpg">
+    <img src="images/bg-topo.jpg">
+    <img src="images/black-zoom-in-256.png">
+    <img src="images/concluindo.png">
+    <img src="images/curtir.png">
+    <img src="images/desafio.png">
+    <img src="images/dica.png">
+    <img src="images/doc.png">
+    <img src="images/fundamental.png">
+    <img src="images/icon-03.png">
+    <img src="images/importante.png">
+    <img src="images/lightbulb.png">
+    <img src="images/link.png">
+    <img src="images/link_pdf_hover.png">
+    <img src="images/link_pdf_normal.png">
+    <img src="images/logo-senac.png">
+    <img src="images/mark-icon.png">
+    <img src="images/mark-icon02.png">
+    <img src="images/midia.png">
+    <img src="images/monitor.png">
+    <img src="images/nao_curtir.png">
+    <img src="images/pergunta.png">
+    <img src="images/pesquisa.png">
+    <img src="images/play.png">
+    <img src="images/radio_flat.png">
+    <img src="images/refletir.png">
+    <img src="images/saiba_mais.png">
+    <img src="images/senac_loader.png">
+    <img src="images/tanamidia.png">
+    <img src="images/transcricao.png">
+    <img src="images/transcricao_small.png">
+    <img src="images/tv.png">
+    <img src="images/tv_bottom.png">
+    <img src="images/zoom.png">
+    <img src="images/zoom_ie.cur">
+    <img src="images/zoom_ie.png">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/print.js"></script>
+<script src="js/template.config.js"></script>
+<script src="js/images.loader.js"></script>
+<noscript>
+  <style media="screen">
+    .over-loader { display: none;}    
+  </style>
+</noscript>
+</body>
+</html>
+<script>
+	//inicializa zoom na imagem
+	$('.zoom-imagem').magnificPopup({
+	 type: 'image',
+  	 mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+ 	 zoom: {
+		enabled: true, // By default it's false, so don't forget to enable it
+
+		duration: 300, // duration of the effect, in milliseconds
+		easing: 'ease-in-out', // CSS transition easing function
+
+		// The "opener" function should return the element from which popup will be zoomed in
+		// and to which popup will be scaled down
+		// By defailt it looks for an image tag:
+		opener: function(openerElement) {
+		  // openerElement is the element on which popup was initialized, in this case its <a> tag
+		  // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+		  return openerElement.is('img') ? openerElement : openerElement.find('img');
+		}
+	  },
+	   image: {
+		  markup: '<div class="mfp-figure">'+
+					'<div class="mfp-close"></div>'+
+					'<div class="mfp-img"></div>'+ // Floated left
+					'<div class="mfp-bottom-bar">'+'<figcaption>'+'<div class="mfp-title" style="text-align:center"></div>'+
+					  '<div class="mfp-counter"></div>'+'</figcaption>'+
+					'</div>'+
+				  '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+		  cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+		  tError: '<a href="%url%">A imagem</a> não pode ser carregada.' // Error message
+	   }
+	});
+
+	//inicializa popover
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+	//inicializa tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+</script>

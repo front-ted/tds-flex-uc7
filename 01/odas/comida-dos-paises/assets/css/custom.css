@@ -1,0 +1,65 @@
+/* Cores e fontes padrões */
+:root{
+    --cor-textos: #193752;
+    --cor-titulo:rgb(255, 255, 255);
+    --font-textos: 'Archivo Narrow', sans-serif;
+    --font-titulo: 'Archivo Black', sans-serif;
+    --paletta-amarelo-base: #fff;
+    --paletta-amarelo-hover: #193752;
+    --paletta-azul-base: #193752;
+    --paletta-azul-hover: #030303;
+    --paletta-verde-claro: #8FC4B6;
+    --paletta-verde-meiotom: #69A696;
+    --paletta-verde-escuro: #3D796A;
+    --feedback-positivo: #7ED957;
+    --feedback-negativo: #FF7C7C;
+  }
+
+  /* Imagens para trocar caso haja necessidade*/
+  body {
+    background-image: url(../img/bg-desk.png);
+  }
+
+  .thumbs-up {
+    background: url(../img/thumb-up.png) top left / 100% auto no-repeat;
+  }
+  .thumbs-down {
+    background: url(../img/thumb-down.png) top left / 100% auto no-repeat;
+  }
+
+  .header-tecnicos {
+    background-image: url(../img/bg-topo-logobg.png), url(../img/topo.jpg);
+  }
+
+/* Background para versão mobile */
+  @media only screen and (max-width: 991px){
+    body {
+      background: url(../img/bg-mobile.png) top center / cover fixed no-repeat #333;
+      font-size: 26px;
+    }
+  }
+
+/* Preloader */
+  #sncload {
+    width: 234px;
+    height: 234px;
+    display: inline-block;
+    background-image: url("../img/senac_loader.png");
+    animation: sprite .9s steps(6) infinite;
+  }
+
+  .dragindrop button img {
+    max-width: 200px;
+  }
+
+  .pergunta {
+    border-radius: 15px;
+  }
+
+  .bto::before {
+    border-radius: 10px;
+  }
+
+  .bto:hover::before {
+    color:white !important
+  }

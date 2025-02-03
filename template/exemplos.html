@@ -1,0 +1,683 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Template paginado</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/tecnicos_senac.css" rel="stylesheet">
+  <link href="fonts/roboto.css" rel="stylesheet">
+  <link href="css/cores.css" rel="stylesheet">
+    <!--Extras - novas classes para facilitar-->
+    <link rel="stylesheet" href="css/extras.css">    
+  <link href="css/sncload.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <!-- referencia ao arquivo css com estilos especificos da pagina -->
+  <!--<link href="custom.css" type="text/css" rel="stylesheet"> -->
+  <!-- css necessario para o print -->
+  <link href="css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  <link href="css/print.css" type="text/css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46916200.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+  <!-- MARCA D´ÁGUA -->
+  <img src="images/logo_senac_colorido.png" id="marcadaguaLogo">
+  <!-- /MARCA D´ÁGUA -->
+
+  <div id='sncloader' class='over-loader'>
+    <div class="over-cell">
+      <div id="sncload"></div>
+    </div>
+  </div>
+  <header id="topo" class="senac no-print">
+    <div class="header-tecnicos container">
+      <h1 id="nome-curso">Nome do curso</h1>
+      <div id="logo-senac"><img src="images/logo-senac.png" alt="logo do senac"></div>
+    </div>
+    <div id="sombra"></div>
+  </header>
+
+  <div id="booklet" class="container fundo-tecnicos">
+    <header class="no-print">
+      <!-- BTO IMPRIMIR -->
+      <div class="grupo-imprimir no-print">
+        <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+          <span class="fa fa-print"></span> <span>Imprimir</span>
+        </button>
+      </div>
+      <!-- /BTO IMPRIMIR -->
+    </header>
+    <!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+    <section class="paginas">
+
+      <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+      <div class="pagina">
+        <h2>Lorem ipsum - h2 para titulos iniciais</h2>
+        <br>
+      
+
+        <!-- Button trigger modal -->
+
+        <div class="row">
+          <p class="col-lg-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in elit at libero
+            lacinia volutpat. Vivamus gravida, nibh at eleifend feugiat, tellus enim placerat quam, vel vulputate urna
+            sapien vel lorem. Praesent risus purus, pulvinar vitae consectetur eget, dignissim in ex. Ut vitae dapibus
+            risus. Nulla consectetur massa sed velit feugiat, sed dictum turpis consectetur. </p>
+          <p class="col-lg-3"><img data-mfp-src="images/slide01.png" src="images/slide01.png" title="teste imagem"
+              class="img-responsive anim-pop zoom-imagem" width="320" height="320"></p>
+        </div>
+
+
+
+        <p class="paper"><strong>Classe paper aplicada</strong><br>
+          <br>
+          Cras rhoncus enim quis luctus vestibulum. Cras lobortis, nisi nec dignissim pellentesque, neque arcu
+          ultricies tortor, vitae porta massa orci quis augue. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Ut arcu nisl, rutrum molestie mi at, ultricies tincidunt nibh.
+        </p>
+
+        <p>Cras rhoncus enim quis luctus vestibulum. Cras lobortis, nisi nec dignissim pellentesque, neque arcu
+          ultricies tortor, vitae porta massa orci quis augue. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Ut arcu nisl, rutrum molestie mi at, ultricies tincidunt nibh. Vivamus in tellus quis ipsum.</p>
+
+        <h3>Subtítulos h3</h3>
+        <p>Cras rhoncus enim quis luctus vestibulum. Cras lobortis, nisi nec dignissim pellentesque, neque arcu
+          ultricies tortor, vitae porta massa orci quis augue. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Ut arcu nisl, rutrum molestie mi at, ultricies tincidunt nibh. Vivamus in tellus quis ipsum.</p>
+
+        <figure>
+          <img src="images/teste_tamanho.png" data-mfp-src="images/slide02.png" class="borda-foto zoom-imagem center-block"
+            title="Legenda da imagem" style="max-width:100%">
+          <figcaption class="legenda-imagem">Legenda da imagem</p>
+        </figure>
+
+        <p class="desktop-only btn-danger">aparece só no desktop</p>
+        <br><br>
+        <h3>Botões padrões (bootstrap)</h3>
+        <div class="row text-center">
+          <div class="col-xs-12 col-sm-2"><button class="btn btn-default" type="button">.btn-default</button></div>
+          <div class="col-xs-12 col-sm-2"><button class="btn btn-primary" type="button">.btn-primary</button></div>
+          <div class="col-xs-12 col-sm-2"><button class="btn btn-success" type="button">.btn-success</button></div>
+          <div class="col-xs-12 col-sm-2"><button class="btn btn-info" type="button">.btn-info</button></div>
+          <div class="col-xs-12 col-sm-2"><button class="btn btn-warning" type="button">.btn-warning</button></div>
+          <div class="col-xs-12 col-sm-2"><button class="btn btn-danger" type="button">.btn-danger</button></div>
+        </div>
+
+        <br><br>
+        <h3>Imagens responsivas</h3>
+        <div class="text-center">
+          <picture class="text-center">
+            <source media="only screen and (max-width: 769px)" srcset="images/imagem_300.png">
+            <source media="only screen and (max-width: 899px)" srcset="images/imagem_480.png">
+            <source media="only screen and (min-width: 900px)" srcset="images/imagem_900.png">
+            <img src="images/imagem_900.png" class="img-responsive" alt="Logo do Senac" style="width:auto; display: inline-block">
+          </picture>
+        </div>
+
+
+        <h2>Página 2</h2><br><br>
+        <h3>Imagens para usar com a paginação</h3>
+        <p>Esta imagem é carregada via Javascript. Ela só irá ser carregada quando o usuário chegar na página em que
+          ela estiver. Caso o usuário esteja vendo a página nº 2 e a imagem esteja na página nº 4, ela não será baixada
+          pelo navegador até que o usuário chegue lá.</p>
+        <p><strong>Exemplo: </strong></p>
+        <img src="" data-src="images/imagempesada_para_testar.jpg" class="imagesLoader img-responsive" alt="">
+
+
+ 
+        <h2>Página 3</h2>
+        <br><br>
+        <h3>Hierarquia de títulos</h3>
+        <div class="caixa-destaque">
+          <p> no inicio do documento, o nome do curso será em H3 </p>
+          <h1>H1 - é utilizado para o nome do curso.</h1>
+          <h2>H2 - nível 1, normalmente o nome do material</h2>
+          <h3>H3 - nivel 2</h3>
+          <h4>H4 - nivel 3</h4>
+          <h5>H5 - nivel 4</h5>
+        </div>
+        <br>
+        <h3>Caixa destaque</h3>
+        <p class="caixa-destaque icone-saiba-mais anim-pop">Cras rhoncus enim quis luctus vestibulum. Cras lobortis,
+          nisi nec dignissim pellentesque, neque arcu ultricies tortor, vitae porta massa orci quis augue. Interdum et
+          malesuada fames ac ante ipsum primis in faucibus. Ut arcu nisl, rutrum molestie mi at, ultricies tincidunt
+          nibh. Vivamus in tellus quis ipsum ultricies elementum. Nam eleifend, enim id molestie fermentum, leo lacus
+          tristique nibh, sit amet lobortis tellus elit in nisl. In sit amet mollis urna. Nunc sodales bibendum mauris
+          a sagittis. Ut est arcu, aliquet in commodo non, mattis vitae nibh.</p>
+        <p class="caixa-destaque"><strong>Caixa de destaque</strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque-livre"><strong>Caixa de destaque sem largura definida, para usar com colunas</strong>
+          - Curabitur eleifend massa et lorem tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci
+          vitae ipsum pharetra consequat quis lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum
+          nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque pequena"><strong>Caixa de destaque pequena</strong> - Curabitur eleifend massa et
+          lorem tincidunt placerat. Cras ac cursus dolor, a luctus felis. </p>
+        <p class="caixa-destaque media"><strong>Caixa de destaque média</strong> - Curabitur eleifend massa et lorem
+          tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis
+          lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam
+          nisl.</p>
+        <p class="caixa-destaque grande"><strong>Caixa de destaque grande</strong> - Curabitur eleifend massa et lorem
+          tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis
+          lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam
+          nisl.</p>
+        <p class="caixa-ta-na-midia">Caixa de destaque sem largura definida, para usar com colunas - Curabitur eleifend
+          massa et lorem tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra
+          consequat quis lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada.
+          Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-atencao"><strong>Atenção</strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-concluindo"><strong>Concluindo</strong> - Curabitur eleifend massa et lorem
+          tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis
+          lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam
+          nisl.</p>
+        <p class="caixa-destaque icone-desafio"><strong>Desafio</strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-dica"><strong>Dica</strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-doc"><strong>Documento</strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-fundamental"><strong>Fundamental</strong> - Curabitur eleifend massa et lorem
+          tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis
+          lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam
+          nisl.</p>
+        <p class="caixa-destaque icone-importante"><strong>Importante</strong> - Curabitur eleifend massa et lorem
+          tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis
+          lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam
+          nisl.</p>
+        <p class="caixa-destaque icone-lampada"><strong>Lampada (variante para dica/idéia)</strong> - Curabitur
+          eleifend massa et lorem tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum
+          pharetra consequat quis lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi
+          malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-link"><strong>Link</strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-para-refletir"><strong>Para refletir</strong> - Curabitur eleifend massa et
+          lorem tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat
+          quis lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget
+          aliquam nisl.</p>
+        <p class="caixa-destaque icone-pergunta"><strong>Pergunta</strong> - Curabitur eleifend massa et lorem
+          tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis
+          lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam
+          nisl.</p>
+        <p class="caixa-destaque icone-play"><strong>Play</strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-saiba-mais"><strong>Saiba mais</strong> - Curabitur eleifend massa et lorem
+          tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis
+          lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam
+          nisl.</p>
+        <p class="caixa-destaque icone-transcricao"><strong>Transcrição</strong> - Curabitur eleifend massa et lorem
+          tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis
+          lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam
+          nisl.</p>
+        <p class="caixa-destaque icone-video"><strong>Vídeo </strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-podcast"><strong>Podcast </strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-curtir"><strong>Curtir </strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-nao-curtir"><strong>Não curtir </strong> - Curabitur eleifend massa et lorem
+          tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis
+          lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam
+          nisl.</p>
+        <p class="caixa-destaque icone-pesquisa"><strong>Pesquisa </strong> - Curabitur eleifend massa et lorem
+          tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis
+          lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam
+          nisl.</p>
+        <p class="caixa-destaque icone-pdf"><strong>Pdf </strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <p class="caixa-destaque icone-midia"><strong>Mídia </strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <br>
+        <h3>Botão simples e botão com ícone</h3>
+        <div class="row text-center">
+          <div class="col-xs-6">
+            <a class="botao text-center" role="button">BOTÃO SIMPLES 01</a>
+          </div>
+          <div class="col-xs-6">
+            <a class="icone-doc botao botao-com-icone" role="button">Teste botao com icone</a>
+          </div>
+        </div>
+
+
+        <h2>Pagina 4</h2>
+        <h3>Outras formas de utilizar os ícones</h3>
+        <h3 class="icone-nao-curtir texto-com-icone">Nullam eget aliquam nisl.</h3>
+        <p class="icone-curtir">Nam vel eleifend dolor. Quisque congue, lacus sit amet eleifend laoreet, neque tellus
+          luctus augue, id tincidunt lorem erat at eros. Sed nec eleifend dui, ut cursus nunc. Curabitur pellentesque
+          lorem posuere eleifend lobortis. Praesent bibendum eros eget massa mattis, eget convallis tellus laoreet.
+          Aliquam vel suscipit magna. Nulla non volutpat quam, vel blandit tellus. Curabitur vel ipsum sit amet lorem
+          fermentum mollis. </p>
+
+        <div class="caixa-destaque icone-fundamental">Vivamus ultricies arcu vel nisi iaculis, ac faucibus nulla
+          dignissim. Sed libero tortor, venenatis eu mauris at, mollis vulputate ex. Morbi a nisl sit amet nibh porta
+          tristique et in nulla. Curabitur eleifend massa et lorem tincidunt placerat. Cras ac cursus dolor, a luctus
+          felis. Sed at orci vitae ipsum pharetra consequat quis lacinia justo. Nullam pharetra justo feugiat eros
+          efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</div>
+
+        <h3>Tabela</h3>
+        <table class="senac">
+          <tbody>
+            <tr>
+              <th>a</th>
+              <th>b</th>
+              <th>c</th>
+              <th>d</th>
+              <th>e</th>
+            </tr>
+            <tr>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+            </tr>
+            <tr>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+            </tr>
+            <tr>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+            </tr>
+            <tr>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+              <td>a</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h3>Outras utilizações</h3>
+        <p class="caixa-destaque"><strong>Caixa de destaque</strong> - Curabitur eleifend massa et lorem tincidunt
+          placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat quis lacinia
+          justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam eget aliquam nisl.</p>
+        <br><br>
+        <h3>Video player</h3>
+        <div>
+          <div class="video-player">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive" title="Player de vídeo" name="tube" src="https://www.youtube.com/embed/NBqWmrAgc4M"
+                allowfullscreen="" wmode="window" frameborder="0"></iframe>
+            </div>
+          </div>         
+        </div>
+
+        <h2>Página 5</h2>
+        <h3>Componentes úteis - Bootstrap 3.3.7</h3>
+        <h4>Abas</h4>
+        <div class="caixa-destaque bg-primaria-02 borda-primaria-01">
+          <ul id="abas" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Aba
+                01</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Aba 02</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Aba 03</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Aba 04</a></li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">
+              <p>Conteudo 01</p>
+              <ul>
+                <li>Nam vel eleifend dolor.</li>
+                <li> Quisque congue, </li>
+                <li>lacus sit amet eleifend laoreet,</li>
+                <li> neque tellus luctus augue, </li>
+                <li>id tincidunt lorem erat at eros.</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile">
+              <p>Conteudo 02</p>
+              <p class="caixa-destaque-livre icone-atencao"><strong>Atenção</strong> - Curabitur eleifend massa et
+                lorem tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra
+                consequat quis lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi
+                malesuada. Nullam eget aliquam nisl.</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="messages">
+              <p>conteudo 03</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in elit at libero lacinia volutpat.
+                Vivamus gravida, nibh at eleifend feugiat, tellus enim placerat quam, vel vulputate urna sapien vel
+                lorem. Praesent risus purus, pulvinar vitae consectetur eget, dignissim inex. Ut vitae dapibus risus.
+                Nulla consectetur massa sed velit feugiat, sed dictum turpis consectetur. Nulla vitae sapien fermentum,
+                eleifend orci quis, commodo felis. Mauris diam elit, cursus et augue eu, sodales tincidunt augue. In
+                elementum, tortor sit amet convallis dapibus, metus leo viverra tortor, sed blandit magna ex id metus.
+                Pellentesque condimentum finibus sapien, at placerat ante.</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="settings">
+              <p>Conteudo 04</p>
+              <p class="caixa_destaque"><strong>Caixa de destaque</strong> - Curabitur eleifend massa et lorem
+                tincidunt placerat. Cras ac cursus dolor, a luctus felis. Sed at orci vitae ipsum pharetra consequat
+                quis lacinia justo. Nullam pharetra justo feugiat eros efficitur, sed interdum nisi malesuada. Nullam
+                eget aliquam nisl.</p>
+            </div>
+          </div>
+        </div>
+
+        <h4>Carousel</h4>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item">
+              <img src="images/slide01.png" alt="imagem 01" class="img-responsive center-block">
+              <div class="carousel-caption">
+                imagem 01
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/slide02.png" alt="imagem 02" class="img-responsive  center-block">
+              <div class="carousel-caption">
+                imagem 02
+              </div>
+            </div>
+            <div class="item active">
+              <img src="images/slide03.png" alt="imagem 03" class="img-responsive  center-block">
+              <div class="carousel-caption">
+                imagem 03
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+        <h3>Modal padrão</h3>
+        <button type="button" class="btn btn-primary btn-lg no-print" data-toggle="modal" data-target="#myModal">
+          Exemplo de modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <h3>Painel </h3>
+        <div class="panel panel-default panel-info">
+          <div class="panel-heading">
+            <h2 class="panel-title">Título do painel</h2>
+          </div>
+          <div class="panel-body">
+            conteúdo do painel
+          </div>
+        </div>
+
+        <h3>Popover</h3>
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="" data-content="Conteúdo"
+          data-placement="top" data-original-title="Título" aria-describedby="popover278400">Clicar para visualizar o
+          popover</button>
+
+        <h3>Tooltip</h3>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title=""
+          data-original-title="Tooltip no topo">Tooltip no topo</button>
+
+        <h3>Painel gaitinha</h3>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h3 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+                  aria-controls="collapseOne">
+                  Painel 01
+                </a>
+              </h3>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Painel 02
+                </a>
+              </h3>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Painel 03
+                </a>
+              </h3>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                <div class="icone-atencao texto-com-icone">Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                  Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                  squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                  labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                  heard of them accusamus labore sustainable VHS.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+    </section>
+    <!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+    <footer class="text-center no-print">
+      <ul class="pagination">
+
+      </ul>
+    </footer>
+
+
+  </div>
+
+  </div>
+
+
+
+  <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+  <!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+  <div class="ico-div-loader">
+    <img src="images/atencao.png">
+    <img src="images/bg-content.jpg">
+    <img src="images/bg-topo.jpg">
+    <img src="images/black-zoom-in-256.png">
+    <img src="images/concluindo.png">
+    <img src="images/curtir.png">
+    <img src="images/desafio.png">
+    <img src="images/dica.png">
+    <img src="images/doc.png">
+    <img src="images/fundamental.png">
+    <img src="images/icon-03.png">
+    <img src="images/importante.png">
+    <img src="images/lightbulb.png">
+    <img src="images/link.png">
+    <img src="images/link_pdf_hover.png">
+    <img src="images/link_pdf_normal.png">
+    <img src="images/logo-senac.png">
+    <img src="images/mark-icon.png">
+    <img src="images/mark-icon02.png">
+    <img src="images/midia.png">
+    <img src="images/monitor.png">
+    <img src="images/nao_curtir.png">
+    <img src="images/pergunta.png">
+    <img src="images/pesquisa.png">
+    <img src="images/play.png">
+    <img src="images/radio_flat.png">
+    <img src="images/refletir.png">
+    <img src="images/saiba_mais.png">
+    <img src="images/senac_loader.png">
+    <img src="images/tanamidia.png">
+    <img src="images/transcricao.png">
+    <img src="images/transcricao_small.png">
+    <img src="images/tv.png">
+    <img src="images/tv_bottom.png">
+    <img src="images/zoom.png">
+    <img src="images/zoom_ie.cur">
+    <img src="images/zoom_ie.png">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/print.js"></script>
+  <script src="js/template.config.js"></script>
+  <script src="js/images.loader.js"></script>
+  <noscript>
+    <style media="screen">
+      .over-loader {
+        display: none;
+      }
+     
+    </style>
+  </noscript>
+</body>
+
+</html>
+<script>
+  //inicializa zoom na imagem
+  $('.zoom-imagem').magnificPopup({
+    type: 'image',
+    mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+    zoom: {
+      enabled: true, // By default it's false, so don't forget to enable it
+
+      duration: 300, // duration of the effect, in milliseconds
+      easing: 'ease-in-out', // CSS transition easing function
+
+      // The "opener" function should return the element from which popup will be zoomed in
+      // and to which popup will be scaled down
+      // By defailt it looks for an image tag:
+      opener: function (openerElement) {
+        // openerElement is the element on which popup was initialized, in this case its <a> tag
+        // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+        return openerElement.is('img') ? openerElement : openerElement.find('img');
+      }
+    },
+    image: {
+      markup: '<div class="mfp-figure">' +
+        '<div class="mfp-close"></div>' +
+        '<div class="mfp-img"></div>' + // Floated left
+        '<div class="mfp-bottom-bar">' + '<figcaption>' + '<div class="mfp-title" style="text-align:center"></div>' +
+        '<div class="mfp-counter"></div>' + '</figcaption>' +
+        '</div>' +
+        '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+      cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+      tError: '<a href="%url%">A imagem</a> não pode ser carregada.' // Error message
+    }
+  });
+
+  //inicializa popover
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+  //inicializa tooltip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>

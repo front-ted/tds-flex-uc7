@@ -1,0 +1,9 @@
+body{
+	word-break: break-word;
+}
+h1 i, h2 i, h3 i, h4 i {
+	font-weight: bold;
+}
+h3{
+	margin-top: 50px;
+}

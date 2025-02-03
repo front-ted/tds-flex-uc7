@@ -1,0 +1,36 @@
+.gaitinha{
+    margin-top: 20px;
+}
+
+.gaitinha .panel {
+    background: transparent !important;
+    border: none;
+    -webkit-box-shadow: 0;
+    box-shadow: none;
+}
+
+.gaitinha .panel-default>.panel-heading{
+    background-color: transparent !important;
+}
+.gaitinha .panel.panel-default .panel-heading{
+    padding:0;
+}
+.gaitinha .panel.panel-default .panel-heading .panel-title a.collapsed{
+    background: #266DB8 !important;
+    color: white !important;   
+}
+
+.gaitinha .panel.panel-default .panel-heading .panel-title a{
+    border: 2px solid #266DB8 !important;
+    color: #266DB8 !important;
+    border-radius: 10px;
+    padding: 1.2rem;           
+}
+
+
+.gaitinha .panel.panel-default .panel-body{
+    border: 0;
+    border-left: 2px solid #266DB8 !important;
+    margin-left: 20px;
+    margin-top: 3px;
+}

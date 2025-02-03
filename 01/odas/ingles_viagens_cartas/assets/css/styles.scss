@@ -1,0 +1,281 @@
+.ODA_ingles_viagens_cartas {
+    margin-bottom:70px;
+
+    .wrapper {
+        width: fit-content;
+        padding: 20px 70px;
+        display: block;
+        margin: 25px auto;
+        border-radius: 20px;
+        position: relative;
+        background: transparent;
+        // background: radial-gradient(circle, rgba(102, 113, 134, 1) 0%, rgba(94, 168, 189, 1) 100%);
+        height: 840px;
+        width: 905px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .btn-prev,
+    .btn-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #d8e4ea;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition-duration: .3s;
+        z-index: 10;
+        opacity: .8;
+
+        &:hover {
+            opacity: 1;
+            transform: translateY(-50%) scale(1.1);
+        }
+    }
+
+    .btn-next {
+        right: 12px;
+    }
+
+    .btn-prev {
+        left: 12px;
+    }
+
+    .tela-inicial {
+        position: absolute;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .msg {
+            background-color: #d8e4ea;
+            width: 650px;
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+
+            h2 {
+                font-weight: 400;
+                font-size: 36px;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+
+            p {
+                line-height: 26px;
+            }
+
+            .btn-start {
+                padding: 10px 30px;
+                font-size: 16px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .tela {
+        position: relative;
+        width: 100%;
+    }
+
+    .disabled {
+        opacity: .2;
+        pointer-events: none;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Efeito de card no hover */
+
+    .card {
+        width: 133px;
+        height: 190px;
+        background-color: transparent;
+        border: none;
+        margin: 10px;
+        transition-duration: .3s;
+        -webkit-perspective: 600px;
+        perspective: 600px;
+        cursor: pointer;
+
+        &:hover:not(.flip) {
+            transform: scale(1.05);
+        }
+    }
+
+    .ladoFrente {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 900;
+        width: 100%;
+        height: inherit;
+        text-align: center;
+        -webkit-transform: rotateX(0) rotateY(0);
+        transform: rotateX(0) rotateY(0);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        background-image: url('../img/carta.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ladoTras {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 800;
+        width: 100%;
+        height: inherit;
+        -webkit-transform: rotateY(-179deg);
+        transform: rotateY(-179deg);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        background: #fff3cc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 0 15px;
+
+        p {
+            font-size: 20px;
+            text-align: center;
+            text-decoration: underline #5f9eb3 dashed;
+            text-decoration-thickness: 2px;
+        }
+
+        button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                svg {
+                    fill: #d8e4ea;
+                    transition-duration: .1s;
+                }
+            }
+
+            svg {
+                fill: #333;
+                transition-duration: .1s;
+            }
+        }
+
+        &::after {
+            pointer-events: none;
+            content: '';
+            position: absolute;
+            width: 85%;
+            height: 90%;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border: 2px solid #5f9eb3;
+        }
+    }
+
+    .ladoFrente .bg,
+    .ladoTras img {
+        width: 100%;
+    }
+
+    .ladoFrente .nro {
+        width: auto;
+        height: 70px;
+    }
+
+    .card.flip .ladoFrente {
+        z-index: 900;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+        -webkit-transform: rotateY(179deg);
+        transform: rotateY(179deg);
+    }
+
+    .card.flip .ladoTras {
+        z-index: 1000;
+        -webkit-transform: rotateX(0) rotateY(0);
+        transform: rotateX(0) rotateY(0);
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    .tres {
+        .nro {
+            height: 60px;
+        }
+    }
+
+    .mil {
+        .nro {
+            height: 48px;
+        }
+    }
+    .smallerFont {
+        .ladoTras p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .ODA_ingles_viagens_cartas {
+        .wrapper {
+            max-width: 100%;
+            width: 600px;
+            height: auto;
+        }
+        .row {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .ODA_ingles_viagens_cartas {
+        .wrapper {
+            max-width: 100%;
+            width: 100%;
+            padding: 15px 0;
+            height: auto;
+        }
+        .row {
+            flex-wrap: wrap;
+        }
+    }
+}
+

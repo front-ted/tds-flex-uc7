@@ -1,0 +1,143 @@
+.ODA_ingles_write_words {
+  text-align: center;
+  background: #272F64;
+  padding: 15px 35px;
+  width: 420px;
+  margin: 25px auto;
+  border-radius: 20px;
+  color: white;
+}
+.ODA_ingles_write_words .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+  padding-top: 15px;
+}
+.ODA_ingles_write_words h2 {
+  margin-top: 0;
+  color: white;
+}
+.ODA_ingles_write_words label {
+  width: 30px;
+}
+.ODA_ingles_write_words .input_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 7px;
+  transition-duration: 0.3s;
+}
+.ODA_ingles_write_words .input_container input {
+  border: none;
+  border-bottom: 1px solid white;
+  margin: auto 15px;
+  background-color: transparent;
+  color: white;
+}
+.ODA_ingles_write_words .input_container input:focus {
+  border: none;
+  box-shadow: none;
+}
+.ODA_ingles_write_words .input_container.correct {
+  position: relative;
+  background-color: rgb(110, 220, 128);
+  transition-duration: 0.3s;
+  color: black;
+}
+.ODA_ingles_write_words .input_container.correct input {
+  color: black;
+  border-color: #333;
+}
+.ODA_ingles_write_words .input_container.correct::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  right: 8px;
+  top: 52%;
+  transform: translateY(-50%);
+  background-image: url("../img/check.svg");
+}
+.ODA_ingles_write_words .input_container.wrong {
+  position: relative;
+  background-color: salmon;
+  transition-duration: 0.3s;
+  color: black;
+}
+.ODA_ingles_write_words .input_container.wrong input {
+  color: black;
+  border-color: #333;
+}
+.ODA_ingles_write_words .input_container.wrong::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/x.svg");
+}
+.ODA_ingles_write_words .check {
+  cursor: pointer;
+  background-color: #D8652A;
+  border: 1px solid #D8652A;
+  color: white;
+  padding: 8px 25px;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.ODA_ingles_write_words .check:hover {
+  background-color: white;
+  color: #D8652A;
+  transition-duration: 0.3s;
+}
+.ODA_ingles_write_words .feedback {
+  text-align: left;
+  position: relative;
+  height: 30px;
+  width: 270px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.ODA_ingles_write_words .feedback .answer-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  opacity: 0;
+  transition-duration: 0.3s;
+  pointer-events: none;
+  color: white;
+}
+.ODA_ingles_write_words .feedback .answer-btn.active {
+  pointer-events: all;
+  opacity: 1;
+}
+.ODA_ingles_write_words .feedback .answer-btn.active:hover {
+  text-decoration: underline;
+}
+.ODA_ingles_write_words .feedback p {
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  transition-duration: 0.3s;
+  pointer-events: none;
+}
+.ODA_ingles_write_words .feedback p.active {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=styles.css.map */

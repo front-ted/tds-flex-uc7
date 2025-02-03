@@ -1,0 +1,50 @@
+/* Modais 100% */
+@keyframes fromLeft{
+    from{
+        left: -150%
+    }
+    to{
+        left: 0;
+    }
+}
+
+.modal-100{   
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0; 
+}
+
+.modal-100 .modal-content{   
+    background-image: url(../objetos/textura_background.png);
+    color: black;
+}
+
+.modal-100 .modal-dialog{ 
+    border-radius: 0; 
+    width: Calc(100% + 17px);
+    margin: 0;
+    left: -100%;
+    animation-delay: 300ms;
+    animation: fromLeft ease-in 1000ms forwards;    
+    box-shadow: none !important;
+}
+.modal-100 .modal-dialog .modal-content{
+    border: 0;
+    box-shadow: none !important;
+    border-radius: 0;
+}
+.modal-100 .modal-dialog .modal-content .modal-header{
+    border: 0;
+    box-shadow: none !important;
+    border-radius: 0;
+}
+.modal-100 .modal-dialog .modal-content .modal-footer{
+    border: 0;
+    box-shadow: none !important;
+    border-radius: 0;
+}
+
+
+.modal-100 .modal-dialog .modal-content{
+    min-height: 100vh;
+}
