@@ -125,14 +125,18 @@ li {
   color: #fff;
 }
 .bloco2,.bloco4,.bloco6,.bloco8,.bloco10,.bloco12{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(158,181,204,1) 100%);
+  background-image: url('../img/bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  /* background: rgb(228,240,255); */
+  /* background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(158,181,204,1) 100%); */
 }
 .bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
-  background-color: #7B8FA6;
+  background-color: #DCE6F5;
+
 }
 .bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
-  color: #fff;
+  /* color: #fff; */
 }
 
 .bloco3 .modal-body,.bloco5 .modal-body,.bloco7 .modal-body,.bloco9 .modal-body,.bloco11 .modal-body{
@@ -140,40 +144,8 @@ li {
 }
 .bloco3 h3,.bloco5 h3,.bloco7 h3,.bloco9 h3,.bloco11 h3,
 .bloco3 h4,.bloco5 h4,.bloco7 h4,.bloco9 h4,.bloco11 h4{
-  color: #fff;
+  /* color: #fff; */
 }
-/* .bloco4{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-}
-.bloco5{
-  background-color: #7b8fa6;
-}
-.bloco6{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-}
-.bloco7{
-  background-color: #7b8fa6;
-}
-.bloco8{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-}
-.bloco9{
-  background-color: #7b8fa6;
-}
-.bloco10{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-}
-.bloco11{
-  background-color: #7b8fa6;
-}
-.bloco12{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-} */
 .marcador-seta li {
   list-style-image: url("../imgs/setas.png");
 }
