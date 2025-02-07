@@ -1,9 +1,7 @@
 body{
-  
   background: url('../imgs/background.png') no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
- 
   background-color: #fff;
 }
 
@@ -64,8 +62,6 @@ pre {
   border: 1px solid #2875C6;
 }
 
-
-
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
   color: #fff;
   cursor: default;
@@ -99,11 +95,17 @@ pre {
   right: 40px;
   position: absolute;
 }
-li {
+h2, h3, h4{ color: #4A74C1;}
+.dotDefault{ margin-top: 30px;}
+ul.dotDefault li {
   margin-bottom: 0.8em;
-  list-style-image: url(../imgs/check.png);
+  line-height: 6px;
+  list-style-image: none;
 }
-
+ul.dotDefault li::marker{
+  color: #4A74C1;
+  font-size: 1.8em;
+}
 .bloco1, 
 .bloco2, 
 .bloco3, 
@@ -116,17 +118,23 @@ li {
 .bloco10, 
 .bloco11,
 .bloco12{
+  position: relative;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .bloco1{
-  background-color: #004b90;
+  position: relative;
   margin-top: 80px;
+  padding-top: 100px;
+  background-color: #272F64;
+  color: #fff;
+}
+.bloco1 h2{
   color: #fff;
 }
 .bloco2,.bloco4,.bloco6,.bloco8,.bloco10,.bloco12{
   background-image: url('../img/bg.jpg');
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   /* background: rgb(228,240,255); */
   /* background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(158,181,204,1) 100%); */
@@ -367,8 +375,68 @@ li {
 .mgleft{margin-right: 15px;}
 .bloco-paragrafo{ margin-bottom: 20px}
 .bloco-paragrafo p{ margin: 0 !important;}
-@media screen and (max-width: 780px){
-  
+
+.floatImg{
+  position: absolute;
+}
+.floatLeft{
+  left: 0;
+}
+.floatRig{
+  right: 0;
+  width: 15%;
+}
+.top1{ width: 17%; top:  500px;}
+.top2{  top: 100px;}
+.divisoria{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  margin: 0 auto;
+}
+.divisoria-practice{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -80px;
+  margin-left: 5%;
+}
+.cartaMemoria {
+  height: 197px !important;
+  width: 313px !important;
+}
+.destaque_novo{
+  position: relative;
+  margin-bottom: 50px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px 50px;
+}
+.destaque_novo_float1{
+  position: absolute;
+  right: -40px;
+}
+.destaque_novo_float2{
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+.destaque_novo_float3{
+  position: absolute;
+  left: -35px;
+  bottom: 0;
+}
+.tabelaCorCurso tr{ border: 2px solid #4A74C1;}
+/* questoes bru */
+.multipla-escolha button::before {
+  color: black;
+}
+@media screen and (max-width: 1480px){
+  .top1{width: 10%;}
+}
+@media screen and (max-width: 1180px){
+  .floatImg{display: none;}
 }
 @media screen and (max-width: 480px){
   .caixa-destaque code{

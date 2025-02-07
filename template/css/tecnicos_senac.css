@@ -778,7 +778,7 @@ ul.senac li{
 .flip-card {
     background-color: transparent;
     width: 234px;
-    height: 423px;
+    height: 223px;
     perspective: 1000px;
     cursor: pointer;
     margin: 20px;

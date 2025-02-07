@@ -32,8 +32,15 @@
         <!--Atividade arrasta e solta-->
         <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
         <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
-        <!--Atividade relacionar colunas-->
-        <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+         <!--Atividade jogo da memória-->
+         <link rel="stylesheet" href="atividades/jogo_memoria/jogoMemoria.css">
+         <!-- Atividade de verdadeiro ou falso -->
+         <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+         <!--Atividade arrasta e solta-->
+         <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+         <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+         <!--Atividade relacionar colunas-->
+         <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
     <!-- referencia ao arquivo css com estilos especificos da pagina -->
     <link href="css/custom.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/player.css" />
@@ -98,6 +105,8 @@
           <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
           <div class="pagina">
             <div class="bloco1">
+              <img src="img/header_lateral_1.png" class="floatImg floatLeft" alt="">
+              <img src="img/header_lateral_2.png" class="floatImg floatRig" alt="">
               <div class="container">
                 <h2>Introducing yourself</h2>
                 <p>Nesta situação de aprendizagem, você aprenderá a: </p>
@@ -112,51 +121,154 @@
               </div>
             </div>
             <div class="bloco2">
+                <img src="img/divisoria.png" class="divisoria" alt="">
                 <div class="container">
                     <h4>Look at the image below:</h4>
-                    <p>What is the man doing?</p>
-                    <p>What job do you think he works with?  </p>
-                    <p>Is he wearing formal or casual clothes to work?</p>
+                    <ul class="dotDefault">
+                      <li>What is the man doing?<p></li>
+                      <li>What job do you think he works with?  <p></li>
+                      <li>Is he wearing formal or casual clothes to work?<p></li>
+                    </ul>
                     <figure class="my-5 no-print">
                         <img src="img/figura_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a man getting ready to work.">
                         <a href="img/figura_1.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
                             <img src="img/figura_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Photograph of a man getting ready to work.">
                         </a>
+                        <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
+                    
                     </figure>
-                    <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
-                </div>
+                  </div>
             </div>
             <div class="bloco3">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
                 <div class="container">
                     <h3>Jobs in IT </h3>
                     <h4>Read the questions aloud and answer them: </h4>
-                    <ul>
+                    <ul class="dotDefault">
                         <li>Do you work?</li>
                         <li>What is your occupation at work? </li>
                         <li> In your occupation at work, do you have to wear formal or casual clothes? </li>
                     </ul>
                     <p><strong>Can you guess what the names of these occupations are? Click to see: </strong></p>
-                    <div class="espera">Jogo da memória, 6 cards com figuras e 6 com as ocupações.</div>
+                    
+                  <div class="container-fluid no-print">
+                    <div class="jogoMemoria" aria-hidden="true">
+                      
+                      
+                        <div class="cartaMemoria" data-par="2">
+                          <div class="ladoFrente">
+                              <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="ladoTras">
+                              <img src="img/memoria_1.png" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                      
+                      <div class="cartaMemoria" data-par="3">
+                        <div class="ladoFrente">
+                            <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="ladoTras">
+                            <img src="img/memoria_2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                        <div class="cartaMemoria" data-par="1">
+                            <div class="ladoFrente">
+                                <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria_3.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="cartaMemoria" data-par="2">
+                            <div class="ladoFrente">
+                                <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria_4.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="cartaMemoria" data-par="5">
+                          <div class="ladoFrente">
+                              <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="ladoTras">
+                              <img src="img/memoria_5.png" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                        <div class="cartaMemoria" data-par="3">
+                            <div class="ladoFrente">
+                                <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria_6.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                     
+                    </div>
+                  </div>
                     <div class="espera">Soluções educacionais: Caça palavras </div>
                 </div>
             </div>
             <div class="bloco4">
+              <img src="img/lateral_1.png" class="floatImg floatLeft top1" alt="">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
                 <div class="container">
                     <h3>Big Companies </h3>
                     <p>Do you know the company names of the logos below? Click to see: </p>
-                    <div class="espera">
-                        Criar 3 flipcards. Figura na frente nome atras. 
+                    
+                  <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_apple.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_apple_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Does your company have a logo? Can you show it for us? </h3>
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_google.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_google_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_microsoft.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_microsoft_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <h3>Does your company have a logo? Can you show it for us? </h3>
                     <p>What is your routine like during your day in your company? Can you discuss it with a partner? </p>
                     <p>Reading activity: </p>
                     <p>John works at the Apple company. Read about his routine during his journey and answer the following questions: </p>
-                    <ul>
+                    <ul class="dotDefault">
                         <li>How does he greet his colleagues? </li>
                         <li>Where does John eat lunch?  </li>
                         <li>What does he do when he arrives at home?</li>
                     </ul>
-                    <div class="destaque">
+                    <div class="destaque_novo">
+                      <img src="img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                      <img src="img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                      <img src="img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
                         <p>John works at Apple. Every morning, he wakes up early. He brushes his teeth and gets dressed in his Apple uniform. Then, he eats breakfast and leaves for work. </p>
                         <p>At work, John greets his colleagues with a smile. He checks his emails and starts his tasks for the day. Sometimes, he helps customers who come into the Apple store. He explains how to use the latest iPhones and MacBooks. </p>
                         <p>During lunchtime, John eats lunch with his coworkers in the Apple cafeteria. They talk about their favorite Apple products and share tips on how to use them better. </p>
@@ -165,7 +277,9 @@
                     </div>
                 </div>
             </div>
-            <div class="bloco5 bloco-practice">
+            <div class="bloco5">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt="">
                 <div class="container">       
                     <h3>Speaking activity in pairs or in groups: </h3>
                     <p>According to your routine, choose a word and complete the sentences using the verbs indicated: </p>
@@ -179,29 +293,144 @@
                 </div>
             </div>
             <div class="bloco6">
+              
+              <img src="img/lateral_2.png" class="floatImg floatRig top2" alt="">
+              <img src="img/divisoria.png" class="divisoria" alt="">
                 <div class="container">
                     <p><strong>Instruction: </strong></p>
                     <p><strong>Read the information about manufacturing, designing and selling of the companies Apple, Google and Microsoft: </strong></p>
-                    <img src="img/ico_tabela_1.png" alt="">
-                    <img src="img/ico_tabela_2.png" alt="">
-                    <img src="img/ico_tabela_3.png" alt="">
-                    <p>According to the information read before, click on the right answer. </p>
-                    <div class="espera">Atividade de Perguntas  e respostas. </div>
+                    
+                    <table class="table-responsive table">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">Manufacturing</th>
+                          <th scope="col">Designing</th>
+                          <th scope="col">Selling:
+                          </th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="img/ico_tabela_3.png" alt=""></td>
+                        <td>Apple makes new devices like iPhones, iPads, and MacBooks every day in special places all over the world, and its online store.
+                        </td>
+                        <td>Artists at Apple always try to make new and clever things, making sure each one shows how good Apple is with technology and style.
+                        </td>
+                        <td>Apple sells its products in many ways, like in big Apple Stores, special shops, and online.
+                        </td>
+                      </tr>
+                        <td><img src="img/ico_tabela_1.png" alt=""></td>
+                        <td>Every day, Google makes cool devices like Pixel phones and Nest gadgets in big factories all around the world.
+                        </td>
+                        <td>Google's creative team always makes things that look good and are easy to use for their devices.
+                        </td>
+                        <td>Google sells its products in many ways, like in their online store and in special shops.
+                        </td>
+                      <tr>
+                        <td><img src="img/ico_tabela_2.png" alt=""></td>
+                        <td>Microsoft makes different devices like Surface laptops and Xbox consoles in big factories around the world.
+                        </td>
+                        <td>Designers at Microsoft always try to make new and smart things, making sure each one shows how good Microsoft is with technology and style.
+                        </td>
+                        <td>The Microsoft online store lets people easily look at and buy the newest devices from home</td>
+                    </tbody>
+                </table>
+                    
+                    
+              
+                    
+                    <div class="box-atividade">
+                      <p class="titulo-ativ"><strong>According to the information read before, click on the right answer.</strong></p>
+                      <p></p>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">Sentence 1: Apple manufactures...</p>
+                          <button class="alt-c">iPhones, iPads, AirPods, Macbooks </button>
+                          <button class="alt-e">Xiaomi, Samsung, JBL </button>
+                          <div class="feedbacks">
+                              <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                              <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                          </div>
+                      </div>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">Sentence 2: Google sells their products...
+                          </p>
+                          <button class="alt-c">online, at special shops (   </button>
+                          <button class="alt-e">supermarkets, hospitals 	</button>
+                          <div class="feedbacks">
+                              <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                              <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                          </div>
+                      </div>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">Sentence 3: Microsoft designs...</p>
+                          <button class="alt-c">new products, smart products  </button>
+                          <button class="alt-e">slow products, old products  </button>
+                          <div class="feedbacks">
+                              <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                              <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                          </div>
+                      </div>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">Sentence 4: Google manufactures...
+                          </p>
+                          <button class="alt-c">pixel phones, Nest gadgets  </button>
+                          <button class="alt-e">xiaomi, Samsung, JBL  </button>
+                          <div class="feedbacks">
+                              <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                              <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                          </div>
+                      </div>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">Sentence 5: Microsoft manufactures...
+                          </p>
+                          <button class="alt-c">surface laptops, XBOX consoles  </button>
+                          <button class="alt-e">xiaomi, Samsung, JBL  </button>
+                          <div class="feedbacks">
+                              <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                              <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                          </div>
+                      </div>
+                    </div>
                 </div>
             </div>
             <div class="bloco7">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
                 <div class="container">
                     <h3>Internet security and passwords </h3>
                     <p><strong>Do you know what the term alphanumeric means? </strong></p>
                     <p><strong>Read the definition below: </strong></p>
                     <p>"Alphanumeric" refers to a combination of alphabetic (letters) and numeric (numbers) characters. Alphanumeric characters are commonly used in passwords. </p>
                     <p><strong>How do you create your passwords? How do you protect them from hackers or internet threats? Listen to the podcast and pay attention to the following information: </strong></p>
-                    <ul>
+                    <ul class="dotDefault">
                         <li>What makes a strong password? </li>
                         <li>Can you use personal information in your passwords?</li>
                     </ul>
                     <p><strong>Click to listen to the audio. </strong></p>
-                    <div class="destaque">Inserir podcast</div>
+                    
+                <div class="bg-podcast no-print audio">
+                  <div class="d-flex justify-content-center flex-column align-items-center">
+                      <div class="audio-player no-print">
+                          <audio>
+                              <source src="podcast/podcast.mp3" type="audio/mpeg">
+                          </audio>
+                          <div class="row">
+                              <div class="timestamp">00:00 | 00:00</div>
+                              <div class="barra">
+                                  <input type="range" value="0" max="4140" step="any">
+                              </div>
+                              <div class="botoes">
+                                  <button title="Tocar" class="btn-play btn-player"></button>
+                                  <button title="Pause" class="btn-pause btn-player"></button>
+                                  <button title="Transcrição" data-bs-toggle="modal"
+                                      data-bs-target="#modal-transcricao-audio2"
+                                      class="btn-transcricao btn-player"></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
                     
                     <div class="acessivel no-print">
                         <p>Podcast Title: "Your Guide to Internet Security" </p>
@@ -228,13 +457,47 @@
                 </div>
             </div>
             <div class="bloco8">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
                 <div class="container">
                     <h3>Videoconference </h3>
                     <p>Do you know the names of the apps below? <strong>Click to see</strong>: </p>
-                    <p class="espera">Criar 3 flipcards</p>
-                    <img src="img/flip_googlemeet.png" alt="">
-                    <img src="img/flip_zoom.png" alt="">
-                    <img src="img/flip_skype.png" alt="">
+                    
+                  <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_zoom.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_zoom_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_skype.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_skype_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_googlemeet.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_googlemeet_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                     <p><strong>Have you ever participated of an online meeting? In which ways: videoconference, teleconference or both? </p>
                     <p>Do you know the difference between videoconference and teleconference? Can you explain it? </p>
                     <p>Pay attention to the following information:</strong> </p>
@@ -263,11 +526,16 @@
                 </div>
             </div>
             <div class="bloco9">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt="">
                 <div class="container">
-                    <p>bloco Practice it </p>
                     <h3>Now, it’s your turn to practice a speaking activity about a formal meeting held by a videoconference. </h3>
-                    <p>1) According to the text example given before, simulate a formal meeting held by videoconference. In groups, create a conversation based on the dialogue watched before in the video. Plan a meeting transcript and record videos from different places. You can use one of the topics ideas below. After that, present to your class: </p>
-                    <table class="table-responsive table">
+                    <ul class="dotDefault">
+                      <li><p>According to the text example given before, simulate a formal meeting held by videoconference. In groups, create a conversation based on the dialogue watched before in the video. Plan a meeting transcript and record videos from different places. You can use one of the topics ideas below. After that, present to your class: </p>
+                      </li>
+                    </ul>
+                    <table class="table-responsive table tabelaCorCurso">
                         </thead>
                         <tbody>
                           <tr>
@@ -291,7 +559,7 @@
                         </tbody>
                     </table>
                     <p>Look the chart below with some sentences that may guide you to create a transcript for a formal meeting. These sentences are going to help you to make suggestions: </p>
-                    <table class="table-responsive table">
+                    <table class="table-responsive table tabelaCorCurso">
                         <thead>
                             <tr>
                                 <th>MAKING SUGGESTIONS AT WORK</th>
@@ -324,18 +592,26 @@
                     </table>
                     <h3>Job Interview </h3>
                     <p><strong>Work in pairs or in groups. Look at the jobs wanted list below:  </strong></p>
-                    <ul>
+                    <ul class="dotDefault">
                         <li>Which jobs from the ad did you like most? </li>
                         <li>Would you choose any of these options? </li>
                         <li>Have you looked for a job in a newspaper before? </li>
                     </ul>
-                    <img src="img/figura_2.png" alt="Ilustration of a job classifieds page.">
-                    <figcaption class="figure-caption text-center">Accessed on: 5 feb. 2024.  </figcaption>
+                    
+                    <figure class="my-5 no-print">
+                      <img src="img/figura_2.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="">
+                      <a href="img/figura_2.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                          <img src="img/figura_2.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="">
+                      </a>
+                      <figcaption class="figure-caption text-center">Accessed on: 5 feb. 2024.  </figcaption>
+    
+                  </figure>
+
                     <p><strong>How do you prepare yourself for a job interview? </strong></p>
                     <p>Look at the infographic below and read the top 5 tips to prepare yourself for a job interview.  </p>
                     <strong><p>Do you follow any of these tips? </strong></p>
                     <div class="caixa-destaque important">
-                        <ul style="list-style-type: decimal;">
+                        <ul class="dotDefault">
                             <li>Research about the company. </li>
                             <li>Review the job description. </li>
                             <li>Practice answering interview questions. </li>
@@ -346,7 +622,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bloco10">
+            <!-- <div class="bloco10">
                 <div class="container"></div>
             </div>
             <div class="bloco11">
@@ -354,7 +630,7 @@
             </div>
             <div class="bloco12">
                 <div class="container"></div>
-            </div>
+            </div> -->
 
           </div>
 
@@ -475,12 +751,16 @@
 <script src="../template/js/highlight.min.js"></script>
 <!-- bts5 -->
 
-
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="../assets/atividades/perguntas/perguntas.js"></script>
         <!--Atividade arrasta e solta-->
         <script src='atividades/arrasta_solta/dragula.min.js'></script>
         <script src="atividades/arrasta_solta/game-custom.js"></script>
         <!--Atividade associar colunas-->
         <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+        
+        <!--Atividade de jogo da memória-->
+        <script src="atividades/jogo_memoria/jogoMemoria.js"></script>
 <noscript>
   <style media="screen">
     .over-loader { display: none;}    
