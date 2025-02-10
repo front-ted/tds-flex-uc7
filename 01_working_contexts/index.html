@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Introducing yourself </title>
+
+    
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+
+
+    <!-- Bootstrap -->
+    <!-- <link href="../template/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="../template/css/tecnicos_senac.css" rel="stylesheet">
+    <link href="../template/css/cores.css" rel="stylesheet">
+    <link href="../template/css/modal-100.css" rel="stylesheet">
+    <link href="../template/css/devibeans.min.css" rel="stylesheet">
+      <!--Extras - novas classes para facilitar-->
+      <link rel="stylesheet" href="../template/css/extras.css">
+    <link href="../template/css/sncload.css" rel="stylesheet">
+    <link href="../template/css/magnific-popup.css" rel="stylesheet">
+    
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+         <!--Atividade jogo da memória-->
+         <link rel="stylesheet" href="atividades/jogo_memoria/jogoMemoria.css">
+         <!-- Atividade de verdadeiro ou falso -->
+         <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+         <!--Atividade arrasta e solta-->
+         <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+         <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+         <!--Atividade relacionar colunas-->
+         <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/player.css" />
+
+    <!-- css necessario para o print -->
+    <link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="../template/css/print.css" type="text/css" rel="stylesheet">
+    <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet">
+    <!--  bots5 -->
+        <!-- ODAs -->
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_cartas/assets/css/styles.css"> -->
+        <link rel="stylesheet" href="odas/ingles_letters/assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_form/assets/css/styles.css">
+        <link rel="stylesheet" href="odas/ingles_viagens_write_numbers/assets/css/styles.css"> -->
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46914400.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+    <!-- MARCA D´ÁGUA -->
+    <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo">
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+    <header id="topo" class="senac no-print">
+        <div  class="header-tecnicos container">
+        	  <h1 id="nome-curso">Desenvolvimento de Sistemas</h1>
+            <div id="logo-senac"><img src="../template/images/logo-senac.png" alt="logo do senac"></div>
+        </div>
+        <div id="sombra"></div>
+    </header>
+
+    <div id="booklet" class="fundo-tecnicos">
+        <header class="no-print">
+          <!-- BTO IMPRIMIR -->
+          <div class="grupo-imprimir no-print">
+            <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+                <span class="fa fa-print"></span> <span>Imprimir</span>
+            </button>
+          </div>
+          <!-- /BTO IMPRIMIR -->
+        </header>
+<!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+        <section class="paginas">
+
+          <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+          <div class="pagina">
+            <div class="bloco1">
+              <img src="img/header_lateral_1.png" class="floatImg floatLeft" alt="">
+              <img src="img/header_lateral_2.png" class="floatImg floatRig" alt="">
+              <div class="container">
+                <h2>Introducing yourself</h2>
+                <p>Nesta situação de aprendizagem, você aprenderá a: </p>
+                <ul class="marcador-check">
+                    <li>Explorar diferentes carreiras relacionadas à tecnologia da informação (TI) </li>
+                    <li>Conhecer as atividades das empresas de tecnologia da informação (TI) </li>
+                    <li>Ter segurança na internet e nas senhas </li>
+                    <li>Simular uma reunião formal realizada por videoconferência </li>
+                    <li>Explorar o processo de contratação, desde a redação de um anúncio de emprego até a realização de uma simulação de entrevista de emprego </li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="bloco2">
+                <img src="img/divisoria.png" class="divisoria" alt="">
+                <div class="container">
+                    <h4>Look at the image below:</h4>
+                    <ul class="dotDefault">
+                      <li>What is the man doing?<p></li>
+                      <li>What job do you think he works with?  <p></li>
+                      <li>Is he wearing formal or casual clothes to work?<p></li>
+                    </ul>
+                    <figure class="my-5 no-print">
+                        <img src="img/figura_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a man getting ready to work.">
+                        <a href="img/figura_1.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                            <img src="img/figura_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Photograph of a man getting ready to work.">
+                        </a>
+                        <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
+                    
+                    </figure>
+                  </div>
+            </div>
+            <div class="bloco3">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
+                <div class="container">
+                    <h3>Jobs in IT </h3>
+                    <h4>Read the questions aloud and answer them: </h4>
+                    <ul class="dotDefault">
+                        <li>Do you work?</li>
+                        <li>What is your occupation at work? </li>
+                        <li> In your occupation at work, do you have to wear formal or casual clothes? </li>
+                    </ul>
+                    <p><strong>Can you guess what the names of these occupations are? Click to see: </strong></p>
+                    
+                  <div class="container-fluid no-print">
+                    <div class="jogoMemoria" aria-hidden="true">
+                      
+                      
+                        <div class="cartaMemoria" data-par="2">
+                          <div class="ladoFrente">
+                              <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="ladoTras">
+                              <img src="img/memoria_1.png" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                      
+                      <div class="cartaMemoria" data-par="3">
+                        <div class="ladoFrente">
+                            <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="ladoTras">
+                            <img src="img/memoria_2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                        <div class="cartaMemoria" data-par="1">
+                            <div class="ladoFrente">
+                                <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria_3.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="cartaMemoria" data-par="2">
+                            <div class="ladoFrente">
+                                <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria_4.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="cartaMemoria" data-par="5">
+                          <div class="ladoFrente">
+                              <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="ladoTras">
+                              <img src="img/memoria_5.png" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                        <div class="cartaMemoria" data-par="3">
+                            <div class="ladoFrente">
+                                <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria_6.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                     
+                    </div>
+                  </div>
+                    <div class="espera">Soluções educacionais: Caça palavras </div>
+                </div>
+            </div>
+            <div class="bloco4">
+              <img src="img/lateral_1.png" class="floatImg floatLeft top1" alt="">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
+                <div class="container">
+                    <h3>Big Companies </h3>
+                    <p>Do you know the company names of the logos below? Click to see: </p>
+                    
+                  <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_apple.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_apple_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_google.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_google_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_microsoft.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_microsoft_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <h3>Does your company have a logo? Can you show it for us? </h3>
+                    <p>What is your routine like during your day in your company? Can you discuss it with a partner? </p>
+                    <p>Reading activity: </p>
+                    <p>John works at the Apple company. Read about his routine during his journey and answer the following questions: </p>
+                    <ul class="dotDefault">
+                        <li>How does he greet his colleagues? </li>
+                        <li>Where does John eat lunch?  </li>
+                        <li>What does he do when he arrives at home?</li>
+                    </ul>
+                    <div class="destaque_novo">
+                      <img src="img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                      <img src="img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                      <img src="img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+                        <p>John works at Apple. Every morning, he wakes up early. He brushes his teeth and gets dressed in his Apple uniform. Then, he eats breakfast and leaves for work. </p>
+                        <p>At work, John greets his colleagues with a smile. He checks his emails and starts his tasks for the day. Sometimes, he helps customers who come into the Apple store. He explains how to use the latest iPhones and MacBooks. </p>
+                        <p>During lunchtime, John eats lunch with his coworkers in the Apple cafeteria. They talk about their favorite Apple products and share tips on how to use them better. </p>
+                        <p>In the afternoon, John continues to work on his projects. He attends meetings with his team to discuss new ideas and plans. He also answers phone calls from customers who need assistance with their Apple devices. </p>
+                        <p>Finally, when the workday is over, John says goodbye to his colleagues and heads home. He relaxes by watching some Apple TV or playing games on his iPhone before going to bed. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bloco5">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt="">
+                <div class="container">       
+                    <h3>Speaking activity in pairs or in groups: </h3>
+                    <p>According to your routine, choose a word and complete the sentences using the verbs indicated: </p>
+             
+                    <figure class="my-5 no-print">
+                        <img src="img/atividade.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a man getting ready to work.">
+                        <a href="img/atividade.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                            <img src="img/atividade.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Photograph of a man getting ready to work.">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            <div class="bloco6">
+              
+              <img src="img/lateral_2.png" class="floatImg floatRig top2" alt="">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+                <div class="container">
+                    <p><strong>Instruction: </strong></p>
+                    <p><strong>Read the information about manufacturing, designing and selling of the companies Apple, Google and Microsoft: </strong></p>
+                    
+                    <table class="table-responsive table">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">Manufacturing</th>
+                          <th scope="col">Designing</th>
+                          <th scope="col">Selling:
+                          </th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="img/ico_tabela_3.png" alt=""></td>
+                        <td>Apple makes new devices like iPhones, iPads, and MacBooks every day in special places all over the world, and its online store.
+                        </td>
+                        <td>Artists at Apple always try to make new and clever things, making sure each one shows how good Apple is with technology and style.
+                        </td>
+                        <td>Apple sells its products in many ways, like in big Apple Stores, special shops, and online.
+                        </td>
+                      </tr>
+                        <td><img src="img/ico_tabela_1.png" alt=""></td>
+                        <td>Every day, Google makes cool devices like Pixel phones and Nest gadgets in big factories all around the world.
+                        </td>
+                        <td>Google's creative team always makes things that look good and are easy to use for their devices.
+                        </td>
+                        <td>Google sells its products in many ways, like in their online store and in special shops.
+                        </td>
+                      <tr>
+                        <td><img src="img/ico_tabela_2.png" alt=""></td>
+                        <td>Microsoft makes different devices like Surface laptops and Xbox consoles in big factories around the world.
+                        </td>
+                        <td>Designers at Microsoft always try to make new and smart things, making sure each one shows how good Microsoft is with technology and style.
+                        </td>
+                        <td>The Microsoft online store lets people easily look at and buy the newest devices from home</td>
+                    </tbody>
+                </table>
+                    
+                    
+              
+                    
+                    <div class="box-atividade">
+                      <p class="titulo-ativ"><strong>According to the information read before, click on the right answer.</strong></p>
+                      <p></p>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">Sentence 1: Apple manufactures...</p>
+                          <button class="alt-c">iPhones, iPads, AirPods, Macbooks </button>
+                          <button class="alt-e">Xiaomi, Samsung, JBL </button>
+                          <div class="feedbacks">
+                              <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                              <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                          </div>
+                      </div>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">Sentence 2: Google sells their products...
+                          </p>
+                          <button class="alt-c">online, at special shops (   </button>
+                          <button class="alt-e">supermarkets, hospitals 	</button>
+                          <div class="feedbacks">
+                              <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                              <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                          </div>
+                      </div>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">Sentence 3: Microsoft designs...</p>
+                          <button class="alt-c">new products, smart products  </button>
+                          <button class="alt-e">slow products, old products  </button>
+                          <div class="feedbacks">
+                              <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                              <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                          </div>
+                      </div>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">Sentence 4: Google manufactures...
+                          </p>
+                          <button class="alt-c">pixel phones, Nest gadgets  </button>
+                          <button class="alt-e">xiaomi, Samsung, JBL  </button>
+                          <div class="feedbacks">
+                              <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                              <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                          </div>
+                      </div>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">Sentence 5: Microsoft manufactures...
+                          </p>
+                          <button class="alt-c">surface laptops, XBOX consoles  </button>
+                          <button class="alt-e">xiaomi, Samsung, JBL  </button>
+                          <div class="feedbacks">
+                              <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                              <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bloco7">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
+                <div class="container">
+                    <h3>Internet security and passwords </h3>
+                    <p><strong>Do you know what the term alphanumeric means? </strong></p>
+                    <p><strong>Read the definition below: </strong></p>
+                    <p>"Alphanumeric" refers to a combination of alphabetic (letters) and numeric (numbers) characters. Alphanumeric characters are commonly used in passwords. </p>
+                    <p><strong>How do you create your passwords? How do you protect them from hackers or internet threats? Listen to the podcast and pay attention to the following information: </strong></p>
+                    <ul class="dotDefault">
+                        <li>What makes a strong password? </li>
+                        <li>Can you use personal information in your passwords?</li>
+                    </ul>
+                    <p><strong>Click to listen to the audio. </strong></p>
+                    
+                <div class="bg-podcast2">
+                  <div class="bg-podcast no-print audio">
+                    <div class="d-flex justify-content-center flex-column align-items-center">
+                        <div class="audio-player no-print">
+                            <audio>
+                                <source src="audio/TDS_UC07_SITUACAO 1_SENHAS_E_SEGURANCA.mp3" type="audio/mpeg">
+                            </audio>
+                            <div class="row">
+                                <div class="timestamp">00:00 | 00:00</div>
+                                <div class="barra">
+                                    <input type="range" value="0" max="4140" step="any">
+                                </div>
+                                <div class="botoes">
+                                    <button title="Tocar" class="btn-play btn-player"></button>
+                                    <button title="Pause" class="btn-pause btn-player"></button>
+                                    <button title="Transcrição" data-bs-toggle="modal"
+                                        data-bs-target="#modal-transcricao-audio2"
+                                        class="btn-transcricao btn-player"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                    
+                    <div class="acessivel no-print">
+                        <p>Podcast Title: "Your Guide to Internet Security" </p>
+                        <p>Alex: Hi there, everyone! Welcome to our podcast today. I'm your host, Alex, and I'm here with my friend, Lisa. </p>
+                        <p>Lisa: Hi, everyone! Today, we're going to talk about something important – keeping safe on the internet. </p>
+                        <p>Alex: That's right, Lisa. So, let's start with the basics. Lisa, what is the internet? </p>
+                        <p>Lisa: Well, the internet is like a big, virtual world where we can find and share information. We use it for everything, from chatting with friends to learning new things. </p>
+                        <p>Alex: Exactly! And just like in the real world, we need to keep ourselves safe in this virtual world. One way to do that is by having strong passwords. </p>
+                        <p>Lisa: Right! A password is like a secret key. It helps us get into our online accounts, like email or social media. </p>
+                        <p>Alex: But Lisa, some people use simple passwords like "123456" or "password." That's not safe, is it? </p>
+                        <p>Lisa: No, Alex, it's not. Using easy passwords is like leaving your front door wide open. We should use strong passwords that are hard for others to guess. </p>
+                        <p>Alex: So, what makes a strong password? </p>
+                        <p>Lisa: Good question! A strong password has a mix of letters (both uppercase and lowercase), numbers, and maybe some special characters.  </p>
+                        <p>Alex: Right, and we should avoid using personal information like our names or birthdays. </p>
+                        <p>Lisa: Absolutely. Now, let's talk about another important thing – changing passwords regularly. </p>
+                        <p>Alex: Why is that important, Lisa? </p>
+                        <p>Lisa: Well, think of it like changing the lock on your front door. If you do it regularly, it's harder for someone to figure out how to get in. </p>
+                        <p>Alex: Great analogy, Lisa! And for everyone listening, remember, don't share your passwords with anyone. It's like keeping your secret code to yourself. </p>
+                        <p>Lisa: Exactly! And always log out when you're done using a website. It's like closing and locking the door when you leave your house. </p>
+                        <p>Alex: That's some fantastic advice, Lisa. Thanks for sharing these important tips with us today. </p>
+                        <p>Lisa: My pleasure, Alex! Let's all stay safe online and keep our virtual doors locked. </p>
+                        <p>Alex: That's a wrap for today's podcast. Thanks for tuning in, and until next time, stay safe and secure on the internet! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bloco8">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
+                <div class="container">
+                    <h3>Videoconference </h3>
+                    <p>Do you know the names of the apps below? <strong>Click to see</strong>: </p>
+                    
+                  <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_zoom.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_zoom_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_skype.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_skype_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/flip_googlemeet.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/flip_googlemeet_.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                    <p><strong>Have you ever participated of an online meeting? In which ways: videoconference, teleconference or both? </p>
+                    <p>Do you know the difference between videoconference and teleconference? Can you explain it? </p>
+                    <p>Pay attention to the following information:</strong> </p>
+
+                    <img src="img/img_meeting_1.png" alt="">
+                    <img src="img/img_meeting_2.png" alt="">
+                    <p><strong>Click to watch the video.   </strong></p>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/iOB7NO1hjeE?si=jPH_zaSEFAfzwWDd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="acessivel no-print">
+                        <p>Meeting Transcript:  </p>
+                        <p>Sarah Johnson: Good morning, everyone. Thank you for joining. Let's start with a quick project update. Michael, can you tell us what's new? </p>
+                        <p>Michael Lee: Sure, Sarah. Our website redesign is going well. We're almost done with the design part and moving on to testing. We should finish on time next month. </p>
+                        <p>Sarah Johnson: Great news, Michael. Thanks for the update. Now, Emily, what do you think about visual communication in our work? </p>
+                        <p>Emily Chen: Hi, Sarah. Visuals are important, especially when we're not in the same place. They help us understand each other better. Video calls let us see expressions and gestures. </p>
+                        <p>Michael Lee: I agree, Emily. In our last client meeting, showing our work on screen helped a lot. It made things clearer and got everyone involved. </p>
+                        <p>Sarah Johnson: Thanks, Michael. That's a good example. Now, Emily, any ideas on improving how we work together from different places? </p>
+                        <p>Emily Chen: Yes, Sarah. We need clear ways to talk and tools to manage tasks. They help us stay organized and connected. </p>
+                        <p>Sarah Johnson: Right, Emily. Good communication and using tools well are key for us. Let's keep using visual tools to work better together. </p>
+                        <p>Michael Lee: Absolutely, Sarah. Thanks for leading the talk today. I'm excited to try these ideas in our next projects. </p>
+                        <p>Emily Chen: Thanks, Sarah and Michael. Let's keep going and do our best, even if we're not in the same office. </p>
+                        <p>Sarah Johnson: Agreed, Emily. Thanks, everyone. Let's keep up the good work. </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="bloco9">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt="">
+                <div class="container">
+                    <h3>Now, it’s your turn to practice a speaking activity about a formal meeting held by a videoconference. </h3>
+                    <ul class="dotDefault">
+                      <li><p>According to the text example given before, simulate a formal meeting held by videoconference. In groups, create a conversation based on the dialogue watched before in the video. Plan a meeting transcript and record videos from different places. You can use one of the topics ideas below. After that, present to your class: </p>
+                      </li>
+                    </ul>
+                    <table class="table-responsive table tabelaCorCurso">
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                                Strategies for Protecting Data </td>
+                          </tr>
+                          <tr>
+                            <td>Brainstorming Future Projects </td></tr>
+                          <tr>
+                            <td>Exploring New Tools and Technologies </td>
+                            </tr>
+                          <tr>
+                            <td>Solving Programming Challenges Together </td>
+                            </tr>
+                          <tr>
+                            <td>Using Cloud Solutions </td>
+                           </tr>
+                            <tr>
+                                <td>IT Insights </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Look the chart below with some sentences that may guide you to create a transcript for a formal meeting. These sentences are going to help you to make suggestions: </p>
+                    <table class="table-responsive table tabelaCorCurso">
+                        <thead>
+                            <tr>
+                                <th>MAKING SUGGESTIONS AT WORK</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>
+                                Why don’t we... ?   </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                How about...? </td></tr>
+                            <tr>
+                            <td>
+                                We could...  </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                I have an idea!  </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                I think we should..  </td>
+                            </tr>
+                            <tr>
+                                <td>IT Insights </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Job Interview </h3>
+                    <p><strong>Work in pairs or in groups. Look at the jobs wanted list below:  </strong></p>
+                    <ul class="dotDefault">
+                        <li>Which jobs from the ad did you like most? </li>
+                        <li>Would you choose any of these options? </li>
+                        <li>Have you looked for a job in a newspaper before? </li>
+                    </ul>
+                    
+                    <figure class="my-5 no-print">
+                      <img src="img/figura_2.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="">
+                      <a href="img/figura_2.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                          <img src="img/figura_2.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="">
+                      </a>
+                      <figcaption class="figure-caption text-center">Accessed on: 5 feb. 2024.  </figcaption>
+    
+                  </figure>
+
+                    <p><strong>How do you prepare yourself for a job interview? </strong></p>
+                    <p>Look at the infographic below and read the top 5 tips to prepare yourself for a job interview.  </p>
+                    <strong><p>Do you follow any of these tips? </strong></p>
+                    <div class="caixa-destaque important">
+                        <ul class="dotDefault">
+                            <li>Research about the company. </li>
+                            <li>Review the job description. </li>
+                            <li>Practice answering interview questions. </li>
+                            <li>Dress appropriately for a job interview.</li>
+                            <li>Be honest!</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="bloco10">
+                <div class="container"></div>
+            </div>
+            <div class="bloco11">
+                <div class="container"></div>
+            </div>
+            <div class="bloco12">
+                <div class="container"></div>
+            </div> -->
+
+          </div>
+
+
+        </section>
+<!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+        <footer class="text-center no-print">
+          <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+        </footer>
+
+      </div>
+
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal-ODBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">ODBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>ODBC</b>, ou Open Database Connectivity, é um conjunto de classes-modelo para conexão disponível em qualquer linguagem de programação, diferindo-se da JDBC, que é exclusiva para Java.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-JDBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">JDBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>JDBC</b>, ou Java EE Database Connectivity, é uma <b>API (<i>application programming interfaces</i>) que possibilita a interação do código Java com um banco de dados</b>, na qual as instruções SQL são executadas por meio de um <i>driver</i>, composto por um grupo de classes e interfaces desenvolvido em Java. Esse processo possibilita a execução de instruções SQLs que se conectarão com a base de dados, permitindo a manipulação dos valores.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+<!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+<div class="ico-div-loader">
+	<img src="../template/images/atencao.png">
+    <img src="../template/images/bg-content.jpg">
+    <img src="../template/images/bg-topo.jpg">
+    <img src="../template/images/black-zoom-in-256.png">
+    <img src="../template/images/concluindo.png">
+    <img src="../template/images/curtir.png">
+    <img src="../template/images/desafio.png">
+    <img src="../template/images/dica.png">
+    <img src="../template/images/doc.png">
+    <img src="../template/images/fundamental.png">
+    <img src="../template/images/icon-03.png">
+    <img src="../template/images/importante.png">
+    <img src="../template/images/lightbulb.png">
+    <img src="../template/images/link.png">
+    <img src="../template/images/link_pdf_hover.png">
+    <img src="../template/images/link_pdf_normal.png">
+    <img src="../template/images/logo-senac.png">
+    <img src="../template/images/mark-icon.png">
+    <img src="../template/images/mark-icon02.png">
+    <img src="../template/images/midia.png">
+    <img src="../template/images/monitor.png">
+    <img src="../template/images/nao_curtir.png">
+    <img src="../template/images/pergunta.png">
+    <img src="../template/images/pesquisa.png">
+    <img src="../template/images/play.png">
+    <img src="../template/images/radio_flat.png">
+    <img src="../template/images/refletir.png">
+    <img src="../template/images/saiba_mais.png">
+    <img src="../template/images/senac_loader.png">
+    <img src="../template/images/tanamidia.png">
+    <img src="../template/images/transcricao.png">
+    <img src="../template/images/transcricao_small.png">
+    <img src="../template/images/tv.png">
+    <img src="../template/images/tv_bottom.png">
+    <img src="../template/images/zoom.png">
+    <img src="../template/images/zoom_ie.cur">
+    <img src="../template/images/zoom_ie.png">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+</div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="../template/js/jquery.min.js"></script>
+<script src="../template/js/bootstrap.min.js"></script> -->
+<script src="../template/js/jquery.magnific-popup.min.js"></script>
+<script src="../template/js/print.js"></script>
+<script src="../template/js/template.config.js"></script>
+<script src="../template/js/images.loader.js"></script>
+<script src="../template/js/highlight.min.js"></script>
+<!-- bts5 -->
+
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="../assets/atividades/perguntas/perguntas.js"></script>
+        <!--Atividade arrasta e solta-->
+        <script src='atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+        
+        <!--Atividade de jogo da memória-->
+        <script src="atividades/jogo_memoria/jogoMemoria.js"></script>
+<noscript>
+  <style media="screen">
+    .over-loader { display: none;}    
+  </style>
+</noscript>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+	//inicializa zoom na imagem
+	
+	//inicializa popover
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+	//inicializa tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+
+  $(function() {
+    $(".card").click(function() {
+      if ($(this).hasClass("exibe-frente")) {
+        $(this)
+          .children()
+          .first()
+          .hide();
+        $(this)
+          .children()
+          .last()
+          .show();
+        $(this).removeClass("exibe-frente");
+      } else {
+        $(".card .verso").hide();
+        $(".card .frente").show();
+        $(this).addClass("exibe-frente");
+      }
+    });
+  });
+
+  $( document ).ready(function() {
+    $(".card .verso").hide();
+  });
+
+
+
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += ' js';
+
+  function boxTop(idBox) {
+    var boxOffset = $(idBox).offset().top;
+    return boxOffset;
+  }
+
+  $(document).ready(function() {
+    $('.botaoCheck').click(function(){
+      $(this).addClass('visitado');
+    });
+    var $target = $('.animeStart'),
+        $target2 = $('.animeStop'),
+        targetBox = $('.box'),
+        animationClass = 'anime-init',
+        windowHeight = $(window).height(),
+        offset = windowHeight - (windowHeight / 4);
+
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+      $target.each(function() {
+        if (documentTop > boxTop(this) - offset) {
+          targetBox.addClass(animationClass);
+        } else {
+          targetBox.removeClass(animationClass);
+        }
+        if (documentTop > boxTop($target2) - offset) {
+          targetBox.removeClass(animationClass);
+        } 
+      });
+    }
+    animeScroll();
+
+    $(document).scroll(function() {
+      animeScroll();
+    });
+  });
+
+
+</script>
+
+        <!-- ODAS -->
+        <!-- <script src="odas/ingles_viagens_cartas/assets/js/scripts.js"></script> -->
+        <script src="odas/ingles_letters/assets/js/script.js"></script>
+        <!-- <script src="odas/ingles_viagens_form/assets/js/script.js"></script> -->
+        <!-- <script src="odas/ingles_viagens_write_numbers/assets/js/script.js"></script> -->
+<script>
+  var scriptElem=document.createElement("script");
+  scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+  scriptElem.charset="UTF-8",
+  scriptElem.onload=function(){
+        window.ht = new HT({
+            token:"bf5b7efb148a829a126a0e0c9fd533bf",
+            align:"top",
+            videoEnabled: true,
+            ytEmbedReplace: true,           
+            mobileConfig:{align:"right",
+                          actionsAlign:"top",
+                          customButtonStyle:{
+                                borderRadius:"6px",
+                                size:"38px",
+                                horizontalMargin:"13px",
+                                bottomMargin:"140px",
+                                rightMargin:"40px"}
+                          }
+          });        
+      $('.ht-skip').attr("aria-hidden","true")
+    },
+  document.body.appendChild(scriptElem);
+</script>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Language base to talk about basic computer hardware, screen operations and software  </title>
+
+    
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+
+
+    <!-- Bootstrap -->
+    <!-- <link href="../template/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="../template/css/tecnicos_senac.css" rel="stylesheet">
+    <link href="../template/css/cores.css" rel="stylesheet">
+    <link href="../template/css/modal-100.css" rel="stylesheet">
+    <link href="../template/css/devibeans.min.css" rel="stylesheet">
+      <!--Extras - novas classes para facilitar-->
+      <link rel="stylesheet" href="../template/css/extras.css">
+    <link href="../template/css/sncload.css" rel="stylesheet">
+    <link href="../template/css/magnific-popup.css" rel="stylesheet">
+    
+        <!--Caça palavras-->
+      <link rel="stylesheet" href="odas/style.css">
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+         <!--Atividade jogo da memória-->
+         <link rel="stylesheet" href="atividades/jogo_memoria/jogoMemoria.css">
+         <!-- Atividade de verdadeiro ou falso -->
+         <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+         <!--Atividade arrasta e solta-->
+         <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+         <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+         <!--Atividade relacionar colunas-->
+         <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/player.css" />
+
+    <!-- css necessario para o print -->
+    <link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="../template/css/print.css" type="text/css" rel="stylesheet">
+    <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet">
+    <!--  bots5 -->
+        <!-- ODAs -->
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_cartas/assets/css/styles.css"> -->
+        <!-- <link rel="stylesheet" href="odas/ingles_letters/assets/css/styles.css"> -->
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_form/assets/css/styles.css">
+        <link rel="stylesheet" href="odas/ingles_viagens_write_numbers/assets/css/styles.css"> -->
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46914400.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+    <!-- MARCA D´ÁGUA -->
+    <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo">
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+    <header id="topo" class="senac no-print">
+        <div  class="header-tecnicos container">
+        	  <h1 id="nome-curso">Desenvolvimento de Sistemas</h1>
+            <div id="logo-senac"><img src="../template/images/logo-senac.png" alt="logo do senac"></div>
+        </div>
+        <div id="sombra"></div>
+    </header>
+
+    <div id="booklet" class="fundo-tecnicos">
+        <header class="no-print">
+          <!-- BTO IMPRIMIR -->
+          <div class="grupo-imprimir no-print">
+            <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+                <span class="fa fa-print"></span> <span>Imprimir</span>
+            </button>
+          </div>
+          <!-- /BTO IMPRIMIR -->
+        </header>
+<!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+        <section class="paginas">
+
+          <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+          <div class="pagina">
+            <div class="bloco1">
+              <img src="img/header_lateral_1.png" class="floatImg floatLeft" alt="">
+              <img src="img/header_lateral_2.png" class="floatImg floatRig" alt="">
+              <div class="container">
+                <h2>Language base to talk about basic computer hardware, screen operations and software </h2>
+                <p>Nesta situação de aprendizagem, você aprenderá a: </p>
+                <ul class="marcador-check">
+                  <li>Explorar os componentes básicos de hardware de um computador e as especificações técnicas associadas a eles </li>
+                  <li>Usar imperativos para dar instruções sobre o uso de uma interface gráfica do usuário (GUI) </li>
+                  <li>Conhecer o hardware multimídia e como ele se conecta aos computadores </li>
+                  <li>Utilizar preposições em frases com dois objetos para descrever, por exemplo, a conexão e desconexão de equipamentos multimídia </li>
+                  <li>Investigar os sistemas operacionais (SO) e sua importância no controle de um computador </li>
+                  <li>Diferenciar um software de código aberto e software proprietário, incluindo sistemas operacionais </li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="bloco2">
+                <img src="img/divisoria.png" class="divisoria" alt="">
+                <div class="container">
+                  <p>Helena is studying about basic computer hardware, screen operations and software. However, she forgot some definitions for each term. Can you help her? </p>
+                  <p>Unscramble the words to make sentences about basic computer hardware, screen operations and software. Time is important in this activity.  </p>
+                  
+                  <div class="box-atividade no-print">
+                  <p class="titulo-ativ"><strong>Let’s practice.</strong></p>
+                  <p>Click on the correct information: </p>
+                  <div class="game-associar-colunas no-print nao-imprimir">
+                      <div class="row">
+                          <div class="col-12 col-sm-4 flexs itens"> 
+                              <button data-resp="1" class="item item1">
+                                  <p>Parts / is / you / the / can / Hardware / touch / a / computer. / in  </p>
+                              </button>
+              
+                              <button data-resp="2" class="item item2">
+                                  <p>Computer. / are / of / instructions / the / Software / the  </p>
+                              </button>
+              
+                              <button data-resp="3" class="item item3">
+                                  <p>Show / computer / Screen / things / on / screen / the / operations  </p>
+                              </button>
+              
+                              <button data-resp="4" class="item item4">
+                                  <p>Hardware / work / to / together / things / computer / the / software / screen. /and / do / on  </p>
+                              </button>
+              
+                              <button data-resp="5" class="item item5">
+                                  <p>Do / Software / appear / screen / things / tells / hardware / the / what / to / and / on / makes / the  </p>
+                              </button>
+              
+                          </div>
+                          <div class="col-12 col-sm-8 flexs">
+                              <button type="button" data-resp="4" class="resp resp5">
+                                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                                  <p>Hardware and software work together to do things on the computer screen. </p>
+                              </button>
+              
+                              <button type="button" data-resp="5" class="resp resp6">
+                                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                                  <p>Software tells the hardware what to do and makes things appear on the screen. </p>
+                              </button>
+              
+                              <button type="button" data-resp="1" class="resp resp7">
+                                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                                  <p>Hardware is the parts you can touch in a computer. </p>
+                              </button>
+              
+                              <button type="button" data-resp="3" class="resp resp1">
+                                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                                  <p>Screen operations show things on the computer screen. </p>
+                              </button>
+              
+                              <button type="button" data-resp="2" class="resp resp8">
+                                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                                  <p> Software are the instructions of the computer. </p>
+                              </button>
+              
+                          </div>
+                      </div>
+              
+                      <!-- Modal -->
+                      <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
+                          aria-labelledby="associarColunasErrou" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="row">
+                                          <div class="col-12 col-lg-4">
+                                              <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg" class="img-fluid" alt="">
+                                          </div>
+                                          <div class="col-12 col-lg-8">
+                                              <p>Ops, tente novamente!</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
+                          tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="row">
+                                          <div class="col-12 col-lg-4">
+                                              <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
+                                          </div>
+                                          <div class="col-12 col-lg-8">
+                                              <p>Muito bem! Você acertou!</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+              
+                  </div>
+                  </div>
+
+                </div>
+            </div>
+            <div class="bloco3">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+                <div class="container">
+                  <h3>Basic Components of a Hardware </h3>
+                  <p><strong>Look at the photo:</strong></p> 
+
+                  <p>Can you describe all the elements you see in the image? </p>
+                  <p>Share photos of your own computers or hardware setups. Point out and explain the various components, such as the CPU, motherboard, RAM, and storage devices. </p>
+                  
+                  <figure class="my-5 no-print">
+                      <img src="img/figura_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a computer hardware.  ">
+                      <a href="img/figura_1.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                          <img src="img/figura_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Photograph of a computer hardware.  ">
+                      </a>
+                      <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
+                  </figure>
+                  <p><strong>As you learned some parts of a computer hardware, let’s continue learning about other categories of hardware. Can you think of basic differences between storage and memory?  </strong></p>
+                  
+                  <table class="table-responsive table">
+                    <thead>
+                      <tr>
+                        <th scope="col">STORAGE</th>
+                        <th scope="col">MEMORY</th>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>For example: Storage refers to the long-term retention of data. </td>
+                      <td>For example: Memory, also known as RAM (Random Access Memory), is used for temporary data storage. </td>
+                    </tr>
+                    <tr>
+                      <td>*</td>
+                      <td>*</td>
+                    </tr>
+                    <tr>
+                      <td>*</td>
+                      <td>*</td>
+                    </tr>
+                    <tr>
+                      <td>*</td>
+                      <td>*</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  
+                    <!-- <p><strong>Relate the columns: </strong></p> -->
+                    <!-- <div class="caixa-destaque icone-practice"> -->
+                      <div class="box-atividade">
+                        <p class="titulo-ativ"><strong>Match the main categories of hardware with their definitions: </strong></p>
+                        <p></p>
+                        <div class="esquemaDaBru multipla-escolha">
+                            <p class="enunciado" tabindex="0">They are devices like keyboards, mice, monitors, printers, and speakers.</p>
+                            <button class="alt-c">Peripherals  </button>
+                            <button class="alt-e">Internal components </button>
+                            <button class="alt-e">Storage </button>
+                            <div class="feedbacks">
+                                <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                                <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                        </div>
+                        <div class="esquemaDaBru multipla-escolha">
+                            <p class="enunciado" tabindex="0">They are the parts inside a computer. These include the CPU, motherboard, RAM, GPU, and PSU. </p>
+                            <button class="alt-e">Peripherals  </button>
+                            <button class="alt-c">Internal components </button>
+                            <button class="alt-e">Storage </button>
+                            <div class="feedbacks">
+                                <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                            </div>
+                        </div>
+                        <div class="esquemaDaBru multipla-escolha">
+                            <p class="enunciado" tabindex="0">It keeps our data safe. There are HDDs and SSDs. HDDs have spinning disks, while SSDs use flash memory. We also use external hard drives, USB flash drives, and memory cards for storage. 
+                            </p>
+                            <button class="alt-e">Peripherals  </button>
+                            <button class="alt-e">Internal components </button>
+                            <button class="alt-c">Storage </button>
+                            <div class="feedbacks">
+                                <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                            </div>
+                        </div>
+                      </div>
+                    <!-- </div> -->
+                
+                </div>
+            </div>
+            
+
+            <div class="bloco4">
+              <img src="img/lateral_1.png" class="floatImg floatLeft top1" alt="">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <div class="container">
+                <h3>Graphical User Interface (GUI) </h3>
+                
+                <p>Find the words below in the wordsearch: </p>
+                <div class="espera"> Inserir caça palavras</div>
+                <p>The words you searched before are important elements of a Graphical User Interface (GUI). Read the definition of a GUI: </p>
+                <div class="caixa-destaque">
+                 <p>A GUI or a Graphical User Interface is a visual way for users to interact with electronic devices or computers through graphical icons, buttons, and other visual indicators. It allows users to interact with software applications using graphical elements such as windows, buttons, menus, and icons rather than text-based commands.  </p>
+                </div>
+                <div class="caixa-destaque">
+                 <p>“Enter your username and password, then click 'Login' to access your account” 
+
+                   “Click the 'Save' button to save your changes” 
+                   
+                   "Scroll down to see more content” </p>
+                </div>
+                <p>
+                 As you saw in the examples above, all the sentences start with a verb which express a command. This content in English is called Imperative verbs. Look at the chart below and learn about what imperative verbs are: 
+                </p>                  
+                <table class="table-responsive table">
+                  <thead>
+                    <tr>
+                      <th scope="col"  colspan="5">The imperative verb is an action a speaker or writer wants someone else to do. For this reason, they're occasionally called “command words” or “bossy verbs,” even though that may not be the speaker's or writer's intent. Look at different usages: </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                   <td>GIVING ORDERS  </td>
+                   <td>GIVING INSTRUCTIONS  </td>
+                   <td>GIVING WARNINGS  </td>
+                   <td>GIVING ADVICE </td>
+                   <td>SIGNS </td>
+                  </tr>
+                  <tr>
+                    <td> Come here, now! Sit down! </td>
+                    <td>Open your books! Read the text! </td>
+                    <td>Don’t drive too fast!  </td>
+                    <td>Study hard and you will pass in the exam! </td>
+                    <td>Stop! Park here!</td>
+                  </tr>
+                  </tbody>
+                </table>
+                <p><strong>Group activity:  </strong></p>
+                <p>Determine which imperative sentence you will perform. </p>
+                <ul class="dotDefault">
+                 <li>Clap your hands three times! </li>
+                 <li>Close your eyes and count to ten! </li>
+                 <li>Shout your name! </li>
+                 <li>Stamp your feet! </li>
+                 <li>Hop on one foot for ten seconds! </li>
+                 <li>Jump up and down four times! </li>
+                 <li>Pat your head three times! </li>
+                 <li>Put your hand on your knee! </li>
+                 <li>Whistle a tune! </li>
+                 <li>Say three words beginning with the letter “a” </li>
+                 <li>Say three words beginning with the letter “e” </li>
+                 <li>Say three words beginning with the letter “p” </li>
+                 <li>Wave hello to someone! </li>
+                 <li>Spin around! </li>
+                 <li>Sing a song! </li>
+                 <li>Shake your arms and legs! </li>
+                 <li>Spell your name! </li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="bloco5">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt="">    
+              <div class="container">
+                <h3>Multimedia Hardware </h3>
+                
+                <p><strong>Click to listen to the audio. </strong></p>
+                    
+                <div class="bg-podcast2">
+                  <div class="bg-podcast no-print audio">
+                    <div class="d-flex justify-content-center flex-column align-items-center">
+                        <div class="audio-player no-print">
+                            <audio>
+                                <source src="audio/TDS_UC07_SITUACAO 2_INSTRUCOES_PC.mp3" type="audio/mpeg">
+                            </audio>
+                            <div class="row">
+                                <div class="timestamp">00:00 | 00:00</div>
+                                <div class="barra">
+                                    <input type="range" value="0" max="4140" step="any">
+                                </div>
+                                <div class="botoes">
+                                    <button title="Tocar" class="btn-play btn-player"></button>
+                                    <button title="Pause" class="btn-pause btn-player"></button>
+                                    <button title="Transcrição" data-bs-toggle="modal"
+                                        data-bs-target="#modal-transcricao-audio2"
+                                        class="btn-transcricao btn-player"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+
+            </div>
+            <div class="bloco6">
+              
+              <img src="img/lateral_2.png" class="floatImg floatRig top2" alt="">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <div class="container"></div>
+            </div>
+            <div class="bloco7">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <div class="container"></div>
+            </div>
+            <div class="bloco8">
+              <img src="img/divisoria.png" class="divisoria" alt="">     
+              <div class="container"></div>         
+
+            </div>
+            <div class="bloco9">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt="">  
+              <div class="container"></div>                     
+
+            </div>
+            <!-- <div class="bloco10">
+                <div class="container"></div>
+            </div>
+            <div class="bloco11">
+                <div class="container"></div>
+            </div>
+            <div class="bloco12">
+                <div class="container"></div>
+            </div> -->
+
+          </div>
+
+
+        </section>
+<!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+        <footer class="text-center no-print">
+          <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+        </footer>
+
+      </div>
+
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal-ODBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">ODBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>ODBC</b>, ou Open Database Connectivity, é um conjunto de classes-modelo para conexão disponível em qualquer linguagem de programação, diferindo-se da JDBC, que é exclusiva para Java.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-JDBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">JDBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>JDBC</b>, ou Java EE Database Connectivity, é uma <b>API (<i>application programming interfaces</i>) que possibilita a interação do código Java com um banco de dados</b>, na qual as instruções SQL são executadas por meio de um <i>driver</i>, composto por um grupo de classes e interfaces desenvolvido em Java. Esse processo possibilita a execução de instruções SQLs que se conectarão com a base de dados, permitindo a manipulação dos valores.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+<!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+<div class="ico-div-loader">
+	<img src="../template/images/atencao.png">
+    <img src="../template/images/bg-content.jpg">
+    <img src="../template/images/bg-topo.jpg">
+    <img src="../template/images/black-zoom-in-256.png">
+    <img src="../template/images/concluindo.png">
+    <img src="../template/images/curtir.png">
+    <img src="../template/images/desafio.png">
+    <img src="../template/images/dica.png">
+    <img src="../template/images/doc.png">
+    <img src="../template/images/fundamental.png">
+    <img src="../template/images/icon-03.png">
+    <img src="../template/images/importante.png">
+    <img src="../template/images/lightbulb.png">
+    <img src="../template/images/link.png">
+    <img src="../template/images/link_pdf_hover.png">
+    <img src="../template/images/link_pdf_normal.png">
+    <img src="../template/images/logo-senac.png">
+    <img src="../template/images/mark-icon.png">
+    <img src="../template/images/mark-icon02.png">
+    <img src="../template/images/midia.png">
+    <img src="../template/images/monitor.png">
+    <img src="../template/images/nao_curtir.png">
+    <img src="../template/images/pergunta.png">
+    <img src="../template/images/pesquisa.png">
+    <img src="../template/images/play.png">
+    <img src="../template/images/radio_flat.png">
+    <img src="../template/images/refletir.png">
+    <img src="../template/images/saiba_mais.png">
+    <img src="../template/images/senac_loader.png">
+    <img src="../template/images/tanamidia.png">
+    <img src="../template/images/transcricao.png">
+    <img src="../template/images/transcricao_small.png">
+    <img src="../template/images/tv.png">
+    <img src="../template/images/tv_bottom.png">
+    <img src="../template/images/zoom.png">
+    <img src="../template/images/zoom_ie.cur">
+    <img src="../template/images/zoom_ie.png">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+</div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="../template/js/jquery.min.js"></script>
+<script src="../template/js/bootstrap.min.js"></script> -->
+<script src="../template/js/jquery.magnific-popup.min.js"></script>
+<script src="../template/js/print.js"></script>
+<script src="../template/js/template.config.js"></script>
+<script src="../template/js/images.loader.js"></script>
+<script src="../template/js/highlight.min.js"></script>
+<!-- bts5 -->
+
+        <!--Caça palavras-->
+        <script src="odas/js.js"></script>
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="../assets/atividades/perguntas/perguntas.js"></script>
+        <!--Atividade arrasta e solta-->
+        <script src='atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+        
+        <!--Atividade de jogo da memória-->
+        <script src="atividades/jogo_memoria/jogoMemoria.js"></script>
+<noscript>
+  <style media="screen">
+    .over-loader { display: none;}    
+  </style>
+</noscript>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+	//inicializa zoom na imagem
+	
+	//inicializa popover
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+	//inicializa tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+
+  $(function() {
+    $(".card").click(function() {
+      if ($(this).hasClass("exibe-frente")) {
+        $(this)
+          .children()
+          .first()
+          .hide();
+        $(this)
+          .children()
+          .last()
+          .show();
+        $(this).removeClass("exibe-frente");
+      } else {
+        $(".card .verso").hide();
+        $(".card .frente").show();
+        $(this).addClass("exibe-frente");
+      }
+    });
+  });
+
+  $( document ).ready(function() {
+    $(".card .verso").hide();
+  });
+
+
+
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += ' js';
+
+  function boxTop(idBox) {
+    var boxOffset = $(idBox).offset().top;
+    return boxOffset;
+  }
+
+  $(document).ready(function() {
+    $('.botaoCheck').click(function(){
+      $(this).addClass('visitado');
+    });
+    var $target = $('.animeStart'),
+        $target2 = $('.animeStop'),
+        targetBox = $('.box'),
+        animationClass = 'anime-init',
+        windowHeight = $(window).height(),
+        offset = windowHeight - (windowHeight / 4);
+
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+      $target.each(function() {
+        if (documentTop > boxTop(this) - offset) {
+          targetBox.addClass(animationClass);
+        } else {
+          targetBox.removeClass(animationClass);
+        }
+        if (documentTop > boxTop($target2) - offset) {
+          targetBox.removeClass(animationClass);
+        } 
+      });
+    }
+    animeScroll();
+
+    $(document).scroll(function() {
+      animeScroll();
+    });
+  });
+
+
+</script>
+
+        <!-- ODAS -->
+        <!-- <script src="odas/ingles_viagens_cartas/assets/js/scripts.js"></script> -->
+        <!-- <script src="odas/ingles_letters/assets/js/script.js"></script> -->
+        <!-- <script src="odas/ingles_viagens_form/assets/js/script.js"></script> -->
+        <!-- <script src="odas/ingles_viagens_write_numbers/assets/js/script.js"></script> -->
+<script>
+  var scriptElem=document.createElement("script");
+  scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+  scriptElem.charset="UTF-8",
+  scriptElem.onload=function(){
+        window.ht = new HT({
+            token:"bf5b7efb148a829a126a0e0c9fd533bf",
+            align:"top",
+            videoEnabled: true,
+            ytEmbedReplace: true,           
+            mobileConfig:{align:"right",
+                          actionsAlign:"top",
+                          customButtonStyle:{
+                                borderRadius:"6px",
+                                size:"38px",
+                                horizontalMargin:"13px",
+                                bottomMargin:"140px",
+                                rightMargin:"40px"}
+                          }
+          });        
+      $('.ht-skip').attr("aria-hidden","true")
+    },
+  document.body.appendChild(scriptElem);
+</script>

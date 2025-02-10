@@ -46,8 +46,14 @@
 .audio-player input[type=range]::-webkit-slider-thumb,
 .audio-player input[type=range]::-webkit-slider-runnable-track,
 .audio-player input[type=range]:focus::-webkit-slider-runnable-track{
-	background: var(--cor-primaria);
+	background: red;
 }
+.audio-player input[type=range]::-moz-range-track,
+.audio-player input[type=range]::-moz-range-thumb {
+	background: var(--bg-gradiente-secundario);
+	background: var(--gradiente-secundario);
+}
+
 .audio-player input[type=range]::-moz-range-track,
 .audio-player input[type=range]::-moz-range-thumb {
 	background: var(--bg-gradiente-secundario);

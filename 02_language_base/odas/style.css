@@ -1,0 +1,174 @@
+
+.caca_palavras .row{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+  font-family: Consolas;
+}
+
+.caca_palavras .row.row-space-evenly{
+  justify-content: space-evenly;
+}
+
+.caca_palavras .box{
+  
+  font-family: Consolas;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.caca_palavras .box-3{
+  width: calc(3*100%/12);
+}
+
+.caca_palavras .box-4{
+  width: calc(4*100%/12);
+}
+
+.caca_palavras .box-6{
+  width: calc(6*100%/12);
+}
+
+.caca_palavras .box-8{
+  width: calc(8*100%/12);
+}
+
+.caca_palavras .box-12{
+  width: calc(12*100%/12);
+}
+
+.caca_palavras .form-titulo{
+  font-weight: bold;
+  font-size: 14pt;
+  text-align: center;
+}
+
+.caca_palavras .form-group{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.caca_palavras .form-group>label{
+  font-size: 9pt;
+}
+
+.caca_palavras .input{
+  border: 1px solid transparent;
+  border-bottom-color: #ccc;
+  outline-style: none;
+  padding: 3px;
+}
+
+.caca_palavras .btn {
+  border: 1px solid #ccc;
+  width: fit-content;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.caca_palavras .btn:hover{
+  background-color: #eee;
+}
+
+.caca_palavras .mensagem-erro{
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #eba2a2;
+  color: #a91c1c;
+  padding: 5px 10px;
+  border: 1px solid #a91c1c;
+  border-left-width: 5px;
+  margin-top: 5px;
+  font-size: 10pt;
+  border-radius: 3px;
+}
+
+.caca_palavras .mensagem-erro.active{
+  display: block;
+}
+
+.caca_palavras .grid-caca-palavras{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  background-color: #eee;
+  padding: 5px;
+  width: min(60vw, 60vh);
+  height: min(60vw, 60vh);
+  margin: auto;
+}
+
+.caca_palavras .grid-linha{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+}
+
+.caca_palavras .grid-celula{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caca_palavras .grid-letra{
+  font-size: 12px;
+  color: #000;
+  cursor: pointer;
+  user-select: none;
+}
+
+.caca_palavras .grid-letra.grid-letra-fixa{
+  /*color: red;*/
+}
+
+.caca_palavras .canvas-selecao-palavras{
+  position: absolute;
+  border: 2px solid transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.caca_palavras .lista-palavras{
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  background-color: #eee;
+  padding: 5px 10px;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caca_palavras .item-palavra{
+  width: 30%;
+  font-size: 12px;
+  padding: 2px;
+  /*cursor: pointer;*/
+}
+
+.caca_palavras .item-palavra.item-palavra-encontrada{
+  text-decoration: line-through;
+}
+
+.caca_palavras .form-cadastrar-palavra{
+  width: 100%;
+}
