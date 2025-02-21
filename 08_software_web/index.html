@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Software and website development
+    </title>
+
+    
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+
+
+    <!-- Bootstrap -->
+    <!-- <link href="../template/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="../template/css/tecnicos_senac.css" rel="stylesheet">
+    <link href="../template/css/cores.css" rel="stylesheet">
+    <link href="../template/css/modal-100.css" rel="stylesheet">
+    <link href="../template/css/devibeans.min.css" rel="stylesheet">
+      <!--Extras - novas classes para facilitar-->
+      <link rel="stylesheet" href="../template/css/extras.css">
+    <link href="../template/css/sncload.css" rel="stylesheet">
+    <link href="../template/css/magnific-popup.css" rel="stylesheet">
+    
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+         <!--Atividade jogo da memória-->
+         <link rel="stylesheet" href="atividades/jogo_memoria/jogoMemoria.css">
+         <!-- Atividade de verdadeiro ou falso -->
+         <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+         <!--Atividade arrasta e solta-->
+         <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+         <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+         <!--Atividade relacionar colunas-->
+         <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+         <link rel="stylesheet" href="../05_equipments_related/atividades/completar_frases/comp_frases.css">
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/player.css" />
+
+    <!-- css necessario para o print -->
+    <link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="../template/css/print.css" type="text/css" rel="stylesheet">
+    <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet">
+    <!--  bots5 -->
+        <!-- ODAs -->
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_cartas/assets/css/styles.css"> -->
+        <link rel="stylesheet" href="odas/ingles_letters/assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_form/assets/css/styles.css">
+        <link rel="stylesheet" href="odas/ingles_viagens_write_numbers/assets/css/styles.css"> -->
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46914400.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+    <!-- MARCA D´ÁGUA -->
+    <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo">
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+    <header id="topo" class="senac no-print">
+        <div  class="header-tecnicos container">
+        	  <h1 id="nome-curso">Desenvolvimento de Sistemas</h1>
+            <div id="logo-senac"><img src="../template/images/logo-senac.png" alt="logo do senac"></div>
+        </div>
+        <div id="sombra"></div>
+    </header>
+
+    <div id="booklet" class="fundo-tecnicos">
+        <header class="no-print">
+          <!-- BTO IMPRIMIR -->
+          <div class="grupo-imprimir no-print">
+            <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+                <span class="fa fa-print"></span> <span>Imprimir</span>
+            </button>
+          </div>
+          <!-- /BTO IMPRIMIR -->
+        </header>
+<!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+        <section class="paginas">
+
+          <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+          <div class="pagina">
+            <div class="bloco1">
+              <img src="img/header_lateral_1.png" class="floatImg floatLeft" alt="">
+              <img src="img/header_lateral_2.png" class="floatImg floatRig" alt="">
+              <div class="container">
+                <h2>Equipments related to IT
+                </h2>
+                <p>Nesta situação de aprendizagem, você aprenderá a: </p>
+                <ul class="marcador-check">
+                  <li>Revisar o vocabulário relacionado a falhas de computador</li>
+                  <li>Distinguir entre diferentes tipos de falhas: <i>freeze, hang and crash</i></li>
+                  <li>Compreender quais setores podem ajudar em uma empresa</li>
+                  <li>Explorar termos e conceitos relevantes sobre uma postura correta e lesão por esforço repetitivo</li>
+                  <li>Revisar vocabulário de currículo</li>
+                  <li>Manter um currículo atualizado</li>
+                  <li>Falar sobre empregos e entrevistas de emprego</li>
+                  <li>Fazer um <i>roleplay</i> de uma entrevista de emprego</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="bloco2">
+                <img src="img/divisoria.png" class="divisoria" alt="">
+                <div class="container">
+                    <h4>Reviewing contents</h4>
+                </div>
+                    <div class="box-atividade d-none d-lg-block">
+                      <!-- <p class="titulo-ativ"><strong>Arrasta e solta</strong></p> -->
+                      <div id="content-game">
+                          <div class="container-fluid game-body no-print" style="padding:0;">
+                              <div class="row">
+                                  <div id="slots" class="col-12">
+                                      <div class="row">
+                                        <div id="box-oldOffice" class="col-12 col-md-2 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                              <!-- <img src="img/arrasta_box_modern.png" alt=""> -->
+                                                <p>SOFTWARE</p>
+                                            </div>
+                                            <div id="slot-1" class="slot">
+                                              <!-- <img src="img/arrasta_box_old.png" alt=""> -->
+                                            </div>
+                                        </div>
+                                        <div id="box-newOffice" class="col-12 col-md-2 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>HARDWARE</p>
+                                            </div>
+                                        <div id="slot-2" class="slot">
+                                        
+                                        </div>
+                                        </div>
+                                        <div class="col-12 col-md-2 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                              <!-- <img src="img/arrasta_box_modern.png" alt=""> -->
+                                                <p>RESUMÉ</p>
+                                            </div>
+                                            <div id="slot-3" class="slot">
+                                              <!-- <img src="img/arrasta_box_old.png" alt=""> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-2 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>INTERNET</p>
+                                            </div>
+                                        <div id="slot-4" class="slot">
+                                        
+                                        </div>
+                                        </div>
+                                        <div class="col-12 col-md-2 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                              <!-- <img src="img/arrasta_box_modern.png" alt=""> -->
+                                                <p>Electronic Communication System:</p>
+                                            </div>
+                                            <div id="slot-5" class="slot">
+                                              <!-- <img src="img/arrasta_box_old.png" alt=""> -->
+                                            </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div id="cardPile" class="game-itens-container">
+                                      <div id="card-1" class="card" data-target="slot-1">
+                                        <p>program</p>
+                                      </div>
+                                      <div id="card-2" class="card" data-target="slot-1">
+                                        <p>application</p>
+                                      </div>
+                                      <div id="card-3" class="card" data-target="slot-1">
+                                        <p>code</p>
+                                      </div>
+                                      <div id="card-4" class="card"  data-target="slot-1">
+                                        <p>bud</p>
+                                      </div>
+                                      <div id="card-5" class="card" data-target="slot-1">
+                                        <p>update</p>
+                                      </div>
+
+                                      <div id="card-6" class="card" data-target="slot-2">
+                                        <p>CPU</p>
+                                      </div>
+                                      <div id="card-7" class="card" data-target="slot-2">
+                                        <p>hard drive</p>
+                                      </div>
+                                      <div id="card-8" class="card" data-target="slot-2">
+                                        <p>scanner</p>
+                                      </div>
+                                      <div id="card-9" class="card"  data-target="slot-2">
+                                        <p>mouse</p>
+                                      </div>
+                                      <div id="card-10" class="card" data-target="slot-2">
+                                        <p>printer</p>
+                                      </div>
+                                      <div id="card-11" class="card" data-target="slot-3">
+                                        <p>personal information</p>
+                                      </div>
+                                      <div id="card-12" class="card" data-target="slot-3">
+                                        <p>education</p>
+                                      </div>
+                                      <div id="card-13" class="card" data-target="slot-3">
+                                        <p>experience</p>
+                                      </div>
+                                      <div id="card-14" class="card"  data-target="slot-3">
+                                        <p>photo</p>
+                                      </div>
+                                      <div id="card-15" class="card" data-target="slot-3">
+                                        <p>summary</p>
+                                      </div>
+                                      <div id="card-16" class="card" data-target="slot-4">
+                                        <p>world wide web</p>
+                                      </div>
+                                      <div id="card-17" class="card" data-target="slot-4">
+                                        <p>web addresses</p>
+                                      </div>
+                                      <div id="card-18" class="card" data-target="slot-4">
+                                        <p>online</p>
+                                      </div>
+                                      <div id="card-19" class="card"  data-target="slot-4">
+                                        <p>connection</p>
+                                      </div>
+                                      <div id="card-20" class="card" data-target="slot-4">
+                                        <p>information</p>
+                                      </div>
+                                      <div id="card-21" class="card" data-target="slot-5">
+                                        <p>computer</p>
+                                      </div>
+                                      <div id="card-22" class="card" data-target="slot-5">
+                                        <p>smartphone</p>
+                                      </div>
+                                      <div id="card-23" class="card" data-target="slot-5">
+                                        <p>tablet</p>
+                                      </div>
+                                      <div id="card-24" class="card"  data-target="slot-5">
+                                        <p>modem</p>
+                                      </div>
+                                      <div id="card-25" class="card" data-target="slot-5">
+                                        <p>email</p>
+                                      </div>
+
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>                           
+                      
+                      <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Resposta correta</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="row">
+                                          <div class="col-12 col-lg-4">
+                                              <img src="../assets/atividades/arrasta_solta/resposta_pos.svg" class="img-fluid" alt="">
+                                          </div>
+                                          <div class="col-12 col-lg-8">
+                                              <p>Muito bem! Você acertou.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  
+                  
+                      <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-header bg-danger">
+                                      <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Resposta incorreta</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="row">
+                                          <div class="col-12 col-lg-4">
+                                              <img src="../assets/atividades/arrasta_solta/resposta_neg.svg" class="img-fluid" alt="">
+                                          </div>
+                                          <div class="col-12 col-lg-8">
+                                              <p>Ops, tente novamente!</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  
+            </div>
+            <div class="bloco3">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <div class="container">
+                <h3>Software and Hardware failures</h3>
+                <p>Software and hardware can sometimes present failures. Look at the images below and try to guess the name of these errors: <strong>Click to see</strong>:
+                </p>
+                <div class="box-atividade destaque_novo no-print" aria-hidden="true">
+                  <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+                  <p><strong>Did you know that around the world there are different currencies? Look the currencies below and match their names with the pictures. </strong>
+
+                  
+                  
+                  <!-- <div class="container py-4"> -->
+                    <!-- Primeira Instância -->
+                     <br>
+                    <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                    <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                    <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+                    <div class="match-container jogo_crash" data-pairs='[{"left":"1", "right":"a"}, {"left":"2", "right":"b"}, {"left":"3", "right":"c"}, {"left":"4", "right":"d"}, {"left":"5", "right":"e"}, {"left":"6", "right":"f"}]'>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 left-col">
+                                <div class="match-item" data-id="1"><img src="img/flipcard1_1.png" alt=""></div>
+                                <div class="match-item" data-id="2"><img src="img/flipcard1_2.png" alt=""></div>
+                                <div class="match-item" data-id="3"><img src="img/flipcard1_3.png" alt=""></div>
+                                <div class="match-item" data-id="4"><img src="img/flipcard1_4.png" alt=""></div>
+                            </div>
+                            <div class="col-md-6  align-self-center  right-col">
+                              <div class="match-item" data-id="a">freeze</div>
+                              <div class="match-item" data-id="b">crash</div>
+                              <div class="match-item" data-id="c">memory</div>
+                              <div class="match-item" data-id="d">charger</div>
+                            </div>
+                        </div>
+                        <div class="feedback text-center"></div>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-sm btn-warning retry-btn">Tentar Novamente</button>
+                        </div>
+                    </div>
+                 
+                </div>   
+               
+                <div class="box-atividade destaque_novo no-print" aria-hidden="true">
+                    <div class="activity-container">
+                      <div class="mb-3">
+                      <p><strong>Complete the sentences using the passive voice:
+                      </strong></p>
+                      <div class="word-bank" data-words="crash,Hard Drive Failure,Hang,Power Supply Failure,Power Supply Failure,Freeze"></div>
+                      </div>
+                    
+                      <div class="sentences">
+                        <p><strong>Software Failures:
+                        </strong></p>
+                        <p><input type="text" class="blank-input" data-answer="Hang">: When a program doesn't respond.This can happen if the program has a problem with resources or keeps repeating a task endlessly. </p>
+                        <p><input type="text" class="blank-input" data-answer="Crash"> is when a program suddenly stops working. This usually happens because of an error like when the program tries to do something it shouldn't.</p>
+                        <p><input type="text" class="blank-input" data-answer="Freeze">: When the whole computer stops working. This can occur when the computer is using too many resources or if different parts of the computer are not working together well.</p>
+                        <p><strong>Hardware Failures:
+                        </strong></p>
+                        <p><input type="text" class="blank-input" data-answer="Hard Drive Failure">: If the part of the computer that stores information breaks. This can make you lose your files or make the computer not work properly. </p>
+                        <p><input type="text" class="blank-input" data-answer="Memory Error">: If the computer's memory parts don't work right, it can cause problems like crashes or lost data.</p>
+                        <p><input type="text" class="blank-input" data-answer="Power Supply Failure">: When the part of the computer that gives it electricity doesn't work. This can make the computer turn off suddenly.</p>
+                        
+                    
+                      <div class="feedback mt-3"></div>
+                      <button class="btn btn-success check-btn">Verificar</button>
+                      <button class="btn btn-warning reset-btn">Reiniciar</button>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="bloco4">
+              <img src="img/lateral_1.png" class="floatImg floatLeft top1" alt="">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <div class="container">
+                <h3>Asking for help.</h3>
+                <p>Look at the image below and discuss the following questions with a partner:
+                </p>
+                <ul class="dotDefault">
+                  <li><p>Do you know what a call center is?</p></li>
+                  <li><p>Have you ever interacted with a call center representative? If so, how was your experience?</p></li>
+                  <li><p>Have you ever had to wait for an extended period before speaking to a call center representative? How did this impact your perception of the service?</p></li>
+                </ul>
+                
+                <figure class="my-5 no-print">
+                  <img src="img/imagem_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a man getting ready to work.">
+                  <a href="img/imagem_1.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                      <img src="img/imagem_1" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Photograph of a man getting ready to work.">
+                  </a>
+                  <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
+               </figure>
+               <p><strong>You are going to watch a video about April, who has a problem with her computer. Discuss the questions below with your class.</strong></p>
+                <div class="ratio ratio-16x9" style="margin-bottom: 50px;">
+                  <iframe src="https://www.youtube.com/embed/AMm8YH_f9Z0?si=0oxUBF4JNo2X_MSu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="acessivel print">
+                  <p>April: Hello, I'm having trouble with my computer. Can you help me?</p>
+                  <p>Call Center Helper: Of course! I'd be happy to assist you. Could you please tell me what seems to be the problem with your computer?</p>
+                  <p>Caller: Yes, my computer is running slowly, and I keep getting error messages.</p>
+                  <p>Call Center Helper: I see. Let's start by checking your internet connection. Can you confirm if you're connected to the internet?</p>
+                  <p>Caller: Yes, I'm connected.</p>
+                  <p>Call Center Helper: Great. In that case, let's try to check some potential software issues. I'll transfer you to our technical support department, they'll be able to assist you with diagnosing and fixing any software problems. Please hold on while I transfer your call.</p>
+                  <p>[aqui pode aparecer uma cena dividida: a April esperando na ligação e a funcionária transferindo-a. Em seguida, um outro funcionário - que é o funcionário do suporte atende ela].</p>
+                  <p>Technical Support: Hello, this is Technical Support. How can I help you today?</p>
+                  <p>Caller: Hi, I'm experiencing slow performance and error messages on my computer. Can you help me?</p>
+                  <p>Technical Support: Certainly. Let's start by running a diagnostic check on your computer to identify any issues. I'll guide you through the process step by step. Could you please open your computer's settings menu?</p>
+                  <p>April: Sure. </p>
+                  <p>Technical Support: Great. Now, let's navigate to the "System and Security" section and then select "Security and Maintenance." From there, click on "Troubleshoot common computer problems."</p>
+                  <p>What was the last department April was directed to?</p>
+                </div>
+                
+                <div class="box-atividade destaque_novo no-print" aria-hidden="true">
+                  <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+  
+                  
+                  <div class="activity-container">
+                    <div class="mb-3">
+                    <p><strong>Read the definitions below for each department and match them:
+
+                    </strong></p>
+                    <div class="word-bank" data-words="technical support department,networking department,customer service,sales department,hardware department,software department"></div>
+                    </div>
+                  
+                    <div class="sentences">
+                      <p>If your computer has a problem, you can ask for help for the <input type="text" class="blank-input" data-answer="technical support department">.</p>
+                      <p>If it's about your internet, the <input type="text" class="blank-input" data-answer="networking department">.</p>
+                      <p>If you have questions about your bill or account, <input type="text" class="blank-input" data-answer="customer service">.</p>
+                      <p>If you want to purchase any product, the <input type="text" class="blank-input" data-answer="sales department">.</p>
+                      <p>If you have any questions about your devices, you can ask for help for the <input type="text" class="blank-input" data-answer="hardware department">.</p>
+                      <p>If you have any questions about your operating systems, you can ask for help for the <input type="text" class="blank-input" data-answer="software department">.</p>
+                  
+                    <div class="feedback mt-3"></div>
+                    <button class="btn btn-success check-btn">Verificar</button>
+                    <button class="btn btn-warning reset-btn">Reiniciar</button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="bloco5">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt="">   
+              <div class="container">
+                <h3>(h3) Relevant terms in IT issues.
+                </h3>
+                <p>Look at the images below and discuss the following questions with a partner.
+                </p>
+                <div class="row">
+                  <figure class="my-5 col-md-6 no-print">
+                    <img src="img/figura_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a man getting ready to work.">
+                  
+                    <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
+                    
+                <ol style="margin-top: 30px; margin-bottom: 0px;">
+                  <li>Describe the pictures you see. </li>
+                  <li>Are they related? If so, in which situation?</li>
+                  <li>Do you think these situations can be problems in the future?</li>
+                  <li>What other problems can a person who works seated on a chair or with a computer have?</li>
+                </ol>
+                  </figure>
+                  <figure class="my-5 col-md-6 no-print">
+                    <img src="img/figura_2.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a man getting ready to work.">
+                  
+                    <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
+                  </figure>
+                </div>
+                <p>Read the information in the infographic below. Click on each topic to read about some issues that are common in the IT area.
+                </p>
+                <div class="mainbox-infografico2.mainbox-infografico2">
+                  <img src="img/infografico_btn_1.png" data-bs-toggle="modal" data-bs-target="#modal-bt1-painel2" alt=""> 
+                  <img src="img/infografico_btn_2.png" data-bs-toggle="modal" data-bs-target="#modal-bt2-painel2" alt="">
+                  <img src="img/infografico_btn_3.png" data-bs-toggle="modal" data-bs-target="#modal-bt3-painel2" alt="">
+                  <img src="img/infografico_btn_4.png" data-bs-toggle="modal" data-bs-target="#modal-bt4-painel2" alt="">
+                  <img src="img/infografico_btn_5.png" data-bs-toggle="modal" data-bs-target="#modal-bt5-painel2" alt="">
+                  </div> 
+                <div class="modal fade no-print" id="modal-bt1-painel2" tabindex="-1"
+                aria-labelledby="modal-bt1-painel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content no-print">
+                        <div class="modal-header">
+                            <h5 class="modal-title"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">Bloatware</button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Bloatware is extra stuff on your computer that you don't need. It takes up space and slows down your computer. You can get rid of bloatware to make your computer faster.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade no-print" id="modal-bt2-painel2" tabindex="-1"
+                aria-labelledby="modal-bt2-painel1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content no-print">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Correct Posture</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>When you sit at a desk, sit straight with your back on the chair and your feet flat on the floor. This keeps you from getting back pain and keeps your body healthy.
+                          </p>
+                          
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade no-print" id="modal-bt3-painel2" tabindex="-1"
+                aria-labelledby="modal-bt3-painel2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content no-print">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Repetitive Strain Injury (RSI): 
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>RSI happens when you do the same thing over and over again, like typing. It can make your hands and arms hurt. Taking breaks and stretching can help stop RSI.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade no-print" id="modal-bt4-painel2" tabindex="-1"
+                aria-labelledby="modal-bt4-painel2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content no-print">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Short Circuit</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>A short circuit is when wires touch and electricity flows too much. It can start a fire. Make sure your cords are okay to avoid short circuits.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade no-print" id="modal-bt5-painel2" tabindex="-1"
+                aria-labelledby="modal-bt5-painel2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content no-print">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Toner Cartridge Care</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Toner cartridges make printer ink. Keep them in a cool, dry place out of the sun. Before using them, shake them to spread the ink.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                
+                <div class="box-atividade  caixa-destaque destaque_novo no-print" aria-hidden="true">
+                  <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+                  <p class="titulo-ativ"><strong>After reading the infographic,decide if the statements below are True or False.</strong></p>
+                 
+                  <div class="esquemaDaBru verdadeiro-falso">
+                      <p class="enunciado" tabindex="0">Bloatware is necessary for optimal computer performance.
+                      </p>
+                      <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                          <button class="alt-e botao hvr-grow-shadow">True</button>
+                          <button class="alt-c botao hvr-grow-shadow">False</button>
+                      </div>
+                      <div class="feedbacks">
+                          <p class="f-positivo"><i
+                                  class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                          <p class="f-negativo"><i
+                                  class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                      </div>
+                  </div>
+                  <div class="esquemaDaBru verdadeiro-falso">
+                      <p class="enunciado" tabindex="0">Relaxing your body while sitting at a desk is beneficial for spinal health.  </p>
+                      <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                          <button class="alt-e botao hvr-grow-shadow">True</button>
+                          <button class="alt-c botao hvr-grow-shadow">False</button>
+                      </div>
+                      <div class="feedbacks">
+                          <p class="f-positivo"><i
+                                  class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                          <p class="f-negativo"><i
+                                  class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                      </div>
+                  </div>
+                  <div class="esquemaDaBru verdadeiro-falso">
+                      <p class="enunciado" tabindex="0">Taking breaks and stretching can help prevent RSI. </p>
+                      <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                          <button class="alt-c botao hvr-grow-shadow">True</button>
+                          <button class="alt-e botao hvr-grow-shadow">False</button>
+                      </div>
+                      <div class="feedbacks">
+                          <p class="f-positivo"><i
+                                  class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                          <p class="f-negativo"><i
+                                  class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                      </div>
+                  </div>
+                  <div class="esquemaDaBru verdadeiro-falso">
+                      <p class="enunciado" tabindex="0">Short circuits can occur when wires touch and electricity flows too much. 
+                      </p>
+                      <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                          <button class="alt-c botao hvr-grow-shadow">True</button>
+                          <button class="alt-e botao hvr-grow-shadow">False</button>
+                      </div>
+                      <div class="feedbacks">
+                          <p class="f-positivo"><i
+                                  class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                          <p class="f-negativo"><i
+                                  class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                      </div>
+                  </div>
+                  <div class="esquemaDaBru verdadeiro-falso">
+                      <p class="enunciado" tabindex="0">Toner cartridges should be stored in direct sunlight to maintain ink quality. </p>
+                      <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                          <button class="alt-e botao hvr-grow-shadow">True</button>
+                          <button class="alt-c botao hvr-grow-shadow">False</button>
+                      </div>
+                      <div class="feedbacks">
+                          <p class="f-positivo"><i
+                                  class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                          <p class="f-negativo"><i
+                                  class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                      </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="bloco6">
+              
+              <img src="img/lateral_2.png" class="floatImg floatRig top2" alt="">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <div class="container">
+                <h3>The importance of a resume</h3>
+                
+                <figure class="my-5 no-print">
+                  <img src="img/figura_3.png" style="width:100%;max-width: 700px; margin: auto;" class="d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a man getting ready to work.">
+                  <a href="img/figura_3.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                      <img src="img/figura_3.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Photograph of a man getting ready to work.">
+                  </a>
+                  <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
+              </figure>
+
+              <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard2_1.png" alt="portrait.">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard2_1_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard2_2.png" alt="Illustration of a personal information.">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard2_2_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard2_3.png" alt="education.">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard2_3_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard2_4.png" alt="experience">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard2_4_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard2_5.png" alt="summary">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard2_5_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <p>
+                <strong>Now that you know some important elements of a resumé, read and analyze both resumés below. After, answer the following questions:</strong>
+            </p>
+              <ul class="dotDefault">
+                <li><p>Which resumé contains more detailed information?</p>
+                </li>
+              </ul>
+              <div class="box-atividade destaque_novo no-print" aria-hidden="true">
+                <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+                <div class="row">
+                <div class="col">
+                  <p><strong>Resume 1:</strong></p>
+                  <p>John Smith 123 Main Street, Anytown, USA Phone: (555) 555-5555 | Email: johnsmith@email.com</p>
+                  <p>Objective: Highly motivated and experienced IT professional with over 8 years of experience in software development and project management. Seeking a challenging role as a Senior Software Engineer where I can show my technical expertise and leadership skills to drive innovation and deliver high-quality solutions.</p>
+                  <p>Education: Bachelor of Science in Computer Science XYZ University, Anytown, USA Graduated: May 2014</p>
+                  <p>Software Developer DEF Solutions, Anytown, USA August 2014 - June 2017</p>
+                  <ul class="dotDefault">
+                    <li><p>Resolved complex technical issues and provided technical guidance to junior developers.</p></li>
+                  </ul>
+                  <p>Skills:</p>
+                  <ul class="dotDefault">
+                    <li><p>Programming Languages: Java, JavaScript, SQL</p></li>
+                    <li><p> Hibernate, RESTful APIs</p></li>
+                    <li><p>Project Management: Agile, Scrum, JIRA</p></li>
+                    <li><p>Database Management</p></li>
+                  </ul>
+                  <p>Certifications:</p>
+                  <ul class="dotDefault">
+                    <li><p>Certified Scrum Master (CSM)</p></li>
+                    <li><p>AWS Certified Developer - Associate</p></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <p><strong>Resume 2:</strong></p>
+                  <p> John Smith 123 Main Street 555-555-5555 johnsmith@email.com</p>
+                  <p> Objective: I want a job in IT.</p>
+                  <p> Education: I graduated from XYZ University in 2014.</p>
+                  <p> Experience: I worked as a software engineer.</p>
+                  <p> Skills: I know Java, JavaScript, and SQL.</p>
+                  <p> Certifications: I have some.</p>
+                </div>
+
+                </div>
+              
+              </div>
+
+
+
+              </div>
+            </div>
+            <div class="bloco7">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt=""> 
+              <div class="container">
+                <h3>A job interview</h3>
+                <p><strong>Read the questions about CVs and share your opinion:</strong></p>
+                <ul class="dotDefault">
+                  <li><p>What is a CV?</p></li>
+                  <li><p>In your opinion, what are the main components of a CV?</p></li>
+                  <li><p>How often should you update your CV?</p></li>
+                  <li><p>Can you give one example of a topic that is commonly written on a CV?</p></li>
+                  <li><p>According to the two CVs seen before, which one would you choose to get motivated to write your own?</p></li>
+                </ul>
+                <p><strong>Click on the cards below.</strong></p>
+                <p>Choose a card and describe the occupation depicted on it without saying its information to your partner. Your partner must choose another card to describe for you.
+                </p>
+                <p>Now, look at the image below and answer the following questions:
+                </p>
+                <ul class="dotDefault">
+                  <li><p>What are they doing?</p></li>
+                  <li><p>Have you ever been in a similar situation?</p></li>
+                  <li><p>Share your previous experiences in job interviews.</p></li>
+                </ul>
+                
+              <div class="d-flex flex-wrap justify-content-around no-print" style="margin-bottom: 110px;" aria-hidden="true">
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard3_1.png" alt="portrait.">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard3_1_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard3_2.png" alt="Illustration of a personal information.">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard3_2_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard3_3.png" alt="education.">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard3_3_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard3_4.png" alt="experience">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard3_4_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard3_5.png" alt="summary">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard3_5_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/flipcard3_6.png" alt="summary">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/flipcard3_6_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="bg-podcast2">
+                <div class="bg-podcast no-print audio">
+                  <div class="d-flex justify-content-center flex-column align-items-center">
+                      <div class="audio-player no-print">
+                          <audio>
+                              <source src="audio/TDS_UC07_SITUACAO 1_SENHAS_E_SEGURANCA.mp3" type="audio/mpeg">
+                          </audio>
+                          <div class="row">
+                              <div class="timestamp">00:00 | 00:00</div>
+                              <div class="barra">
+                                  <input type="range" value="0" max="4140" step="any">
+                              </div>
+                              <div class="botoes">
+                                  <button title="Tocar" class="btn-play btn-player"></button>
+                                  <button title="Pause" class="btn-pause btn-player"></button>
+                                  <button title="Transcrição" data-bs-toggle="modal"
+                                      data-bs-target="#modal-transcricao-audio2"
+                                      class="btn-transcricao btn-player"></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                    </div>
+                <div class="acessivel">
+                  <p>Interviewer: Hello, welcome! Thank you for coming in today. Please have a seat.</p>
+                  <p>Candidate: Thank you for having me. I'm excited to be here.</p>
+                  <p>Interviewer: Let's start by having you tell me a little about yourself and why you're interested in this position.</p>
+                  <p>Candidate: I just finished college in administration, and I'm looking for a job where I can use my skills in organizing and helping people. I think being an administrative assistant would be perfect for me.</p>
+                  <p>Interviewer: That's great to hear. Can you give me an example of a time when you had to do a few things at once, and how you managed it?</p>
+                  <p>Candidate: Yes, once during a college project, I had to write a report and make a presentation at the same time. I made a list of what I needed to do and worked on one thing at a time until I finished them both.</p>
+                  <p>Interviewer: How do you deal with things when they're busy or when you need to finish something quickly?</p>
+                  <p>Candidate: I try to stay calm and do one thing at a time. I ask for help if I need it, and I always try to let people know if there's a problem or if I need more time.</p>
+                  <p>Interviewer: That's good to know. Now, can you tell me about your experience using computers, like Microsoft Word or Excel?</p>
+                  <p>Candidate: I've used Word and Excel before for school projects. I can write documents and make tables in Excel. I'm still learning, but I'm getting better at it.</p>
+                  <p>Interviewer: That's good to hear. Finally, do you have any questions for me about the company or the job?</p>
+                  <p>Candidate: Yes, I was wondering what it's like to work here and if there are chances to learn new things and get better at my job.</p>
+                  <p>Interviewer: We have a friendly team here, and we like to help each other out. We also have training sessions sometimes to help people improve their skills.</p>
+                  <p>Candidate: That sounds great. Thank you for telling me.</p>
+                  <p>Interviewer: Thank you for coming in today. We'll be in touch soon to let you know what happens next.</p>
+                  <p>Candidate: Thank you. I hope to hear from you soon.</p>
+                  <p>[Os dois se levantam, dão um aperto de mão e a entrevista se encerra]</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="bloco8">
+              <img src="img/divisoria.png" class="divisoria" alt="">     
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt=""> 
+              <div class="container">
+                <p><strong>Imagine you are on a job interview. You and your classmate are going to interview each other. Think of good sentences to answer the questions that are going to be asked. Change turns when you finish answering. Write down the information you hear and then present to your class.
+                </strong></p>
+                
+                <figure class="my-5 col-md-6 no-print" style="margin: 0 auto;">
+                  <img src="img/imagem_2.png" class="img-fluid d-block mx-auto p-2 radius" alt="Illustration of two people in a job interview.
+                  ">
+                  <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
+                </figure>
+                <div class="caixa-destaque caixa-destaque2 icone-pergunta2">
+                  <p>QUESTIONS:</p>
+                  <ul class="dotDefault">
+                    <li>What is your full name?</li>
+                    <li>How old are you?</li>
+                    <li>Why do you want this job?</li>
+                    <li>What experiences do you have for this job?</li>
+                    <li>Are you an organized person? Can you give examples of it?</li>
+                    <li>Do you enjoy working as part of a team or do you prefer working individually?</li>
+                    <li>Do you have good computer skills? Can you give some examples?</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </section>
+<!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+        <footer class="text-center no-print">
+          <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+        </footer>
+
+      </div>
+
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal-ODBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">ODBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>ODBC</b>, ou Open Database Connectivity, é um conjunto de classes-modelo para conexão disponível em qualquer linguagem de programação, diferindo-se da JDBC, que é exclusiva para Java.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-JDBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">JDBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>JDBC</b>, ou Java EE Database Connectivity, é uma <b>API (<i>application programming interfaces</i>) que possibilita a interação do código Java com um banco de dados</b>, na qual as instruções SQL são executadas por meio de um <i>driver</i>, composto por um grupo de classes e interfaces desenvolvido em Java. Esse processo possibilita a execução de instruções SQLs que se conectarão com a base de dados, permitindo a manipulação dos valores.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+<!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+<div class="ico-div-loader">
+	<img src="../template/images/atencao.png">
+    <img src="../template/images/bg-content.jpg">
+    <img src="../template/images/bg-topo.jpg">
+    <img src="../template/images/black-zoom-in-256.png">
+    <img src="../template/images/concluindo.png">
+    <img src="../template/images/curtir.png">
+    <img src="../template/images/desafio.png">
+    <img src="../template/images/dica.png">
+    <img src="../template/images/doc.png">
+    <img src="../template/images/fundamental.png">
+    <img src="../template/images/icon-03.png">
+    <img src="../template/images/importante.png">
+    <img src="../template/images/lightbulb.png">
+    <img src="../template/images/link.png">
+    <img src="../template/images/link_pdf_hover.png">
+    <img src="../template/images/link_pdf_normal.png">
+    <img src="../template/images/logo-senac.png">
+    <img src="../template/images/mark-icon.png">
+    <img src="../template/images/mark-icon02.png">
+    <img src="../template/images/midia.png">
+    <img src="../template/images/monitor.png">
+    <img src="../template/images/nao_curtir.png">
+    <img src="../template/images/pergunta.png">
+    <img src="../template/images/pesquisa.png">
+    <img src="../template/images/play.png">
+    <img src="../template/images/radio_flat.png">
+    <img src="../template/images/refletir.png">
+    <img src="../template/images/saiba_mais.png">
+    <img src="../template/images/senac_loader.png">
+    <img src="../template/images/tanamidia.png">
+    <img src="../template/images/transcricao.png">
+    <img src="../template/images/transcricao_small.png">
+    <img src="../template/images/tv.png">
+    <img src="../template/images/tv_bottom.png">
+    <img src="../template/images/zoom.png">
+    <img src="../template/images/zoom_ie.cur">
+    <img src="../template/images/zoom_ie.png">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+</div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="../template/js/jquery.min.js"></script>
+<script src="../template/js/bootstrap.min.js"></script> -->
+<script src="../template/js/jquery.magnific-popup.min.js"></script>
+<script src="../template/js/print.js"></script>
+<script src="../template/js/template.config.js"></script>
+<script src="../template/js/images.loader.js"></script>
+<script src="../template/js/highlight.min.js"></script>
+<!-- bts5 -->
+
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="../assets/atividades/perguntas/perguntas.js"></script>
+        <!--Atividade arrasta e solta-->
+        <script src='atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+
+        <script src="../05_equipments_related/atividades/completar_frases/comp_frases.js"></script>
+        
+        <!--Atividade de jogo da memória-->
+        <script src="atividades/jogo_memoria/jogoMemoria.js"></script>
+<noscript>
+  <style media="screen">
+    .over-loader { display: none;}    
+  </style>
+</noscript>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+	//inicializa zoom na imagem
+	
+	//inicializa popover
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+	//inicializa tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+
+  $(function() {
+    $(".card").click(function() {
+      if ($(this).hasClass("exibe-frente")) {
+        $(this)
+          .children()
+          .first()
+          .hide();
+        $(this)
+          .children()
+          .last()
+          .show();
+        $(this).removeClass("exibe-frente");
+      } else {
+        $(".card .verso").hide();
+        $(".card .frente").show();
+        $(this).addClass("exibe-frente");
+      }
+    });
+  });
+
+  $( document ).ready(function() {
+    $(".card .verso").hide();
+  });
+
+
+
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += ' js';
+
+  function boxTop(idBox) {
+    var boxOffset = $(idBox).offset().top;
+    return boxOffset;
+  }
+
+  $(document).ready(function() {
+    $('.botaoCheck').click(function(){
+      $(this).addClass('visitado');
+    });
+    var $target = $('.animeStart'),
+        $target2 = $('.animeStop'),
+        targetBox = $('.box'),
+        animationClass = 'anime-init',
+        windowHeight = $(window).height(),
+        offset = windowHeight - (windowHeight / 4);
+
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+      $target.each(function() {
+        if (documentTop > boxTop(this) - offset) {
+          targetBox.addClass(animationClass);
+        } else {
+          targetBox.removeClass(animationClass);
+        }
+        if (documentTop > boxTop($target2) - offset) {
+          targetBox.removeClass(animationClass);
+        } 
+      });
+    }
+    animeScroll();
+
+    $(document).scroll(function() {
+      animeScroll();
+    });
+  });
+
+
+</script>
+
+        <!-- ODAS -->
+        <!-- <script src="odas/ingles_viagens_cartas/assets/js/scripts.js"></script> -->
+        <script src="odas/ingles_letters/assets/js/script.js"></script>
+        <!-- <script src="odas/ingles_viagens_form/assets/js/script.js"></script> -->
+        <!-- <script src="odas/ingles_viagens_write_numbers/assets/js/script.js"></script> -->
+         
+  <script>
+    // Função principal para drag and drop
+    document.addEventListener('DOMContentLoaded', () => {
+      const draggables = document.querySelectorAll('.draggable');
+      const dropzones = document.querySelectorAll('.dropzone');
+
+      let draggedElement = null;
+
+      // Adiciona eventos aos elementos arrastáveis
+      draggables.forEach(draggable => {
+        draggable.addEventListener('dragstart', () => {
+          draggedElement = draggable;
+          draggable.classList.add('dragging');
+        });
+
+        draggable.addEventListener('dragend', () => {
+          draggable.classList.remove('dragging');
+          draggedElement = null;
+        });
+      });
+
+      // Adiciona eventos às áreas de destino
+      dropzones.forEach(dropzone => {
+        dropzone.addEventListener('dragover', e => {
+          e.preventDefault();
+        });
+
+        dropzone.addEventListener('drop', e => {
+          e.preventDefault();
+
+          if (!draggedElement) return;
+
+          const currentPrice = dropzone.querySelector('.price');
+          const draggedPrice = draggedElement.dataset.price;
+
+          // Verifica se há um preço na imagem de destino
+          if (currentPrice.textContent) {
+            // Troca os preços entre as imagens
+            const tempPrice = currentPrice.textContent;
+            currentPrice.textContent = draggedPrice;
+
+            // Se o elemento arrastado veio de outra imagem, atualiza o preço lá
+            if (draggedElement.parentElement.classList.contains('dropzone')) {
+              const originalDropzone = draggedElement.parentElement;
+              const originalPrice = originalDropzone.querySelector('.price');
+              originalPrice.textContent = tempPrice;
+            } else {
+              // Se o elemento arrastado veio da lista de preços, remove-o
+            //   draggedElement.remove();
+            }
+          } else {
+            // Se não houver preço na imagem de destino, apenas adiciona o preço
+            currentPrice.textContent = draggedPrice;
+
+            // Remove o preço da lista de preços, se aplicável
+            if (!draggedElement.parentElement.classList.contains('dropzone')) {
+            //   draggedElement.remove();
+            }
+          }
+        });
+      });
+    });
+  </script>
+<script>
+  var scriptElem=document.createElement("script");
+  scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+  scriptElem.charset="UTF-8",
+  scriptElem.onload=function(){
+        window.ht = new HT({
+            token:"bf5b7efb148a829a126a0e0c9fd533bf",
+            align:"top",
+            videoEnabled: true,
+            ytEmbedReplace: true,           
+            mobileConfig:{align:"right",
+                          actionsAlign:"top",
+                          customButtonStyle:{
+                                borderRadius:"6px",
+                                size:"38px",
+                                horizontalMargin:"13px",
+                                bottomMargin:"140px",
+                                rightMargin:"40px"}
+                          }
+          });        
+      $('.ht-skip').attr("aria-hidden","true")
+    },
+  document.body.appendChild(scriptElem);
+</script>

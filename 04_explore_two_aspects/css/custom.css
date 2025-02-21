@@ -117,7 +117,8 @@ ul.dotDefault li::marker{
 .bloco9, 
 .bloco10, 
 .bloco11,
-.bloco12{
+.bloco12,
+.bloco13{
   position: relative;
   padding-top: 50px;
   padding-bottom: 80px;
@@ -139,7 +140,7 @@ ul.dotDefault li::marker{
   /* background: rgb(228,240,255); */
   /* background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(158,181,204,1) 100%); */
 }
-.bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
+.bloco3,.bloco5,.bloco7,.bloco9,.bloco11,.bloco13{
   background-color: #DCE6F5;
 
 }
@@ -401,10 +402,11 @@ ul.dotDefault li::marker{
   right: 0;
   top: -80px;
   margin-left: 5%;
+  z-index: 1;
 }
 .cartaMemoria {
-  height: 197px !important;
-  width: 313px !important;
+  /* height: 197px !important;
+  width: 313px !important; */
 }
 .destaque_novo{
   position: relative;
@@ -427,7 +429,19 @@ ul.dotDefault li::marker{
   left: -35px;
   bottom: 0;
 }
-.tabelaCorCurso tr{ border: 2px solid #4A74C1;}
+
+.tabelaCorCurso tr, .tabelaCorCurso th{ border: 2px solid #4A74C1;}
+.tabelaCorCurso td{ border: 1px solid #4A74C1;}
+.tabelaCorCurso th{ text-align: center;}
+.tabelaCorCurso{ background-color: #fff; border-radius: 10px;}
+
+.flip-card{
+  width: 280px;
+  height: 298px;
+}
+.flip-card  img{
+  width: 95%;
+}
 /* questoes bru */
 .multipla-escolha button::before {
   color: black;
@@ -532,6 +546,60 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #74A9D8;
+}
+.mainbox-infografico, .mainbox-infografico2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mainbox-infografico img, .mainbox-infografico2 img{ transition: all ease-in-out 0.150s; cursor: pointer; margin: 0px 20px 50px 20px;}
+.mainbox-infografico img:hover, .mainbox-infografico2 img:hover{ transform: scale(1.1);}
+.mainbox-infografico2{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.match-container {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.match-item {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.match-item img{ max-width: 100%;}
+.match-item.selected {
+  background-color: #e9ecef;
+}
+
+.match-item.correct {
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+}
+
+.match-item.incorrect {
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+}
+
+.feedback {
+  min-height: 25px;
+  margin-top: 10px;
+}
+
+.jogo_problemas .left-col .match-item{
+  position: relative;
+    width: 45%;
+    display: inline-block;
+    margin: 1px 10px;
+    border: none;
 }
 @media screen and (max-width: 1480px){
   .top1{width: 10%;}

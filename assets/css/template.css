@@ -512,6 +512,7 @@ tbody td:first-child{border-left: 0;}
     background: #fff;
     color: #000;
 }
+
 /* blocos modal*/
 .bloco3 .modal-body,.bloco5 .modal-body,.bloco7 .modal-body,.bloco9 .modal-body,.bloco11 .modal-body{
     color: black;

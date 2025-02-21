@@ -1,0 +1,46 @@
+.match-container {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.match-item {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.match-item img{ max-width: 100%;}
+.match-item.selected {
+  background-color: #e9ecef;
+}
+
+.match-item.correct {
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+}
+
+.match-item.incorrect {
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+}
+
+.feedback {
+  min-height: 25px;
+  margin-top: 10px;
+}
+/* .jogo_moedas .left-col .match-item{
+  position: relative;
+  width: 50%;
+  display: inline-block;
+  border: none;
+}
+.jogo_crash .left-col .match-item{
+  position: relative;
+  width: 49%;
+  display: inline-block;
+  border: none;
+} */

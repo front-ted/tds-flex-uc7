@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Software development and websites</title>
+
+    
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+
+
+    <!-- Bootstrap -->
+    <!-- <link href="../template/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="../template/css/tecnicos_senac.css" rel="stylesheet">
+    <link href="../template/css/cores.css" rel="stylesheet">
+    <link href="../template/css/modal-100.css" rel="stylesheet">
+    <link href="../template/css/devibeans.min.css" rel="stylesheet">
+      <!--Extras - novas classes para facilitar-->
+      <link rel="stylesheet" href="../template/css/extras.css">
+    <link href="../template/css/sncload.css" rel="stylesheet">
+    <link href="../template/css/magnific-popup.css" rel="stylesheet">
+    
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+         <!--Atividade jogo da memória-->
+         <link rel="stylesheet" href="atividades/jogo_memoria/jogoMemoria.css">
+         <!-- Atividade de verdadeiro ou falso -->
+         <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+         <!--Atividade arrasta e solta-->
+         <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+         <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+         <!--Atividade relacionar colunas-->
+         <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+         <link rel="stylesheet" href="../05_equipments_related/atividades/completar_frases/comp_frases.css">
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/player.css" />
+
+    <!-- css necessario para o print -->
+    <link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="../template/css/print.css" type="text/css" rel="stylesheet">
+    <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet">
+    <!--  bots5 -->
+        <!-- ODAs -->
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_cartas/assets/css/styles.css"> -->
+        <link rel="stylesheet" href="odas/ingles_letters/assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_form/assets/css/styles.css">
+        <link rel="stylesheet" href="odas/ingles_viagens_write_numbers/assets/css/styles.css"> -->
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46914400.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+    <!-- MARCA D´ÁGUA -->
+    <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo">
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+    <header id="topo" class="senac no-print">
+        <div  class="header-tecnicos container">
+        	  <h1 id="nome-curso">Desenvolvimento de Sistemas</h1>
+            <div id="logo-senac"><img src="../template/images/logo-senac.png" alt="logo do senac"></div>
+        </div>
+        <div id="sombra"></div>
+    </header>
+
+    <div id="booklet" class="fundo-tecnicos">
+        <header class="no-print">
+          <!-- BTO IMPRIMIR -->
+          <div class="grupo-imprimir no-print">
+            <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+                <span class="fa fa-print"></span> <span>Imprimir</span>
+            </button>
+          </div>
+          <!-- /BTO IMPRIMIR -->
+        </header>
+<!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+        <section class="paginas">
+
+          <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+          <div class="pagina">
+            <div class="bloco1">
+              <img src="img/header_lateral_1.png" class="floatImg floatLeft" alt="">
+              <img src="img/header_lateral_2.png" class="floatImg floatRig" alt="">
+              <div class="container">
+                <h2>Equipments related to IT
+                </h2>
+                <p>Nesta situação de aprendizagem, você aprenderá a: </p>
+                <ul class="marcador-check">
+                  <li>Planejar o processo de escrita de <i>software</i> e desenvolvimento de <i>websites</i></li>
+                  <li>Conhecer os aspectos fundamentais da arquitetura de <i>websites</i> e do processo de desenvolvimento de <i>websites</i></li>
+                  <li>Explorar os elementos comuns encontrados na maioria dos <i>sites</i> e entender a importância de criar uma estrutura de navegação intuitiva para os usuários</li>
+                  <li>Conhecer conceitos básicos de programação e a importância das variáveis em qualquer linguagem de programação</li>
+                  <li>Identificar os conceitos de gerenciamento de projetos no desenvolvimento de <i>software</i></li>
+                  <li>Descrever um projeto de desenvolvimento de <i>website</i></li>
+                  <li>Utilizar a gramática da voz passiva</li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="bloco2">
+                <img src="img/divisoria.png" class="divisoria" alt="">
+                <div class="container">
+                    <h4>Software development and websites</h4>
+                    <ul class="dotDefault">
+                      <li><p>What can you see in the picture?</p></li>
+                      <li><p>What are your previous experiences in the IT area? Have you worked with it before?</p></li>
+                      <li><p>You are going to play two truths and a lie. Think of situations that happened in your journey with IT. Make three sentences, two must be true and one must be false.</p></li>
+                      <li><p>Share the sentences with the big group. Your classmates need to guess which of your sentences are true, and which one is false.</p></li>
+                    </ul>
+                    <figure class="my-5 no-print">
+                        <img src="img/figura_1.png" class="d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a man getting ready to work.">
+                        <a href="img/figura_1.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                            <img src="img/figura_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Photograph of a man getting ready to work.">
+                        </a>
+                        <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
+                    </figure>
+                  </div>
+            </div>
+            <div class="bloco3">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <div class="container">
+                <h3>Initial stages of software writing</h3>
+                <p></p>
+                <ul class="dotDefault">
+                  <li><p>How many logos can you see? Do you know all their names?</p></li>
+                  <li><p>Can you share your experiences with software or websites?</p></li>
+                  <li><p>What software/websites do you use?</p></li>
+                  <li><p>Do you know what the initial stages of making a software writing process are? </p></li>
+                </ul>
+
+                <figure class="my-5 no-print">
+                  <img src="img/figura_2.png" class="d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a man getting ready to work.">
+                  <a href="img/figura_2.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                      <img src="img/figura_2.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Photograph of a man getting ready to work.">
+                  </a>
+                  <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>
+              </figure>
+              <p><strong>You are going to learn about the initial stages of software writing and website development processes. Read the headlines in the chart and write them in the blank spaces according to the given information. 
+              </strong></p>
+              
+              <div class="box-atividade destaque_novo no-print" aria-hidden="true">
+                <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+
+                
+              <div class="activity-container bigWords">
+                <div class="mb-3">
+                  <p><strong>According to the information you read, you are going to see three different logos of videoconference options. Each logo represents a service mentioned before: telepresence rooms, videophones or internet-based services. Look at the names of the logos and write the names of the videoconference options on it. Don’t forget to check if you are correct:
+                  </strong></p>
+                  <div class="word-bank" data-words="Find the People Involved,Make sure it's right,Decide what's most important,Ask what's needed,Get everyone to agree,Write down what's needed"></div>
+                </div>
+                
+                <div class="sentences">
+                  <p><input type="text" class="blank-input" data-answer="Find the People Involved">: First, figure out who's involved in the project. This includes clients, people who will use the software or website, managers, developers, and anyone else who's important.
+                  </p>
+                  <p><input type="text" class="blank-input" data-answer="Make sure it's right">: Talk to these people to find out what they want the software or website to do. You can do this by talking to them, sending out surveys, or having meetings.
+                  </p>
+                  <p><input type="text" class="blank-input" data-answer="Decide what's most important">:  Not everything people want is equally important. Decide which things are most urgent or have the biggest impact.
+                  </p>
+                  <p><input type="text" class="blank-input" data-answer="Ask what's needed">: Put all the important stuff in a document. This document lays out what the software or website needs to do in a clear and organized way. 
+                  </p>
+                  <p><input type="text" class="blank-input" data-answer="Get everyone to agree">: Show the document to the people involved to make sure it covers everything they want.
+                  </p>
+                  <p><input type="text" class="blank-input" data-answer="Write down what's needed">: Once everyone's happy with the document, get them to officially agree to it. This sets the plan for the project and gives a clear direction for what comes next. 
+                  </p>
+                   
+                
+                  <div class="feedback mt-3"></div>
+                  <button class="btn btn-success check-btn">Verificar</button>
+                  <button class="btn btn-warning reset-btn">Reiniciar</button>
+                </div>
+              </div>
+              
+                <div class="box-atividade  caixa-destaque destaque_novo no-print" aria-hidden="true">
+                <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+                <p class="titulo-ativ"><strong>True or false: you are going to play a true or false game according to the information read in the text before. Read the sentences and click on the options: 
+
+                </strong></p>
+               
+                <div class="esquemaDaBru verdadeiro-falso">
+                    <p class="enunciado" tabindex="0">Find the people involved is the first step of a software writing </p>
+                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                        <button class="alt-c botao hvr-grow-shadow">True</button>
+                        <button class="alt-e botao hvr-grow-shadow">False</button>
+                    </div>
+                    <div class="feedbacks">
+                        <p class="f-positivo"><i
+                                class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                        <p class="f-negativo"><i
+                                class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                    </div>
+                </div>
+                <div class="esquemaDaBru verdadeiro-falso">
+                    <p class="enunciado" tabindex="0">Ask what's needed is the third step of a software writing </p>
+                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                        <button class="alt-e botao hvr-grow-shadow">True</button>
+                        <button class="alt-c botao hvr-grow-shadow">False</button>
+                    </div>
+                    <div class="feedbacks">
+                        <p class="f-positivo"><i
+                                class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                        <p class="f-negativo"><i
+                                class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                    </div>
+                </div>
+                <div class="esquemaDaBru verdadeiro-falso">
+                    <p class="enunciado" tabindex="0">Write down what's needed is putting all the important information in a document. </p>
+                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                        <button class="alt-c botao hvr-grow-shadow">True</button>
+                        <button class="alt-e botao hvr-grow-shadow">False</button>
+                    </div>
+                    <div class="feedbacks">
+                        <p class="f-positivo"><i
+                                class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                        <p class="f-negativo"><i
+                                class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                    </div>
+                </div>
+                <div class="esquemaDaBru verdadeiro-falso">
+                    <p class="enunciado" tabindex="0">Show the document to the people involved is the same thing as to make sure the information is right.</p>
+                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                        <button class="alt-c botao hvr-grow-shadow">True</button>
+                        <button class="alt-e botao hvr-grow-shadow">False</button>
+                    </div>
+                    <div class="feedbacks">
+                        <p class="f-positivo"><i
+                                class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                        <p class="f-negativo"><i
+                                class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                    </div>
+                </div>
+                <div class="esquemaDaBru verdadeiro-falso">
+                    <p class="enunciado" tabindex="0">Get everyone to agree is the fourth step of a software writing </p>
+                    <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                        <button class="alt-e botao hvr-grow-shadow">True</button>
+                        <button class="alt-c botao hvr-grow-shadow">False</button>
+                    </div>
+                    <div class="feedbacks">
+                        <p class="f-positivo"><i
+                                class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                        <p class="f-negativo"><i
+                                class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                    </div>
+                </div>
+              </div>
+
+           
+          </div>   
+                
+
+              </div>
+            </div>
+            <div class="bloco4">
+              <img src="img/lateral_1.png" class="floatImg floatLeft top1" alt="">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <div class="container">
+                <h3>Website architecture and the website development process</h3>
+                <p>Think of websites that start with the following letters:</p>
+                <p>A: _____________________                             H: _________________________</p>
+                <p></p>
+                <p>G: ____________________                               N: _________________________</p>
+                <p>What websites do you use most?</p>
+                <p>Look at some elements from a website. Do you know all of them?</p>
+                <p>In pairs or in groups, choose a website and present the elements you see.</p>
+                <p>Logo / social media icons / about us / menu</p>
+                <p></p>
+                <p>Read the dialogue and check in the box below the words you see:</p>
+                <p>(    ) website architecture    (    ) schedule          (    ) navigation</p>
+                <p>(    ) design the layout         (    ) internet            (    ) connected</p>
+                
+                <div class="row">
+                  <div class="col-12 col-md-6 mautos">
+                      <!-- <h3>Where are you from?</h3> -->
+                      <div class="d-flex">
+                          <!-- <p>Read and listen to the dialogue below.</p> -->
+                          <!-- <div class="audio-player no-print mb-5 audio1">
+                              <audio>
+                                  <source src="audios/unit1-audio1.mp3" type="audio/mpeg">
+                              </audio>
+                              <button title="Tocar" class="btn-play btn-player"></button>
+                              <button title="Pause" class="btn-pause btn-player"></button>
+                          </div> -->
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">Matthew: Hi there! Do you know about making websites?
+                            <p>
+                          </p></div>
+                          <img src="img/ico_mathew.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/ico_andrew.png" class="img-fluid">
+                          <div class="balao-esq">Andrew: Not much, just a bit. What do you want to know?
+                            <p>
+                          </p></div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">Matthew: Well, I heard about website architecture. What's that?
+                            <p>
+                          </p></div>
+                          <img src="img/ico_mathew.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/ico_andrew.png" class="img-fluid">
+                          <div class="balao-esq">Andrew: Website architecture is how everything is organized and connected.
+                            <p>
+                          </p></div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">Matthew: Ah, I see. So, how do we start building a website?
+                            <p>
+                          </p>
+                          </div>
+                          <img src="img/ico_mathew.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/ico_andrew.png" class="img-fluid">
+                          <div class="balao-esq">Andrew: First, we plan what pages we need and what each page should do. Then, we design the layout and decide where everything goes.
+                            <p>
+                          </p>
+
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">Matthew: That sounds important. But why is making it easy to navigate so crucial?
+                            <p>
+                          </p>
+                          </div>
+                          <img src="img/ico_mathew.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/ico_andrew.png" class="img-fluid">
+                          <div class="balao-esq">Andrew: If users can't find what they need quickly, they might leave the site. So, we need to make it easy for them to find things.
+                            <p>
+                          </p>
+
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">Matthew: Got it. So, the navigation structure is like a map for the website?
+                            <p>
+                          </p>
+                          </div>
+                          <img src="img/ico_mathew.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/ico_andrew.png" class="img-fluid">
+                          <div class="balao-esq">Andrew: Exactly! It guides users to the right places, making their experience better.
+                            <p>
+                          </p>
+
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">Matthew: Thanks for explaining. I never knew there was so much to think about!
+                            <p>
+                          </p>
+                          </div>
+                          <img src="img/ico_mathew.png" class="img-fluid">
+                      </div>
+                      
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                        <img src="img/ico_andrew.png" class="img-fluid">
+                        <div class="balao-esq">Andrew: No problem! It's a big world of websites out there, but it can be made simpler for everyone.
+                          <p>
+                        </p></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="bloco5">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt="">   
+              <div class="container">
+                <p><strong>Look at the sentence extracted from the text: “it can be made simpler for everyone”. 
+                </strong></p>
+                <ul class="dotDefault">
+                  <li><p>Do you know what is Andrew’s idea when he says that?</p></li>
+                  <li><p>The sentence “it can be made” is written in the passive voice. Do you know how to use this tense? What’s the meaning of it?</p></li>
+                  <li><p>Look at the chart below and observe its usage.</p></li>
+                </ul>
+                <table class="table-responsive table tabelaCorCurso">
+                  <thead>
+                    <tr>
+                      <th scope="col" colspan="2">
+                        <p>PASSIVE VOICE – SIMPLE PRESENT:</p>
+                      <p>In the passive voice, the thing receiving the action is the focus. We don't always say who did the action. For example, "The cake was eaten" is passive because we focus on the cake being eaten, not who ate it.</p>
+                      
+                      </th>
+                    </tr>
+                  </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p><strong>Active Voice:</strong> </p>
+                          <p>the subject of the sentence performs the action expressed by the verb.</p>
+                        </td>
+                        <td>
+                          <p></strong>Passive voice:</strong></p>
+                          <p>Tells us what is done to someone or something.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>The structure is usually: </p>
+                          <p>Subject - Verb - Object.</p>
+                        </td>
+                        <td>
+                          <p>The structure is usually:</p>
+                          <p>Object - Verb – Subject.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><strong>
+                          <p>Examples:</p>
+                          <p>The girl takes a selfie.</p>
+                          <p>The girl doesn’t take selfies.</p>
+                          <p>The girls take selfies.</p>
+                          <p>Do the girls take a selfie?</p></strong>
+                        </td>
+                        <td><strong>
+                          <p>Examples:</p>
+                          <p>A selfie is taken by the girl.</p>
+                          <p>Selfies aren’t taken by the girl. </p>
+                          <p>Selfies are taken by the girls.</p>
+                          <p>Is a selfie taken by the girls?</p></strong>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+             
+                  <div class="box-atividade destaque_novo no-print" aria-hidden="true">
+                    <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                    <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                    <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+    
+                    
+                    <div class="activity-container smallWords">
+                      <div class="mb-3">
+                      <p><strong>Complete the sentences using the passive voice:
+                      </strong></p>
+                      <div class="word-bank" data-words="print,read,write,close,teach"></div>
+                      </div>
+                    
+                      <div class="sentences">
+                        <p>The documents <input type="text" class="blank-input" data-answer="print"> by the secretary. </p>
+                        <p>Newspapers <input type="text" class="blank-input" data-answer="read"> by many people.  </p>
+                        <p>E-mails <input type="text" class="blank-input" data-answer="write"> by managers every day.  </p>
+                        <p>The door <input type="text" class="blank-input" data-answer="close"> by the cleaner.  </p>
+                        <p>English <input type="text" class="blank-input" data-answer="teach"> by Helen at school.  </p>
+                       
+                    
+                      <div class="feedback mt-3"></div>
+                      <button class="btn btn-success check-btn">Verificar</button>
+                      <button class="btn btn-warning reset-btn">Reiniciar</button>
+                      </div>
+                    </div>
+                  </div> 
+                  
+                <div class="box-atividade  caixa-destaque destaque_novo no-print" aria-hidden="true">
+                  <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+                  <p class="titulo-ativ"><strong>Instruction:</strong></p>
+                  <p>Read the sentences below and choose if they are written in the passive or active voice:</p>
+                 
+                          <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">Volleyball matches are played on Sundays </p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-c botao hvr-grow-shadow">Active</button>
+                                <button class="alt-e botao hvr-grow-shadow">Passive</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                          </div>
+                          <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">The painter paints the walls. </p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-c botao hvr-grow-shadow">Active</button>
+                                <button class="alt-e botao hvr-grow-shadow">Passive</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                          </div>
+                          
+                          <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">The office is cleaned every day. </p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-c botao hvr-grow-shadow">Active</button>
+                                <button class="alt-e botao hvr-grow-shadow">Passive</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                          </div>
+                          
+                          <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">Butter is made from milk.</p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-c botao hvr-grow-shadow">Active</button>
+                                <button class="alt-e botao hvr-grow-shadow">Passive</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                          </div>
+                          
+                          <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">Students don’t speak Portuguese in class. </p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-c botao hvr-grow-shadow">Active</button>
+                                <button class="alt-e botao hvr-grow-shadow">Passive</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                          </div>
+                          
+                          <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">The dog eats bacon in the morning. </p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-c botao hvr-grow-shadow">Active</button>
+                                <button class="alt-e botao hvr-grow-shadow">Passive</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                          </div>
+                          
+                          <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">Books are read by people all over the world.</p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-e botao hvr-grow-shadow">Active</button>
+                                <button class="alt-c botao hvr-grow-shadow">Passive</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                          </div>
+                          <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">⦁	A Ferrari is driven by Karl. </p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-c botao hvr-grow-shadow">Active</button>
+                                <button class="alt-e botao hvr-grow-shadow">Passive</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                          </div>
+                          <div class="esquemaDaBru verdadeiro-falso">
+                            <p class="enunciado" tabindex="0">Many songs are sung</p>
+                            <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                                <button class="alt-c botao hvr-grow-shadow">Active</button>
+                                <button class="alt-c botao hvr-grow-shadow">Passive</button>
+                            </div>
+                            <div class="feedbacks">
+                                <p class="f-positivo"><i
+                                        class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                <p class="f-negativo"><i
+                                        class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                            </div>
+                          </div>
+                  </div>
+
+
+
+              </div>
+            </div>
+            <div class="bloco6">
+              
+              <!-- <img src="img/lateral_2.png" class="floatImg floatRig top2" alt="Photograph of someone telling a story.
+              "> -->
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <div class="container">
+                <h3>Basic programming concepts
+                </h3>
+
+                <figure class="my-5 no-print">
+                  <img src="img/figura_3.png" class="d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of someone telling a story.">
+                  <a href="img/figura_3.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                      <img src="img/figura_3.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Photograph of someone telling a story.">
+                  </a>
+                  <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>                
+                </figure>
+
+              </div>
+            </div>
+            <div class="bloco7">
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt=""> 
+              <div class="container">
+                <ul class="dotDefault">
+                    <li><p>Group activity: </li>
+                    <li><p>Look at the picture and analyse it. What is it? How can you describe the image?</li>
+                    <li><p>Have you ever told a story to someone about when you were talking about a food you wanted to eat, a product you wanted to buy or even a course you wanted to  and suddenly this thing appeared on your TV, YouTube or even apps? </li>
+                    <li><p>Can you share a story about it?</li>
+                    <li><p>Do you know what an algorithm is?</li>
+                    <li><p>Can you give an example of an everyday algorithm?</li>
+                    <li><p>How do algorithms help to improve websites?</li>
+                </ul>
+                <p>Algorithm is related to one of the programming steps. Programming is like learning the ABCs of computers. It helps you write instructions for the computer to follow and solve problems. One important thing in programming is called variables. They're like containers that hold different kinds of information.
+                </p>
+                <div class="row">
+                  <div class="col"><p>Organize the basic ideas in programming: (Parte 1)</p>
+                      <div class="bg-podcast2  podcast3">
+                  <div class="bg-podcast no-print audio">
+                    <div class="d-flex justify-content-center flex-column align-items-center">
+                        <div class="audio-player no-print">
+                            <audio>
+                                <source src="audio/TDS_UC07_SITUACAO 1_SENHAS_E_SEGURANCA.mp3" type="audio/mpeg">
+                            </audio>
+                            <div class="row">
+                                <div class="timestamp">00:00 | 00:00</div>
+                                <div class="barra">
+                                    <input type="range" value="0" max="4140" step="any">
+                                </div>
+                                <div class="botoes">
+                                    <button title="Tocar" class="btn-play btn-player"></button>
+                                    <button title="Pause" class="btn-pause btn-player"></button>
+                                    <button title="Transcrição" data-bs-toggle="modal"
+                                        data-bs-target="#modal-transcricao-audio2"
+                                        class="btn-transcricao btn-player"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                      </div>
+                  </div>
+                  <div class="col"><p>Why are variables important? (Parte 2)</p>
+                    
+                    <div class="bg-podcast2 podcast3">
+                      <div class="bg-podcast no-print audio">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <div class="audio-player no-print">
+                                <audio>
+                                    <source src="audio/TDS_UC07_SITUACAO 1_SENHAS_E_SEGURANCA.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="row">
+                                    <div class="timestamp">00:00 | 00:00</div>
+                                    <div class="barra">
+                                        <input type="range" value="0" max="4140" step="any">
+                                    </div>
+                                    <div class="botoes">
+                                        <button title="Tocar" class="btn-play btn-player"></button>
+                                        <button title="Pause" class="btn-pause btn-player"></button>
+                                        <button title="Transcrição" data-bs-toggle="modal"
+                                            data-bs-target="#modal-transcricao-audio2"
+                                            class="btn-transcricao btn-player"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                          </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <p><strong>Variables</strong>: Variables are like boxes used to hold and change information in a program. They can keep different kinds of data, like numbers, words, or complicated things. </p>
+                    <p><strong>Data Types</strong>: Data types decide what kind of data is kept in variables, such as whole numbers, numbers with decimal points, words, and lists.</p>
+                    <p><strong>Control Structures</strong>: Control structures control how a program runs, letting developers make choices, repeat actions, and organize code clearly. </p>
+                    <p><strong>Functions and Procedures</strong>: Functions and procedures are parts of code that can be used again and again to do specific tasks. They help keep code neat and easy to use by putting tasks into small parts, making it simpler to fix and expand programs.</p>
+                    <p><strong>Comments and Documentation</strong>: They are important for making code easy to read and understand. They let programmers explain their code with notes, instructions, and tips, which helps people work together and share knowledge.</p>
+                  </div>
+                  
+                  <div class="col">
+                    <p><strong>Store Data:</strong> Variables can keep different kinds of data, from simple numbers and letters to complicated lists and groups.</p>
+                    <p><strong>Change Data:</strong> By giving values to variables and doing things with them, developers can change data easily, like doing math, transforming information, and working with data.</p>
+                    <p><strong>Give Flexibility:</strong> Variables make programs flexible, so they can react to changes, user actions, and outside events. They help programmers make code that can handle many different situations and needs.</p>
+                  </div>
+                </div>
+                <!-- <table class="table-responsive table tabelaCorCurso">
+                  <thead>
+                    <tr>
+                      <td>Organize the basic ideas in programming: (Parte 1)</td>
+                      <td>Why are variables important? (Parte 2)</td>
+                    </tr>
+                  </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p><strong>Active Voice:</strong> </p>
+                          <p>the subject of the sentence performs the action expressed by the verb.</p>
+                        </td>
+                        <td>
+                          <p></strong>Passive voice:</strong></p>
+                          <p>Tells us what is done to someone or something.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>The structure is usually: </p>
+                          <p>Subject - Verb - Object.</p>
+                        </td>
+                        <td>
+                          <p>The structure is usually:</p>
+                          <p>Object - Verb – Subject.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><strong>
+                          <p>Examples:</p>
+                          <p>The girl takes a selfie.</p>
+                          <p>The girl doesn’t take selfies.</p>
+                          <p>The girls take selfies.</p>
+                          <p>Do the girls take a selfie?</p></strong>
+                        </td>
+                        <td><strong>
+                          <p>Examples:</p>
+                          <p>A selfie is taken by the girl.</p>
+                          <p>Selfies aren’t taken by the girl. </p>
+                          <p>Selfies are taken by the girls.</p>
+                          <p>Is a selfie taken by the girls?</p></strong>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table> -->
+                  
+                <div class="box-atividade no-print" style="margin-top: 40px">
+                  <p><strong>Speaking activity</strong>: In pairs or in groups use the correct time conjunctions:</p>
+                  <div class="game-associar-colunas no-print nao-imprimir">
+                    <div class="row">
+                        <div class="col-12 col-sm-8 flexs itens"> 
+                            <button data-resp="1" class="item item1">
+                                <p>Variables: Variables are like boxes used to hold and change information in a _________. They can keep different kinds of data, like numbers, words, or complicated things. 
+                                </p>
+                            </button>
+                            <button data-resp="2" class="item item2">
+                              <p>Data Types: Data types decide what kind of data is kept in variables, such as whole numbers, numbers with decimal points, ____________ , and lists.
+                              </p>
+                            </button>
+                            <button data-resp="3" class="item item3">
+                              <p>Control Structures: Control structures control how a program runs, letting developers make choices, repeat actions, and organize ____________ clearly. 
+                                Functions and Procedures: Functions and procedures are parts of code that can be used again and again to do specific tasks. They help keep code neat and easy to use by putting tasks into small parts, making it simpler to fix and expand programs.
+                                </p>
+                            </button>
+                            <button data-resp="4" class="item item4">
+                              <p>Comments and Documentation: They are important for making code easy to read and understand. They let programmers explain their code with notes, instructions, and tips, which helps people ____________  together and share knowledge.
+                              </p>
+                            </button>
+                            <button data-resp="5" class="item item4">
+                              <p>Store Data: Variables can keep different kinds of data, from simple ____________ and letters to complicated lists and groups.
+                              </p>
+                            </button>
+                            <button data-resp="6" class="item item4">
+                              <p>Change Data: By giving values to variables and doing things with them, developers can change data easily, like doing math, transforming ____________  </p>
+                            </button>
+                            <button data-resp="7" class="item item4">
+                              <p>Give Flexibility: Variables make programs ____________ , so they can react to changes, user actions, and outside events. They help programmers make code that can handle many different situations and needs.</p>
+                            </button>
+
+                            
+                        </div>
+                        <div class="col-12 col-sm-4 flexs">
+                            <button type="button" data-resp="1" class="resp resp5">
+                                <div class="txtacao"><i class="fas fa-question"></i></div>
+                                <p>program</p>
+                            </button>
+                            <button type="button" data-resp="2" class="resp resp6">
+                                <div class="txtacao"><i class="fas fa-question"></i></div>
+                                <p>words
+                                </p>
+                            </button>
+                            <button type="button" data-resp="3" class="resp resp7">
+                                <div class="txtacao"><i class="fas fa-question"></i></div>
+                                <p>code
+                                </p>
+                            </button>
+                            <button type="button" data-resp="4" class="resp resp1">
+                                <div class="txtacao"><i class="fas fa-question"></i></div>
+                                <p> work
+                                </p>
+                            </button>
+                            <button type="button" data-resp="5" class="resp resp1">
+                                <div class="txtacao"><i class="fas fa-question"></i></div>
+                                <p> numbers
+                                </p>
+                            </button>
+                            <button type="button" data-resp="6" class="resp resp1">
+                                <div class="txtacao"><i class="fas fa-question"></i></div>
+                                <p>information
+                                </p>
+                            </button>
+                            <button type="button" data-resp="7" class="resp resp1">
+                                <div class="txtacao"><i class="fas fa-question"></i></div>
+                                <p>flexible 
+                                </p>
+                            </button>
+                           
+            
+                        </div>
+                    </div>
+            
+                    <!-- Modal -->
+                    <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
+                        aria-labelledby="associarColunasErrou" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            <p>Ops, tente novamente!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
+                        tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            <p>Muito bem! Você acertou!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="bloco8">
+              <img src="img/divisoria.png" class="divisoria" alt="">     
+              <div class="container">
+                <p><strong>Match the pairs. Find the definitions and their names:
+                </strong></p>
+                
+                <div class="container-fluid no-print">
+                  <div class="jogoMemoria" aria-hidden="true">
+                    <div class="cartaMemoria" data-par="3">
+                      <div class="ladoFrente">
+                          <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                      </div>
+                      <div class="ladoTras">
+                          <img src="img/memoria_2_.png" class="img-fluid" alt="">
+                      </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="1">
+                        <div class="ladoFrente">
+                            <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="ladoTras">
+                            <img src="img/memoria_3.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="1">
+                        <div class="ladoFrente">
+                            <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="ladoTras">
+                            <img src="img/memoria_3_.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="4">
+                        <div class="ladoFrente">
+                            <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="ladoTras">
+                            <img src="img/memoria_4.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="4">
+                        <div class="ladoFrente">
+                            <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="ladoTras">
+                            <img src="img/memoria_4_.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="5">
+                  <div class="ladoFrente">
+                      <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="ladoTras">
+                      <img src="img/memoria_5.png" class="img-fluid" alt="">
+                  </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="5">
+                <div class="ladoFrente">
+                    <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                </div>
+                <div class="ladoTras">
+                    <img src="img/memoria_5_.png" class="img-fluid" alt="">
+                </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="6">
+                    <div class="ladoFrente">
+                        <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="ladoTras">
+                        <img src="img/memoria_6.png" class="img-fluid" alt="">
+                    </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="2">
+                  <div class="ladoFrente">
+                      <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="ladoTras">
+                      <img src="img/memoria_1.png" class="img-fluid" alt="">
+                  </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="6">
+                    <div class="ladoFrente">
+                        <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="ladoTras">
+                        <img src="img/memoria_6_.png" class="img-fluid" alt="">
+                    </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="7">
+                  <div class="ladoFrente">
+                      <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="ladoTras">
+                      <img src="img/memoria_7.png" class="img-fluid" alt="">
+                  </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="7">
+                <div class="ladoFrente">
+                    <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                </div>
+                <div class="ladoTras">
+                    <img src="img/memoria_7_.png" class="img-fluid" alt="">
+                </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="2">
+              <div class="ladoFrente">
+                  <img src="img/memoria_verso.png" class="img-fluid" alt="">
+              </div>
+              <div class="ladoTras">
+                  <img src="img/memoria_1_.png" class="img-fluid" alt="">
+              </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="8">
+                <div class="ladoFrente">
+                    <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                </div>
+                <div class="ladoTras">
+                    <img src="img/memoria_8.png" class="img-fluid" alt="">
+                </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="3">
+              <div class="ladoFrente">
+                  <img src="img/memoria_verso.png" class="img-fluid" alt="">
+              </div>
+              <div class="ladoTras">
+                  <img src="img/memoria_2.png" class="img-fluid" alt="">
+              </div>
+                    </div>
+                    <div class="cartaMemoria" data-par="8">
+                        <div class="ladoFrente">
+                            <img src="img/memoria_verso.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="ladoTras">
+                            <img src="img/memoria_8_.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+            <div class="bloco9">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <div class="container">
+                <h3>Project management in software development
+                </h3>
+                
+                <div class="box-atividade destaque_novo no-print" aria-hidden="true">
+                  <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+                  <p><strong>Did you know that around the world there are different currencies? Look the currencies below and match their names with the pictures.
+
+                  </strong></p>
+                  
+                  <!-- <div class="container py-4"> -->
+                    <!-- Primeira Instância -->
+                    <div class="match-container jogo_moedas" data-pairs='[{"left":"1", "right":"a"}, {"left":"2", "right":"b"}, {"left":"3", "right":"c"}, {"left":"4", "right":"d"}, {"left":"5", "right":"e"}, {"left":"6", "right":"f"}]'>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 left-col">
+                                <div class="match-item" data-id="1"><img src="img/flip_1_.png" alt=""></div>
+                                <div class="match-item" data-id="2"><img src="img/flip_2_.png" alt=""></div>
+                                <div class="match-item" data-id="3"><img src="img/flip_3_.png" alt=""></div>
+                                <div class="match-item" data-id="4"><img src="img/flip_4_.png" alt=""></div>
+                            </div>
+                            <div class="col-md-6  align-self-center  right-col">
+                              <div class="match-item" data-id="a"><img src="img/flip_1.png" alt=""></div>
+                              <div class="match-item" data-id="b"><img src="img/flip_2.png" alt=""></div>
+                              <div class="match-item" data-id="c"><img src="img/flip_3.png" alt=""></div>
+                              <div class="match-item" data-id="d"><img src="img/flip_4.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="feedback text-center"></div>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-sm btn-warning retry-btn">Tentar Novamente</button>
+                        </div>
+                    </div>
+
+
+                  <!-- </div> -->
+                </div>
+                <ul class="dotDefault">
+                  <li>As you know what PDCA is, read the infographic below and check what each part of this acronym means.</li>
+                </ul>
+                
+                <figure class="my-5" aria-hidden="true">
+                  <img src="img/infografico.png" class="d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of someone telling a story.">
+                  <a href="img/infografico.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                      <img src="img/infografico.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Photograph of someone telling a story.">
+                  </a>
+                  <figcaption class="figure-caption text-center">Source: Freepik (2024)  </figcaption>                
+                </figure>
+                <div class="acessivel no-print">
+                  <p>Plan: establish the objectives and processes necessary to deliver results in accordance with the organisation’s safety policy.</p>
+                  <p>Do: implement the process.</p>
+                  <p>Act: take actions to continually improve safety performance.</p>
+                  <p>Check: Monitor and measure processes against safety policy, objectives, legal and other requirements, report the results.</p>
+                </div>
+                <p><strong>Instruction:
+                </strong></p>
+                <ul class="dotDefault">
+                  <li><p>Giovanna is explaining the basic steps involved in project management in software development, focusing on the PDCA explanation. Read it and after, answer the questions:</p>
+                  </li>
+                </ul>
+                <div class="caixa-destaque caixa-destaque2 icone-pergunta2">
+                  <p>In software development projects, there are steps to follow to finish the work. </p>
+                  <p>First, we plan what needs to be done. This means deciding what the software will do and when it should be ready.</p>
+                  <p>Then, we organize the tasks. This is like making a list of everything we need to do and who will do each thing. </p>
+                  <p>After that, we start working on the tasks. This is when we create the software. While we work, we need to talk to each other and make sure everyone knows what they should do. If we find any problems, we try to fix them quickly. </p>
+                  <p>Finally, when everything is done, we check if the software works correctly and if it meets the needs of the people who will use it. If everything is okay, the project is finished!</p>
+                </div>
+                
+                <div class="box-atividade destaque_novo no-print" aria-hidden="true">
+                  <img src="../01_working_contexts/img/destaque_elemento_1.png" class="destaque_novo_float1" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_2.png" class="destaque_novo_float2" alt="">
+                  <img src="../01_working_contexts/img/destaque_elemento_3.png" class="destaque_novo_float3" alt="">
+  
+                  
+                  <div class="activity-container bigWords">
+                    <div class="mb-3">
+                    <p><strong>Correct the information below according to the text. Write full sentences:
+                    </strong></p>
+                    <div class="word-bank" data-words="First, we plan what needs to be done,Then, we organize the tasks,After that, we start working on the tasks,If we find any problems, we try to fix them quickly,When everything is done, we check if the software works correctly"></div>
+                    </div>
+                  
+                    <div class="sentences">
+                      <p>First, we do what needs to be done. <input type="text" class="blank-input" data-answer="First, we plan what needs to be done">.</p>
+                      <p>Then, we check the tasks. <input type="text" class="blank-input" data-answer="Then, we organize the tasks">.</p>
+                      <p>After that, we start planning on the tasks.<input type="text" class="blank-input" data-answer="After that, we start working on the tasks">.</p>
+                      <p>If we find any problems, we try to fix them slowly.<input type="text" class="blank-input" data-answer="If we find any problems, we try to fix them quickly">.</p>
+                      <p>When everything is done, we check if the hardware works correctly.<input type="text" class="blank-input" data-answer="When everything is done, we check if the software works correctly">.</p>
+                      
+                      
+                     
+                      
+                      
+                      
+                     
+                  
+                    <div class="feedback mt-3"></div>
+                    <button class="btn btn-success check-btn">Verificar</button>
+                    <button class="btn btn-warning reset-btn">Reiniciar</button>
+                    </div>
+                  </div>
+                </div> 
+
+                
+                
+              </div>                     
+            </div>
+            <div class="bloco10">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">  
+              
+              <div class="container">
+                <h3>Website development project</h3>
+                <p>Find the 5 words from the chart in the wordsearch:
+                </p>
+                <div class="espera">Atividade de procurar a palavra</div>
+
+              </div>                   
+            </div>
+            <div class="bloco11">
+              
+              <img src="img/divisoria.png" class="divisoria" alt="">
+              <img src="img/ico_practice_it.png" class="divisoria-practice" alt="">  
+              
+              <div class="container">
+                <p>Read the text below and pay attention to the project which was developed by Sarah, Alex and James.</p>
+                <p>Sarah, Alex, and James have been working hard to make a website. They've had to figure out a lot of tricky problems, like how to make everything work right and how to make sure the site is safe for pets.</p>
+                
+                <table class="table-responsive table tabelaCorCurso">
+                  <!-- <thead>
+                    <tr>
+                      <th scope="col" colspan="2">
+                        <p>PASSIVE VOICE – SIMPLE PRESENT:</p>
+                      <p>In the passive voice, the thing receiving the action is the focus. We don't always say who did the action. For example, "The cake was eaten" is passive because we focus on the cake being eaten, not who ate it.</p>
+                      
+                      </th>
+                    </tr>
+                  </thead> -->
+                    <tbody>
+                      <tr>
+                        <td>
+                            <p><strong>Project Title: Virtual Pet Care App</strong></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><strong>Scenario:</strong> In a busy city where more people are getting pets, but they're finding it hard to take care of them because they're so busy, a group of people who love animals has a great idea: a Virtual Pet Care website.</p>
+                          <p>I am Sarah and I love animals. I’m always busy with my job and struggles to take care of the pets. My team is completed with my friend Alex, who's good at making things look nice, and James, who knows a lot about making websites.</p>
+                          <p>Together, we want to make an app that helps pet owners take better care of their pets and feel connected to other pet lovers.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><strong>The Virtual Pet Care Website will do lots of things:</strong></p>
+                          <ul class="dotDefault">
+                            <li><p><strong>Make Profiles for Pets:</strong> People can make profiles for their pets and say things like how old they are, what they eat, and if they're sick.</p></li>
+                            <li><p><strong>Remind People to Take Care of Their Pets:</strong> The website will send reminders for things like giving medicine and taking pets to the vet.</p></li>
+                            <li><p><strong>Check on Pets' Health:</strong> People can keep track of their pets' weight, how active they are, and when they need vaccinations.</p></li>
+                            <li><p><strong>Get Help in Emergencies:</strong> If something bad happens, the website will show where the nearest vet is and give tips on how to help pets.</p></li>
+                            <li><p><strong>Find Pets to Adopt:</strong> There's a part of the website where people can see pets that need homes and maybe adopt one.</p></li>
+                          </ul>
+                          
+                        </td>
+                      </tr>
+                 
+                    </tbody>
+                  </table>
+                  <p><strong>Group activity</strong>: based on the text you read before, you and your team are going to create a website’s project. Complete the chart below with the information you decided together. </p>
+                  <p>Create a title for your website. Introduce who is going to work on your website and what their occupations are. Show what your website has to offer. After that, present your project to the big group:</p>
+
+                  <table class="table-responsive table tabelaCorCurso">
+                      <tbody>
+                        <tr>
+                          <td>
+                              <p><strong>Project Title:</strong></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <p><strong>Scenario:</strong></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              <p><strong>The website will do lots of things:</strong></p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>                   
+            </div>
+            <!-- <div class="bloco10">
+                <div class="container"></div>
+            </div>
+            <div class="bloco11">
+                <div class="container"></div>
+            </div>
+            <div class="bloco12">
+                <div class="container"></div>
+            </div> -->
+
+          </div>
+
+
+        </section>
+<!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+        <footer class="text-center no-print">
+          <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+        </footer>
+
+      </div>
+
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal-ODBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">ODBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>ODBC</b>, ou Open Database Connectivity, é um conjunto de classes-modelo para conexão disponível em qualquer linguagem de programação, diferindo-se da JDBC, que é exclusiva para Java.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-JDBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">JDBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>JDBC</b>, ou Java EE Database Connectivity, é uma <b>API (<i>application programming interfaces</i>) que possibilita a interação do código Java com um banco de dados</b>, na qual as instruções SQL são executadas por meio de um <i>driver</i>, composto por um grupo de classes e interfaces desenvolvido em Java. Esse processo possibilita a execução de instruções SQLs que se conectarão com a base de dados, permitindo a manipulação dos valores.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+<!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+<div class="ico-div-loader">
+	<img src="../template/images/atencao.png">
+    <img src="../template/images/bg-content.jpg">
+    <img src="../template/images/bg-topo.jpg">
+    <img src="../template/images/black-zoom-in-256.png">
+    <img src="../template/images/concluindo.png">
+    <img src="../template/images/curtir.png">
+    <img src="../template/images/desafio.png">
+    <img src="../template/images/dica.png">
+    <img src="../template/images/doc.png">
+    <img src="../template/images/fundamental.png">
+    <img src="../template/images/icon-03.png">
+    <img src="../template/images/importante.png">
+    <img src="../template/images/lightbulb.png">
+    <img src="../template/images/link.png">
+    <img src="../template/images/link_pdf_hover.png">
+    <img src="../template/images/link_pdf_normal.png">
+    <img src="../template/images/logo-senac.png">
+    <img src="../template/images/mark-icon.png">
+    <img src="../template/images/mark-icon02.png">
+    <img src="../template/images/midia.png">
+    <img src="../template/images/monitor.png">
+    <img src="../template/images/nao_curtir.png">
+    <img src="../template/images/pergunta.png">
+    <img src="../template/images/pesquisa.png">
+    <img src="../template/images/play.png">
+    <img src="../template/images/radio_flat.png">
+    <img src="../template/images/refletir.png">
+    <img src="../template/images/saiba_mais.png">
+    <img src="../template/images/senac_loader.png">
+    <img src="../template/images/tanamidia.png">
+    <img src="../template/images/transcricao.png">
+    <img src="../template/images/transcricao_small.png">
+    <img src="../template/images/tv.png">
+    <img src="../template/images/tv_bottom.png">
+    <img src="../template/images/zoom.png">
+    <img src="../template/images/zoom_ie.cur">
+    <img src="../template/images/zoom_ie.png">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+</div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="../template/js/jquery.min.js"></script>
+<script src="../template/js/bootstrap.min.js"></script> -->
+<script src="../template/js/jquery.magnific-popup.min.js"></script>
+<script src="../template/js/print.js"></script>
+<script src="../template/js/template.config.js"></script>
+<script src="../template/js/images.loader.js"></script>
+<script src="../template/js/highlight.min.js"></script>
+<!-- bts5 -->
+
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="../assets/atividades/perguntas/perguntas.js"></script>
+        <!--Atividade arrasta e solta-->
+        <script src='atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+
+        <script src="../05_equipments_related/atividades/completar_frases/comp_frases.js"></script>
+        
+        <!--Atividade de jogo da memória-->
+        <script src="atividades/jogo_memoria/jogoMemoria.js"></script>
+<noscript>
+  <style media="screen">
+    .over-loader { display: none;}    
+  </style>
+</noscript>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+	//inicializa zoom na imagem
+	
+	//inicializa popover
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+	//inicializa tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+
+  $(function() {
+    $(".card").click(function() {
+      if ($(this).hasClass("exibe-frente")) {
+        $(this)
+          .children()
+          .first()
+          .hide();
+        $(this)
+          .children()
+          .last()
+          .show();
+        $(this).removeClass("exibe-frente");
+      } else {
+        $(".card .verso").hide();
+        $(".card .frente").show();
+        $(this).addClass("exibe-frente");
+      }
+    });
+  });
+
+  $( document ).ready(function() {
+    $(".card .verso").hide();
+  });
+
+
+
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += ' js';
+
+  function boxTop(idBox) {
+    var boxOffset = $(idBox).offset().top;
+    return boxOffset;
+  }
+
+  $(document).ready(function() {
+    $('.botaoCheck').click(function(){
+      $(this).addClass('visitado');
+    });
+    var $target = $('.animeStart'),
+        $target2 = $('.animeStop'),
+        targetBox = $('.box'),
+        animationClass = 'anime-init',
+        windowHeight = $(window).height(),
+        offset = windowHeight - (windowHeight / 4);
+
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+      $target.each(function() {
+        if (documentTop > boxTop(this) - offset) {
+          targetBox.addClass(animationClass);
+        } else {
+          targetBox.removeClass(animationClass);
+        }
+        if (documentTop > boxTop($target2) - offset) {
+          targetBox.removeClass(animationClass);
+        } 
+      });
+    }
+    animeScroll();
+
+    $(document).scroll(function() {
+      animeScroll();
+    });
+  });
+
+
+</script>
+
+        <!-- ODAS -->
+        <!-- <script src="odas/ingles_viagens_cartas/assets/js/scripts.js"></script> -->
+        <script src="odas/ingles_letters/assets/js/script.js"></script>
+        <!-- <script src="odas/ingles_viagens_form/assets/js/script.js"></script> -->
+        <!-- <script src="odas/ingles_viagens_write_numbers/assets/js/script.js"></script> -->
+         
+<script>
+  // Função para embaralhar array (Fisher-Yates)
+function shuffle(array) {
+for (let i = array.length - 1; i > 0; i--) {
+const j = Math.floor(Math.random() * (i + 1));
+[array[i], array[j]] = [array[j], array[i]];
+}
+return array;
+}
+
+// Função para embaralhar itens nas colunas
+function shuffleItems(container) {
+const leftCol = container.querySelector('.left-col');
+const rightCol = container.querySelector('.right-col');
+
+// Embaralhar e reordenar itens da esquerda
+const leftItems = Array.from(leftCol.children);
+shuffle(leftItems);
+leftItems.forEach(item => leftCol.appendChild(item));
+
+// Embaralhar e reordenar itens da direita
+const rightItems = Array.from(rightCol.children);
+shuffle(rightItems);
+rightItems.forEach(item => rightCol.appendChild(item));
+}
+document.querySelectorAll('.match-container').forEach(container => {
+    const pairs = JSON.parse(container.dataset.pairs);
+    const leftItems = container.querySelectorAll('.left-col .match-item');
+    const rightItems = container.querySelectorAll('.right-col .match-item');
+    const feedback = container.querySelector('.feedback');
+    const retryBtn = container.querySelector('.retry-btn');
+    
+    // Embaralhar inicial
+    shuffleItems(container);
+
+    let selectedItem = null;
+
+    // Atualizar a seleção de itens após embaralhar
+    const updateItems = () => {
+        leftItems = container.querySelectorAll('.left-col .match-item');
+        rightItems = container.querySelectorAll('.right-col .match-item');
+    };
+    
+    // Seleção de itens
+    const handleSelection = (item) => {
+        if (item.classList.contains('correct')) return;
+
+        if (item.parentElement.classList.contains('left-col')) {
+            if (selectedItem) selectedItem.classList.remove('selected');
+            selectedItem = item;
+            item.classList.add('selected');
+        } else {
+            if (selectedItem) {
+                const leftId = selectedItem.dataset.id;
+                const rightId = item.dataset.id;
+                
+                const isCorrect = pairs.some(pair => 
+                    pair.left === leftId && pair.right === rightId
+                );
+
+                // Aplicar estilos
+                selectedItem.classList.add(isCorrect ? 'correct' : 'incorrect');
+                item.classList.add(isCorrect ? 'correct' : 'incorrect');
+                
+                // Feedback
+                feedback.textContent = isCorrect ? '✓ Correto!' : '✗ Incorreto!';
+                feedback.style.color = isCorrect ? 'green' : 'red';
+
+                // Resetar seleção
+                selectedItem.classList.remove('selected');
+                selectedItem = null;
+            }
+        }
+    };
+
+    // Event listeners
+    leftItems.forEach(item => {
+        item.addEventListener('click', () => handleSelection(item));
+    });
+
+    rightItems.forEach(item => {
+        item.addEventListener('click', () => handleSelection(item));
+    });
+
+    // Botão de tentar novamente
+    retryBtn.addEventListener('click', () => {
+        leftItems.forEach(item => {
+            item.classList.remove('selected', 'correct', 'incorrect');
+        });
+        rightItems.forEach(item => {
+            item.classList.remove('correct', 'incorrect');
+        });
+        feedback.textContent = '';
+        selectedItem = null;
+    });
+});
+</script>
+  <script>
+    // Função principal para drag and drop
+    document.addEventListener('DOMContentLoaded', () => {
+      const draggables = document.querySelectorAll('.draggable');
+      const dropzones = document.querySelectorAll('.dropzone');
+
+      let draggedElement = null;
+
+      // Adiciona eventos aos elementos arrastáveis
+      draggables.forEach(draggable => {
+        draggable.addEventListener('dragstart', () => {
+          draggedElement = draggable;
+          draggable.classList.add('dragging');
+        });
+
+        draggable.addEventListener('dragend', () => {
+          draggable.classList.remove('dragging');
+          draggedElement = null;
+        });
+      });
+
+      // Adiciona eventos às áreas de destino
+      dropzones.forEach(dropzone => {
+        dropzone.addEventListener('dragover', e => {
+          e.preventDefault();
+        });
+
+        dropzone.addEventListener('drop', e => {
+          e.preventDefault();
+
+          if (!draggedElement) return;
+
+          const currentPrice = dropzone.querySelector('.price');
+          const draggedPrice = draggedElement.dataset.price;
+
+          // Verifica se há um preço na imagem de destino
+          if (currentPrice.textContent) {
+            // Troca os preços entre as imagens
+            const tempPrice = currentPrice.textContent;
+            currentPrice.textContent = draggedPrice;
+
+            // Se o elemento arrastado veio de outra imagem, atualiza o preço lá
+            if (draggedElement.parentElement.classList.contains('dropzone')) {
+              const originalDropzone = draggedElement.parentElement;
+              const originalPrice = originalDropzone.querySelector('.price');
+              originalPrice.textContent = tempPrice;
+            } else {
+              // Se o elemento arrastado veio da lista de preços, remove-o
+            //   draggedElement.remove();
+            }
+          } else {
+            // Se não houver preço na imagem de destino, apenas adiciona o preço
+            currentPrice.textContent = draggedPrice;
+
+            // Remove o preço da lista de preços, se aplicável
+            if (!draggedElement.parentElement.classList.contains('dropzone')) {
+            //   draggedElement.remove();
+            }
+          }
+        });
+      });
+    });
+  </script>
+<script>
+  var scriptElem=document.createElement("script");
+  scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+  scriptElem.charset="UTF-8",
+  scriptElem.onload=function(){
+        window.ht = new HT({
+            token:"bf5b7efb148a829a126a0e0c9fd533bf",
+            align:"top",
+            videoEnabled: true,
+            ytEmbedReplace: true,           
+            mobileConfig:{align:"right",
+                          actionsAlign:"top",
+                          customButtonStyle:{
+                                borderRadius:"6px",
+                                size:"38px",
+                                horizontalMargin:"13px",
+                                bottomMargin:"140px",
+                                rightMargin:"40px"}
+                          }
+          });        
+      $('.ht-skip').attr("aria-hidden","true")
+    },
+  document.body.appendChild(scriptElem);
+</script>

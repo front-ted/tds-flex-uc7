@@ -567,7 +567,7 @@ a.botao-transcricao{
 }
 .botao:hover{
 	text-decoration:none;
-	color:#FFFFFF !important;
+	/* color:#FFFFFF !important; */
 }
 .botao_paginacao{
 	width:40px;
@@ -827,6 +827,35 @@ ul.senac li{
     background: url('../images/check.png') no-repeat;
 	background-size: cover;
 }
+
+
+/* icones */
+.icone-pergunta2:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('../../03_discover_the_ways/img/ico_pergunta.png');
+	background-repeat: no-repeat;
+	left: -70px;
+	top: -30px;
+}
+.icone-saiba-mais2:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('../../02_language_base/img/ico_importante_atencao.png');
+	background-repeat: no-repeat;
+	left: -70px;
+	top: -30px;
+}
+.caixa-destaque2 {
+    position: relative;
+    background-color: #2B4C8C !important;
+	color: #fff;
+}
+/*  */
 /*  */
 /* 
 $('.botaoCheck').click(function(){

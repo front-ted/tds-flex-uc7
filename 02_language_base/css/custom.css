@@ -386,6 +386,7 @@ ul.dotDefault li::marker{
   right: 0;
   width: 15%;
 }
+.floatTam2{width: 17%}
 .top1{ width: 17%; top:  500px;}
 .top2{  top: 100px;}
 .divisoria{
@@ -527,6 +528,12 @@ input[type=range]::-ms-thumb {
   background: #FFFFFF;
   cursor: pointer;
 }
+
+.tabelaCorCurso tr, .tabelaCorCurso th{ border: 2px solid #4A74C1;}
+.tabelaCorCurso td{ border: 1px solid #4A74C1;}
+.tabelaCorCurso th{ text-align: center;}
+.tabelaCorCurso{ background-color: #fff; border-radius: 10px;}
+
 input[type=range]:focus::-ms-fill-lower {
   background: #74A9D8;
 }
@@ -535,6 +542,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 @media screen and (max-width: 1480px){
   .top1{width: 10%;}
+  .floatTam2{width: 10%; top: 200px;}
 }
 @media screen and (max-width: 1180px){
   .floatImg{display: none;}

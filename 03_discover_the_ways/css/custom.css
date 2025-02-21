@@ -117,7 +117,8 @@ ul.dotDefault li::marker{
 .bloco9, 
 .bloco10, 
 .bloco11,
-.bloco12{
+.bloco12,
+.bloco13{
   position: relative;
   padding-top: 50px;
   padding-bottom: 80px;
@@ -139,7 +140,7 @@ ul.dotDefault li::marker{
   /* background: rgb(228,240,255); */
   /* background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(158,181,204,1) 100%); */
 }
-.bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
+.bloco3,.bloco5,.bloco7,.bloco9,.bloco11, .bloco13{
   background-color: #DCE6F5;
 
 }
@@ -162,18 +163,15 @@ ul.dotDefault li::marker{
 	width: 210px;
 	margin: 7px;
 }
-.game-body .slot .card{width: 94%;}
+.game-body .slot .card{width: 120px; margin: 20px auto;}
 .game-body .slot{
-	border: 5px solid #c0101a;
-	border-radius: 10px;
-	background: #dbe1ec;
-	padding: 15px 0;
+  padding-top: 100px;
+  min-height: 330px;
+  max-width: 100%;
+  border: 0px;
 }
 .game-titulo{
-	background: #c0101a;
-	width: 30px;
-	border-radius: 30px;
-	padding: 3px;
+	display: none;
 }
 .game-body .card{
 	background: #abc1eb;
@@ -427,7 +425,10 @@ ul.dotDefault li::marker{
   left: -35px;
   bottom: 0;
 }
-.tabelaCorCurso tr{ border: 2px solid #4A74C1;}
+.tabelaCorCurso tr, .tabelaCorCurso th{ border: 2px solid #4A74C1;}
+.tabelaCorCurso td{ border: 1px solid #4A74C1;}
+.tabelaCorCurso th{ text-align: center;}
+.tabelaCorCurso{ background-color: #fff; border-radius: 10px;}
 /* questoes bru */
 .multipla-escolha button::before {
   color: black;
@@ -532,6 +533,25 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #74A9D8;
+}
+
+/*  */
+.flip-card{
+  width: 280px;
+  height: 298px;
+}
+.flip-card  img{
+  width: 95%;
+}
+#box-oldOffice{
+  background-image: url('../img/arrasta_box_old.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#box-newOffice{
+  background-image: url('../img/arrasta_box_modern.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 1480px){
   .top1{width: 10%;}
