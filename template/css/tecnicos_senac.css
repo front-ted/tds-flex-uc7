@@ -904,6 +904,13 @@ height: 168px;
 	ul{margin-left: 0;}
 }
 @media screen and (max-width:600px){
+	
+    .tabelaCorCurso {
+        max-width: 100%;
+        overflow: scroll;
+        width: 100%;
+        display: block;
+    }
 	.jornal{
 		width:450px;
 		padding: 10px;

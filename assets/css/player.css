@@ -212,7 +212,7 @@
         width: 50px;
     }
     .bg-podcast2::before{
-        left: 0;
+        right: 0;
     }
     .bg-podcast2, .bg-podcast{width: 100%;}
 }
