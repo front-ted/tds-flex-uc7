@@ -530,12 +530,6 @@ tbody td:first-child{border-left: 0;}
 @media screen and (max-width: 780px){
     h1{font-size: 5vw;}
     
-    .tabelaCorCurso {
-        max-width: 100%;
-        overflow: scroll;
-        width: 100%;
-        display: block;
-    }
     .topo-logo{
         background-size: auto, 14%;
     }
