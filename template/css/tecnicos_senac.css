@@ -854,6 +854,12 @@ ul.senac li{
     position: relative;
     background-color: #2B4C8C !important;
 	color: #fff;
+    margin-top: 50px;
+}
+.mx-auto{ max-width: 100%;}
+.destaque_novo {
+    margin-top: 50px;
+	padding: 20px 50px 40px 50px !important;
 }
 /*  */
 /*  */
@@ -875,6 +881,11 @@ height: 168px;
 } */
 /*  */
 /* dispositivos moveis */
+@media screen and (max-width:1100px){
+	.box-atividade{
+		margin: 50px 30px;
+	}
+}
 @media screen and (max-width:1000px){
 	#nome-curso.titulo-longo{
 	width:70%;

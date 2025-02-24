@@ -241,7 +241,7 @@ ul.dotDefault li::marker{
   position: absolute;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #e3e5e9;
+  border-top: 20px solid #f6f9ff;
   bottom: 0;
   left: -20px;
   transform: rotate(180deg);
@@ -409,7 +409,7 @@ ul.dotDefault li::marker{
 }
 .top1{ width: 17%; top:  500px;}
 .top2{  top: 100px;}
-.divisoria{
+.divisoria{max-width:100%;
   position: absolute;
   left: 0;
   right: 0;
@@ -584,16 +584,53 @@ input[type=range]:focus::-ms-fill-upper {
 .mainbox-infografico img, .mainbox-infografico2 img{ transition: all ease-in-out 0.150s; cursor: pointer; margin: 0px 20px 50px 20px;}
 .mainbox-infografico img:hover, .mainbox-infografico2 img:hover{ transform: scale(1.1);}
 .mainbox-infografico2{
+  height: 500px;
   background-image: url('../img/infografico.png');
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
   margin: 0 auto;
-  justify-content: space-between !important;
+  /* justify-content: space-between !important; */
 }
-.mainbox-infografico2 img:last-child{
-  margin: 0 auto;
+.mainbox-infografico2 > row{
+  width: 100%;
+}
+.infografico_btn_1,.infografico_btn_2,.infografico_btn_3,.infografico_btn_4,.infografico_btn_5{
+  width: 308px;
+  height: 130px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.infografico_btn_1{
+  background-image: url('../img/infografico_btn_1.png');
+}
+.infografico_btn_1:hover{
+  background-image: url('../img/infografico_btn_1_hover.png');
+}
+.infografico_btn_2{
+  background-image: url('../img/infografico_btn_2.png');
+}
+.infografico_btn_2:hover{
+  background-image: url('../img/infografico_btn_2_hover.png');
+}
+.infografico_btn_3{
+  background-image: url('../img/infografico_btn_3.png');
+}
+.infografico_btn_3:hover{
+  background-image: url('../img/infografico_btn_3_hover.png');
+}
+.infografico_btn_4{
+  background-image: url('../img/infografico_btn_4.png');
+}
+.infografico_btn_4:hover{
+  background-image: url('../img/infografico_btn_4_hover.png');
+}
+.infografico_btn_5{
+  background-image: url('../img/infografico_btn_5.png');
+}
+.infografico_btn_5:hover{
+  background-image: url('../img/infografico_btn_5_hover.png');
 }
 
 .match-container {
@@ -676,11 +713,41 @@ input[type=range]:focus::-ms-fill-upper {
 .dropzone .price{
   top: 10% !important;
 }
+.card.gu-transit{
+  font-size: 1em !important;
+  color: #000 !important;
+    text-transform: unset !important;
+    font-family: rubik !important;
+    text-transform: lowercase !important;
+}
+.game-titulo img{ width: 100%;}
+.game-titulo { background-color: #1d5591;}
+.game-body .slot .card{float: left;}
 @media screen and (max-width: 1480px){
   .top1{width: 10%;}
 }
 @media screen and (max-width: 1180px){
   .floatImg{display: none;}
+}
+@media screen and (max-width: 768px){
+  .mainbox-infografico2 {
+    height: auto;
+    padding-top: 350px;
+    background-position: center 0;
+  }
+  .infografico_btn_1,.infografico_btn_2,.infografico_btn_3,.infografico_btn_4,.infografico_btn_5{
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 550px){
+  .mainbox-infografico2 {
+    height: auto;
+    padding-top: 220px;
+    background-position: center 0;
+  }
+  .jogo_crash .left-col .match-item {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px){
   .caixa-destaque code{

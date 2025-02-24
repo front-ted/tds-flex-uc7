@@ -221,7 +221,7 @@ ul.dotDefault li::marker{
   position: absolute;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #e3e5e9;
+  border-top: 20px solid #f6f9ff;
   bottom: 0;
   left: -20px;
   transform: rotate(180deg);
@@ -389,7 +389,7 @@ ul.dotDefault li::marker{
 }
 .top1{ width: 17%; top:  500px;}
 .top2{  top: 100px;}
-.divisoria{
+.divisoria{max-width:100%;
   position: absolute;
   left: 0;
   right: 0;
@@ -578,6 +578,8 @@ input[type=range]:focus::-ms-fill-upper {
   cursor: pointer;
   padding: 10px;
   margin: 5px 0;
+  width: 49%;
+  display: inline-block;
   border: 1px solid #dee2e6;
   background-color: #fff;
   border-radius: 4px;
@@ -605,7 +607,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .jogo_moedas .left-col .match-item{
   position: relative;
-  /* width: 49%; */
+  width: 49%;
   display: inline-block;
   /* margin: 5px 4px; */
   border: none;
@@ -651,6 +653,9 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .bg-podcast2.podcast3::before{background: none}
 .podcast3{}
+.boxWords{ border: 1px solid black;
+  width: 430px;
+  padding: 0px 20px;}
 @media screen and (max-width: 1480px){
   .top1{width: 10%;}
 }

@@ -163,9 +163,9 @@ ul.dotDefault li::marker{
 	width: 210px;
 	margin: 7px;
 }
-.game-body .slot .card{width: 120px; margin: 20px auto;}
+.game-body .slot .card{width: 120px; display: inline-flex;}
 .game-body .slot{
-  padding-top: 100px;
+  padding-top: 130px;
   min-height: 330px;
   max-width: 100%;
   border: 0px;
@@ -218,7 +218,7 @@ ul.dotDefault li::marker{
   position: absolute;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #e3e5e9;
+  border-top: 20px solid #f6f9ff;
   bottom: 0;
   left: -20px;
   transform: rotate(180deg);
@@ -386,7 +386,7 @@ ul.dotDefault li::marker{
 }
 .top1{ width: 17%; top:  500px;}
 .top2{  top: 100px;}
-.divisoria{
+.divisoria{max-width:100%;
   position: absolute;
   left: 0;
   right: 0;
@@ -552,6 +552,13 @@ input[type=range]:focus::-ms-fill-upper {
   background-image: url('../img/arrasta_box_modern.png');
   background-size: 100%;
   background-repeat: no-repeat;
+}
+.ico_answer_modal{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.ico_answer_modal:hover{
+  transform: scale(1.1);
 }
 @media screen and (max-width: 1480px){
   .top1{width: 10%;}
