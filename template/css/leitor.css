@@ -308,8 +308,11 @@ header.senac{
 
 }
 
-  .no-print, .nao-imprimir {
+.no-print, .nao-imprimir {
   display: none !important;
+}
+.modal.fade.no-print, .modal.fade.nao-imprimir {
+display: none !important;
 }
 
 .container {

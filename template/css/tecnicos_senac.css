@@ -881,6 +881,16 @@ height: 168px;
 } */
 /*  */
 /* dispositivos moveis */
+.ratio{
+	margin: 20px 0px 50px 0px;
+}
+.tabelaCorCurso {
+    margin: 0 auto 50px auto !important;
+}
+.grupo-imprimir {
+    top: 85px !important;
+    z-index: 1;
+}
 @media screen and (max-width:1100px){
 	.box-atividade{
 		margin: 50px 30px;
@@ -905,6 +915,12 @@ height: 168px;
 }
 @media screen and (max-width:600px){
 	
+	.destaque_novo {
+	    margin-top: 50px;
+		padding: 30px 10px !important;
+		margin-left: 0px;
+    	margin-right: 0px;
+	}
     .tabelaCorCurso {
         max-width: 100%;
         overflow: scroll;
@@ -919,7 +935,18 @@ height: 168px;
 }
 
 @media screen and (max-width:550px){
-
+	.icone-pergunta2:before {
+		width: 60px;
+		height: 60px;
+		left: -30px;
+		top: -35px;
+		background-size: cover;
+	}
+	.destaque_novo_float3 {
+		left: 0px !important;
+		bottom: -20px !important;
+		width: 50px;
+	}
 		.jornal{
 			width:90%;
 			padding: 10px;
