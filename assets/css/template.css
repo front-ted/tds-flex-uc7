@@ -517,6 +517,11 @@ tbody td:first-child{border-left: 0;}
 .bloco3 .modal-body,.bloco5 .modal-body,.bloco7 .modal-body,.bloco9 .modal-body,.bloco11 .modal-body{
     color: black;
 }
+
+.imgcenter{
+	display: block !important;
+	margin: 0 auto !important;
+}
 /* blocos modal */
 @media screen and (max-width: 1200px){
     h2{margin-left: 0;}

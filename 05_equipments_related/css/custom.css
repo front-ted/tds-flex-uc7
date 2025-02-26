@@ -382,7 +382,7 @@ ul.dotDefault li::marker{
 }
 .floatLeft{
   left: 0;
-  width: 15%;
+  /* width: 15%; */
 }
 .floatRig{
   right: 0;

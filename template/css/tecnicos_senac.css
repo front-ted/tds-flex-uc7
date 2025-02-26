@@ -37,6 +37,10 @@ blockquote{
 	font-family:inherit;
 }
 
+.imgcenter{
+	display: block !important;
+	margin: 0 auto !important;
+}
 .postit{
 	padding: 40px;
 	border-top: 20px solid #dbcb76;
@@ -881,6 +885,10 @@ height: 168px;
 } */
 /*  */
 /* dispositivos moveis */
+.imgcenter{
+	display: block !important;
+	margin: 0 auto !important;
+}
 .ratio{
 	margin: 20px 0px 50px 0px;
 }
