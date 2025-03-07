@@ -25,6 +25,12 @@
     border: 2px dashed;
 }
 
+.word-item.used {
+    background-color: #6c757d !important;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
 .word-item:hover {
     background-color: #c7ddfd;
 }

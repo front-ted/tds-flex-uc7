@@ -11,6 +11,7 @@
     width: 350px;
     margin: 50px auto;
     position: relative;
+    margin-top: 90px;
 }
 .bg-podcast2::before{
     content:'';

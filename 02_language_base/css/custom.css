@@ -534,6 +534,10 @@ input[type=range]::-ms-thumb {
 .tabelaCorCurso th{ text-align: center;}
 .tabelaCorCurso{ background-color: #fff; border-radius: 10px;}
 
+.flip-card2{
+  width: 301px;
+  height: 200px;
+}
 input[type=range]:focus::-ms-fill-lower {
   background: #74A9D8;
 }
