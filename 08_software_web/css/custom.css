@@ -729,7 +729,7 @@ input[type=range]:focus::-ms-fill-upper {
 @media screen and (max-width: 1180px){
   .floatImg{display: none;}
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
   .mainbox-infografico2 {
     height: auto;
     padding-top: 350px;
