@@ -659,7 +659,14 @@ input[type=range]:focus::-ms-fill-upper {
   }
   .videoconference .sentences p{
     margin-left: 50px;
-}
+  }
+  .redBox{color: red; font-weight: bold;}
+  .greenBox{color: #00bb00; font-weight: bold;}
+  .blueBox{color: rgb(35, 35, 255); font-weight: bold;}
+  .flip-card3.flip-card3{
+    /* width: 286px;
+    height: 190px; */
+  }
 @media screen and (max-width: 1480px){
   .top1{width: 10%;}
 }
