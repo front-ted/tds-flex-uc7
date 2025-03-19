@@ -1,0 +1,84 @@
+
+
+@keyframes fadeRelatorio{
+    from{
+        opacity: 0;        
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#relatorioContainer{
+   top: 0;
+   left: 0;
+   position: fixed;
+   z-index: 9999999;
+   width: 100vw;
+   height: 100vh;
+   background-color: lightgrey;    
+   animation: fadeRelatorio ease-in forwards 300ms;
+}
+#relatorioContainer header{
+    box-sizing: border-box;
+    background-color: grey;
+    color:white;
+    padding: 10px;
+    height: 60px;
+
+}
+#relatorioContainer header h1{
+    font-size: 2rem;
+}
+#relatorioContainer header .btClose{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+
+}
+#relatorioContainer .container{
+    padding-top: 1px;
+    background-color: white;
+    height: Calc(100vh - 80px);
+    overflow-y: auto;
+    padding-bottom: 50px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+#relatorioContainer #relatorioPdfEmbed{
+    /*width: 480px;
+    height: 640px;
+    */
+    width:80vw;
+    height: Calc(80vw * 4/3);
+    max-width: 500px;
+    max-height: Calc(500px * 4/3);
+    display: block;
+    margin: 20px auto;
+    border: 1px solid;
+}
+
+
+/*mensagem de confirmaçao que aparecem em dispositivos móveis, vai ser visivel quando o app estiver em landscape, aparece antes do carregamento*/
+#mensagem{
+    position: absolute;
+    width: 80vw;
+    margin-left: 0;
+    top: 10vw;
+    background-color: #EDBF53;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 0 rgba(0,0,0,0.3);
+    font-size: 1.3rem;
+    display: none;
+}
+#mensagem button{
+    padding: 20px;
+    width: 180px;
+    border-radius: 20px;
+    border:0;
+    font-weight: bold;
+    font-size: 2rem;
+}

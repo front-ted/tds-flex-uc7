@@ -1,0 +1,7 @@
+{
+    "short_name": "Simulador TST",
+    "name": "Simulador Segurança no Trabalho",
+    "display":      "fullscreen",
+    "orientation":  "landscape",
+    "start_url": "../../index.html"
+}

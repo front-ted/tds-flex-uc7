@@ -1,0 +1,37 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    padding: 10px;
+    color: white;
+    background-color: grey;
+    height: 80px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.main{
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+#relatorioPdf{
+    border: 1px solid grey;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    display: block;
+    margin: 20px auto;
+    overflow:hidden;
+}
+
+#relatorio{
+    background-color: red;
+}
