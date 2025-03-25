@@ -43,6 +43,8 @@
          <!--Atividade relacionar colunas-->
          <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
          <link rel="stylesheet" href="../05_equipments_related/atividades/completar_frases/comp_frases.css">
+         <!-- ODA spreadsheets -->
+          <link rel="stylesheet" href="odas/tds-uc7-emojis/assets/css/style.css">
     <!-- referencia ao arquivo css com estilos especificos da pagina -->
     <link href="css/custom.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/player.css" />
@@ -54,7 +56,7 @@
     <!--  bots5 -->
         <!-- ODAs -->
         <!-- <link rel="stylesheet" href="odas/ingles_viagens_cartas/assets/css/styles.css"> -->
-        <link rel="stylesheet" href="odas/ingles_letters/assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="odas/ingles_letters/assets/css/styles.css"> -->
         <!-- <link rel="stylesheet" href="odas/ingles_viagens_form/assets/css/styles.css">
         <link rel="stylesheet" href="odas/ingles_viagens_write_numbers/assets/css/styles.css"> -->
     
@@ -155,42 +157,97 @@
                   <h3>Spreadsheets</h3>
                   <p>Look the images and join their names to discover a new word:
                   </p>
-                  <div class="espera no-print" aria-hidden="true">inserir objeto 
+                  <div class="obj_spreadsheet_container">
+                    <p class="instruction">Discover new words by joining these two words together:</p>
+            
+                    <div class="tela tela-1">
+                        <div class="emoji-container">
+                            <div class="option option-1">🧈</div>
+                            <div class="option option-2">🪰</div>
+                            <div class="result">🦋</div>
+                        </div>
+                        <input data-answer="butterfly" type="text" class="answer-input">
+                        <button class="check-answer disabled">Check answer</button>
+                        <button class="next hidden">Next</button>
+                        <button class="show-answer disabled">Show answer</button>
+                    </div>
+                    <div class="tela tela-2">
+                        <div class="emoji-container">
+                            <div class="option option-1">🥚</div>
+                            <div class="option option-2">🪴</div>
+                            <div class="result">🍆</div>
+                        </div>
+                        <input data-answer="eggplant" type="text" class="answer-input">
+                        <button class="check-answer disabled">Check answer</button>
+                        <button class="next hidden">Next</button>
+                        <button class="show-answer disabled">Show answer</button>
+                    </div>
+                    <div class="tela tela-3">
+                        <div class="emoji-container">
+                            <div class="option option-1">💧</div>
+                            <div class="option option-2">🍈</div>
+                            <div class="result">🍉</div>
+                        </div>
+                        <input data-answer="watermelon" type="text" class="answer-input">
+                        <button class="check-answer disabled">Check answer</button>
+                        <button class="next hidden">Next</button>
+                        <button class="show-answer disabled">Show answer</button>
+                    </div>
+                    <div class="tela tela-4">
+                        <div class="emoji-container">
+                            <div class="option option-1">🍳</div>
+                            <div class="option option-2">🍰</div>
+                            <div class="result">🥞</div>
+                        </div>
+                        <input data-answer="pancakes" type="text" class="answer-input">
+                        <button class="check-answer disabled">Check answer</button>
+                        <button class="next hidden">Next</button>
+                        <button class="show-answer disabled">Show answer</button>
+                    </div>
+                    <div class="tela tela-final">
+                        <p>Congratulations! You finished this exercise and discovered a bunch of new words!</p>
+                        <p>You can play again by pressing the restart button:</p>
+                        <button class="restart-btn">Restart</button>
+                    </div>
+                </div>
                   </div>
-                  <p>Observe the image:</p>
-                  <figure class="my-5 no-print">
-                      <img src="img/figura_1.png" class="d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a spreadsheet.
-                      ">
-                      <a href="img/figura_1.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
-                          <img src="img/figura_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="">
-                      </a>
-                      <figcaption class="figure-caption text-center">Adaptado de Freepik (2024)  </figcaption>
-                  </figure>
-                  <ul class="dotDefault">
-                    <li>What is Roger doing?</li>
-                    <li>Do you use spreadsheets in your work/school? </li>
-                    <li>How often do you use them?</li>
-                    <li>Do you think spreadsheets are necessary? Why?</li>
-                  </ul>
-                  <p>Roger uses spreadsheets to organize his life. Watch the video and pay attention to all the details:
-                  </p>
-                  <p class="no-print" aria-hidden="true"><strong>Click to watch the video.   </strong></p>
-                  <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/Yboj6_923PY?si=zKyTBrN19FIG7bOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <div class="container">
+                    <p>Observe the image:</p>
+                    <figure class="my-5 no-print">
+                        <img src="img/figura_1.png" class="d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Photograph of a spreadsheet.
+                        ">
+                        <a href="img/figura_1.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                            <img src="img/figura_1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="">
+                        </a>
+                        <figcaption class="figure-caption text-center">Adaptado de Freepik (2024)  </figcaption>
+                    </figure>
+                    <ul class="dotDefault">
+                      <li>What is Roger doing?</li>
+                      <li>Do you use spreadsheets in your work/school? </li>
+                      <li>How often do you use them?</li>
+                      <li>Do you think spreadsheets are necessary? Why?</li>
+                    </ul>
+                    <p>Roger uses spreadsheets to organize his life. Watch the video and pay attention to all the details:
+                    </p>
+                    <p class="no-print" aria-hidden="true"><strong>Click to watch the video.   </strong></p>
+                    <div class="ratio ratio-16x9">
+                      <iframe src="https://www.youtube.com/embed/Yboj6_923PY?si=zKyTBrN19FIG7bOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="acessivel">
+                      <p>Son: Hey Dad, I wanted to talk to you about my summer spending.</p>
+                      <p>Dad: Sure, what's up?</p>
+                      <p>Son: Well, I wrote all my expenses in a spreadsheet.</p>
+                      <p>Dad: That's great! It was important to know where your money went. So, what did you spend money on?</p>
+                      <p>Son: Well, I spent some on entertainment like going to the movies and hanging out with friends. But I also bought some new clothes for school and paid for a few meals when we went out.</p>
+                      <p>Dad: Okay, sounds reasonable. Did you spend within your budget?</p>
+                      <p>Son: Mostly, but I did go over a little bit in the entertainment category.</p>
+                      <p>Dad: That's okay. Did you save any money?</p>
+                      <p>Son: Yes, I managed to save some from my part-time job earnings.</p>
+                      <p>Dad: That's fantastic! Saving was important too.</p>
+                      <p>Son: Thanks, Dad. I'll continue to keep an eye on my spending and make sure I was responsible with my money.</p>
+                    </div>
                   </div>
-                  <div class="acessivel">
-                    <p>Son: Hey Dad, I wanted to talk to you about my summer spending.</p>
-                    <p>Dad: Sure, what's up?</p>
-                    <p>Son: Well, I wrote all my expenses in a spreadsheet.</p>
-                    <p>Dad: That's great! It was important to know where your money went. So, what did you spend money on?</p>
-                    <p>Son: Well, I spent some on entertainment like going to the movies and hanging out with friends. But I also bought some new clothes for school and paid for a few meals when we went out.</p>
-                    <p>Dad: Okay, sounds reasonable. Did you spend within your budget?</p>
-                    <p>Son: Mostly, but I did go over a little bit in the entertainment category.</p>
-                    <p>Dad: That's okay. Did you save any money?</p>
-                    <p>Son: Yes, I managed to save some from my part-time job earnings.</p>
-                    <p>Dad: That's fantastic! Saving was important too.</p>
-                    <p>Son: Thanks, Dad. I'll continue to keep an eye on my spending and make sure I was responsible with my money.</p>
-                  </div>
+                  
                 </div>
             </div>
             <div class="bloco4">
@@ -1740,9 +1797,10 @@
 
         <!-- ODAS -->
         <!-- <script src="odas/ingles_viagens_cartas/assets/js/scripts.js"></script> -->
-        <script src="odas/ingles_letters/assets/js/script.js"></script>
+        <!-- <script src="odas/ingles_letters/assets/js/script.js"></script> -->
         <!-- <script src="odas/ingles_viagens_form/assets/js/script.js"></script> -->
         <!-- <script src="odas/ingles_viagens_write_numbers/assets/js/script.js"></script> -->
+         <script src="odas/tds-uc7-emojis/assets/js/spreadsheet_script.js"></script>
 <script>
   var scriptElem=document.createElement("script");
   scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
