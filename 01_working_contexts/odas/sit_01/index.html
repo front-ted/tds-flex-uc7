@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Senacrs</title>
+	<link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="./assets/fas/css/all.min.css" rel="stylesheet">
+	<link href="./assets/css/layout.css" rel="stylesheet">
+
+	<!--
+	<script src="assets/js/CustomUnityProgress.js"></script>
+	
+	<script src="%UNITY_WEBGL_LOADER_URL%"></script>
+   
+    <script>
+    	var unityInstance = UnityLoader.instantiate("unityApp", "%UNITY_WEBGL_BUILD_URL%", {onProgress: CustomUnityProgress});
+	</script>
+	 --> 
+</head>
+<body class="w-100 h-100">
+	<!-- Caso seja aberto no IE -->
+	<div id="msgIe" style="padding: 50px; text-align: center;">
+		<div class="positioner">
+			<h4><span>&#9888;</span></h4>
+			<h4>Sentimos muito, mas o aplicativo não é compativel com Internet Explorer, <br>por favor, utilize um browser moderno para acessar este conteúdo<br>(Chrome, Firefox, Microsoft Edge 76+, Opera).</h4>	   
+		</div>
+	
+	</div>
+	<!-- mensagem para tela em portrait, com mensagem informando que a aplicação funciona em landscape -->
+	<div id="msgPortrait">
+		<h1>Atenção!</h1>
+		<img class="img-fluid" style="max-width: 250px;" src="./assets/img/rotate.gif">
+		<h1>Vire o dispositivo para iniciar.</h1>	
+	</div>
+	
+	
+	<!--tela de carregamento -->
+	<section id="loadScreen" class="bg-light">
+		<!-- Obrigatório para o funcionamento no movel -  tela de ok que aparece no frame da unity -->
+		
+		<div id="mensagem">
+			<p>Aplicativos móveis desenvolvidos em webGl são compatíveis com os navegadores chrome e firefox. Clique em ok para continuar.</p>
+			<button onclick="$('#unityApp button').click(); $('#mensagem').fadeOut(300);">OK</button>
+		</div>
+		
+		<div id="loader">
+			<div id="barraLoader"></div>
+		</div>
+		<div id="loadMsg">Aguarde, carregando aplicação.</div>
+	</section>
+
+
+	<!--tela para a aplicação unity-->
+	<section id="application" class="hidden">
+		<div id="unityContainer">
+		    <canvas id="unityApp"></canvas>
+	   </div>
+	</section>
+
+
+
+	<!-- Loader moderno 2020 da unity -->
+	<script>
+		var GlobalUnity  = null;
+		var buildUrl = "Build";
+		var loaderUrl = buildUrl + "/Build.loader.js";
+		var config = {
+		  dataUrl: buildUrl + "/Build.data.unityweb",
+		  frameworkUrl: buildUrl + "/Build.framework.js.unityweb",
+		  codeUrl: buildUrl + "/Build.wasm.unityweb",
+		  streamingAssetsUrl: "StreamingAssets",
+		  companyName: "GETE-SenacRS",
+		  productName: "WebGL Template",
+		  productVersion: "1.0",
+		};
+  
+		var container = document.querySelector("#unityContainer");
+		var canvas = document.querySelector("#unityApp");
+		//var loadingBar = document.querySelector("#barraLoader");
+		var progressBarFull = document.querySelector("#barraLoader");
+		//var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+  
+		if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+		  container.className = "unity-mobile";
+		  config.devicePixelRatio = 2;
+		} //else {
+		 // canvas.style.width = "1920px";
+		 // canvas.style.height = "1080px";
+		//}
+
+	//	loadingBar.style.display = "block";
+  
+		var script = document.createElement("script");
+		script.src = loaderUrl;
+		script.onload = () => {
+			
+		  createUnityInstance(canvas, config, (progress) => {
+			progressBarFull.style.width = 100 * progress + "%";
+		  }).then((unityInstance) => {
+			GlobalUnity = unityInstance;
+			hideLoadScreen();
+			displayUnityApp();	
+
+			/*
+			fullscreenButton.onclick = () => {
+			  unityInstance.SetFullscreen(1);
+			};
+			*/
+		  }).catch((message) => {
+			alert(message);
+		  });
+		};
+		document.body.appendChild(script);
+  
+  
+	   
+	  </script>
+
+	<script src="./assets/js/jquery-3.2.1.min.js"></script>
+	<script src="./assets/js/functions.js"></script>
+	<script src="./assets/js/init.js" defer></script>
+
+	<!--Arquivos necessarios para gerar o pdf com o relatorio-->
+	<script src="relatorios/html2pdf.bundle.min.js"></script>	
+	<script src="./relatorios/relatorios.js" defer></script>
+
+
+	
+	
+</body>
+</html>

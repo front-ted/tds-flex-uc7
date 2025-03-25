@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadsheet</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="obj_spreadsheet_container">
+        <p class="instruction">Discover new words by joining these two words together:</p>
+
+        <div class="tela tela-1">
+            <div class="emoji-container">
+                <div class="option option-1">🧈</div>
+                <div class="option option-2">🪰</div>
+                <div class="result">🦋</div>
+            </div>
+            <input data-answer="butterfly" type="text" class="answer-input">
+            <button class="check-answer disabled">Check answer</button>
+            <button class="next hidden">Next</button>
+            <button class="show-answer disabled">Show answer</button>
+        </div>
+        <div class="tela tela-2">
+            <div class="emoji-container">
+                <div class="option option-1">🥚</div>
+                <div class="option option-2">🪴</div>
+                <div class="result">🍆</div>
+            </div>
+            <input data-answer="eggplant" type="text" class="answer-input">
+            <button class="check-answer disabled">Check answer</button>
+            <button class="next hidden">Next</button>
+            <button class="show-answer disabled">Show answer</button>
+        </div>
+        <div class="tela tela-3">
+            <div class="emoji-container">
+                <div class="option option-1">💧</div>
+                <div class="option option-2">🍈</div>
+                <div class="result">🍉</div>
+            </div>
+            <input data-answer="watermelon" type="text" class="answer-input">
+            <button class="check-answer disabled">Check answer</button>
+            <button class="next hidden">Next</button>
+            <button class="show-answer disabled">Show answer</button>
+        </div>
+        <div class="tela tela-4">
+            <div class="emoji-container">
+                <div class="option option-1">🍳</div>
+                <div class="option option-2">🍰</div>
+                <div class="result">🥞</div>
+            </div>
+            <input data-answer="pancakes" type="text" class="answer-input">
+            <button class="check-answer disabled">Check answer</button>
+            <button class="next hidden">Next</button>
+            <button class="show-answer disabled">Show answer</button>
+        </div>
+        <div class="tela tela-final">
+            <p>Congratulations! You finished this exercise and discovered a bunch of new words!</p>
+            <p>You can play again by pressing the restart button:</p>
+            <button class="restart-btn">Restart</button>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/spreadsheet_script.js"></script>
+</body>
+</html>

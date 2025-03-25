@@ -1,0 +1,317 @@
+
+
+*{
+    box-sizing: border-box;
+}
+/*LOADER*/
+#loader{
+    width:100%;
+    max-width: 500px;
+    border-radius: 20px;
+    height: 40px;
+    border: 2px solid black;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#barraLoader{
+    width: 0%;
+    height: 100%;
+    background-color: #F3DD57;
+}
+
+#loadScreen{
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex-flow: column;
+}
+
+#btCursorLock{
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    right: 60px;
+}
+
+.cursores{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    left: Calc(50% - 25px);
+    top: Calc(50% - 25px);
+}
+.cursores.cursor01{    
+    border-radius: 100%;
+    background-image: url(../img/cursor01.png);
+    background-size: contain;
+    background-position: center center;
+}
+.cursores.cursor02{
+    background-image: url(../img/cursor02.png);
+    background-size: contain;
+    background-position: center center;
+    left: 50%;
+    top: 50%;
+}
+.cursores.cursor03{
+    background-image: url(../img/cursor03.png);
+    background-size: contain;
+    background-position: center center;
+    left: 50%;
+    top: 50%;
+}
+.cursores.cursor04{
+   border-radius: 100%;
+   border: 2px solid white;
+}
+
+
+#btGoFullScreen,#btExitFullScreen{
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    right: 10px;
+}
+#btExitFullScreen{
+    display: none;
+}
+
+#loadMsg{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+.hidden{
+    display: none !important;
+}
+/*soh aparecerá no ie*/
+#msgIe{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100000;
+}
+#msgIe .positioner{
+   
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 30vh;
+}
+
+#application{
+    background-color: grey;
+    height: 100vh;
+}
+#topMenuBar{
+    background-color: whitesmoke;
+    height: 60px;
+}
+#topMenuBar .containerTitle{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+#topMenuBar h1{   
+   font-size: 1.7rem; 
+   text-align: center;
+   
+}
+
+.logo{
+    max-width: 100%;
+    height: 40px;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
+
+#unityContainer{
+    position: relative;   
+    background-color: magenta;
+    height: 100%; 
+    margin:0;
+   
+ }
+
+
+#unityApp{     
+    width: 100%;
+    height:100%;
+    /*
+    width: 82vw; 
+    height: Calc(82vw * 9/16); 
+    max-width:90em;
+    max-height:Calc(90em * 9/16);   
+    */
+    background-color: #0c0c0c;
+    display:block; 
+    margin:0 auto; 
+}
+
+
+
+
+
+
+
+
+
+
+#relatorioContainer{
+   top: 0;
+   left: 0;
+   position: fixed;
+   z-index: 9999999;
+   width: 100vw;
+   height: 100vh;
+   background-color: lightgrey;    
+}
+#relatorioContainer header{
+    box-sizing: border-box;
+    background-color: grey;
+    color:white;
+    padding: 10px;
+    height: 60px;
+
+}
+#relatorioContainer header h1{
+    font-size: 2rem;
+}
+#relatorioContainer header .btClose{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+
+}
+#relatorioContainer .container{
+    padding-top: 1px;
+    background-color: white;
+    height: Calc(100vh - 80px);
+    overflow-y: auto;
+    padding-bottom: 50px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+#relatorioContainer #relatorioPdfEmbed{
+    /*width: 480px;
+    height: 640px;
+    */
+    width:80vw;
+    height: Calc(80vw * 4/3);
+    max-width: 500px;
+    max-height: Calc(500px * 4/3);
+    display: block;
+    margin: 20px auto;
+    border: 1px solid;
+}
+
+
+/*mensagem de confirmaçao que aparecem em dispositivos móveis, vai ser visivel quando o app estiver em landscape, aparece antes do carregamento*/
+#mensagem{
+    position: absolute;
+    width: 80vw;
+    margin-left: 0;
+    top: 10vw;
+    background-color: #EDBF53;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 0 rgba(0,0,0,0.3);
+    font-size: 1.3rem;
+    display: none;
+}
+#mensagem button{
+    padding: 20px;
+    width: 180px;
+    border-radius: 20px;
+    border:0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+
+
+/*mensagens em telas em modo porta retrato*/
+#msgPortrait{
+    display: none;
+    animation: fadeIn forwards 300ms ease-in;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px; 
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+}
+
+
+@media screen and (max-width:990px) and (orientation: portrait){
+    .main{
+        display: none;
+    }
+    #msgPortrait{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        animation: fadeIn forwards 300ms ease-in;
+    }
+    #msgPortrait h1 span{
+        font-size: 10rem;
+    }
+
+   
+}
+
+@media screen and (max-width:990px){
+    #mensagem{
+        display: block;
+    }
+
+    .bottomBar {       
+        background-color: transparent;
+         position: fixed;
+         padding: 10px;
+         width: 30vw;
+         right: 0;
+         bottom: 0;
+     }
+ 
+     #topMenuBar {
+         background-color: transparent !important;      
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 10;
+         width: 100%;
+         color: white;
+     }
+
+     #unityContainer {
+        position: relative;
+        background-color: magenta;
+        height: 100% ;
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    #loadScreen > img {
+        max-width: 150px;
+    }
+}

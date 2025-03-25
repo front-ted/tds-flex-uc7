@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.obj_spreadsheet_container {
+    min-height: 360px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+    background-color: #FDF0D5;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px #333;
+    text-align: center;
+    font-family: arial;
+
+    .instruction {
+        position: absolute;
+        text-align: center;
+        font-family: arial;
+        width: 300px;
+        top: 20px;
+    }
+
+    .tela {
+        position: absolute;
+        top: 80px;
+    }
+
+    .tela-final {
+        p {
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .emoji-container {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 40px;
+        font-size: 42px;
+        margin-bottom: -20px;
+
+        .option {
+            transition-duration: .5s;
+            opacity: 1;
+
+            &.disabled {
+                opacity: 0;
+            }
+
+            &.d-none {
+                display: none;
+            }
+        }
+
+        .result {
+            transition-duration: .5s;
+            display: none;
+            opacity: 0;
+
+            &::after {
+                content: '';
+            }
+
+            &.active {
+                display: block;
+                opacity: 1;
+            }
+        }
+    }
+
+    input {
+        display: block;
+        margin-bottom: 20px;
+
+        &.disabled {
+            pointer-events: none;
+        }
+    }
+
+    .show-answer {
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        margin: 8px auto;
+        width: 100%;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.disabled {
+            pointer-events: none;
+            opacity: 0;
+        }
+    }
+
+    .check-answer,
+    .restart-btn,
+    .next {
+        display: block;
+        margin: auto;
+        padding: 12px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &.disabled {
+            pointer-events: none;
+            opacity: .5;
+        }
+
+        &.correct {
+            background-color: greenyellow;
+            pointer-events: none;
+            opacity: .5;
+        }
+
+        &.wrong {
+            background-color: salmon;
+            pointer-events: none;
+            opacity: .5;
+        }
+    }
+
+    .restart-btn {
+        margin-top: 40px;
+    }
+
+    .next {
+        margin-top: 20px;
+
+        &.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
