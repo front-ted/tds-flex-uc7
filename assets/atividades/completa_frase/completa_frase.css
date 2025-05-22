@@ -1,0 +1,62 @@
+   /* .activity-container {} */
+        
+.word-bank {
+    min-height: 80px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.word-item {
+    cursor: grab;
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s;
+}
+
+.word-item.used {
+    background-color: #6c757d !important;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.blank-input-container {
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+}
+
+.blank-input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #dee2e6;
+    padding-right: 25px;
+}
+
+.clear-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #dc3545;
+    font-weight: bold;
+    display: none;
+}
+
+.blank-input:not(:placeholder-shown) + .clear-btn {
+    display: block;
+}
+
+.correct { background-color: #d4edda !important; }
+.incorrect { background-color: #f8d7da !important; }
+.blank-input.selected {
+    outline: 2px solid #0d6efd;
+    outline-offset: 2px;
+}

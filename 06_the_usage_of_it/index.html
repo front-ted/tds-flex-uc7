@@ -42,7 +42,7 @@
          <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
          <!--Atividade relacionar colunas-->
          <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
-         <link rel="stylesheet" href="../05_equipments_related/atividades/completar_frases/comp_frases.css">
+         <link rel="stylesheet" href="../assets/atividades/completa_frase/completa_frase.css">
     <!-- referencia ao arquivo css com estilos especificos da pagina -->
     <link href="css/custom.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/player.css" />
@@ -255,15 +255,30 @@
                     <div class="mb-3">
                       <p><strong>According to the information you read, you are going to see three different logos of videoconference options. Each logo represents a service mentioned before: telepresence rooms, videophones or internet-based services. Look at the names of the logos and write the names of the videoconference options on it. Don’t forget to check if you are correct:
                       </strong></p>
-                      <div class="word-bank" data-words="Telepresence room,Videophone,Internet-based service"></div>
+                      <div class="word-bank" data-words="Telepresence room;Videophone;Internet-based service"></div>
                     </div>
                     
                     <div class="sentences">
-                      <p>The service that represents Skype is <input type="text" class="blank-input" data-answer="Internet-based service">
+                      <p>The service that represents Skype is 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="Telepresence room">
+    <span class="clear-btn">×</span>
+</span>
+
                       </p>
-                      <p>The service that represents WhatsApp is <input type="text" class="blank-input" data-answer="Videophone">
+                      <p>The service that represents WhatsApp is 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="Videophone">
+    <span class="clear-btn">×</span>
+</span>
+
                       </p>
-                      <p>The service that represents CISCO is <input type="text" class="blank-input" data-answer="Telepresence room">
+                      <p>The service that represents CISCO is 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="Internet-based service">
+    <span class="clear-btn">×</span>
+</span>
+
                       </p>
                        
                     
@@ -500,13 +515,40 @@
                   
                     <div class="activity-container">
                     <div class="mb-3">
-                      <div class="word-bank" data-words="experience,safe,Security,customers"></div>
+                      <div class="word-bank" data-words="experience;safe;Security;customers"></div>
                     </div>
                     
                     <div class="sentences">
-                      <p>An e-commerce system needs to be <input type="text" class="blank-input" data-answer="safe">, easy to use, and give customers a good <input type="text" class="blank-input" data-answer="experience">.                       
+                      <p>An e-commerce system needs to be 
+                        
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="safe">
+    <span class="clear-btn">×</span>
+</span>
+
+, easy to use, and give customers a good 
+                        
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="experience">
+    <span class="clear-btn">×</span>
+</span>
+
+.                       
                       </p>
-                      <p><input type="text" class="blank-input" data-answer="Security"> is important to keep customer information safe. Ease of use means it's simple for people to find what they want and buy it. Customer experience is about making sure <input type="text" class="blank-input" data-answer="customers"> are happy and satisfied when they use the website. </p>
+                      <p>
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="Security">
+    <span class="clear-btn">×</span>
+</span>
+
+ is important to keep customer information safe. Ease of use means it's simple for people to find what they want and buy it. Customer experience is about making sure 
+                        
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="customers">
+    <span class="clear-btn">×</span>
+</span>
+
+ are happy and satisfied when they use the website. </p>
                   
                       
                     
@@ -1092,7 +1134,7 @@
         <!--Atividade associar colunas-->
         <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
 
-        <script src="../05_equipments_related/atividades/completar_frases/comp_frases.js"></script>
+        <script src="../assets/atividades/completa_frase/completa_frase.js"></script>
         
         <!--Atividade de jogo da memória-->
         <script src="atividades/jogo_memoria/jogoMemoria.js"></script>

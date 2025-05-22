@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
   <!--Atividade relacionar colunas-->
   <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
-  <link rel="stylesheet" href="atividades/completar_frases/comp_frases.css">
+  <link rel="stylesheet" href="../assets/atividades/completa_frase/completa_frase.css">
   <!-- referencia ao arquivo css com estilos especificos da pagina -->
   <link href="css/custom.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/player.css" />
@@ -742,28 +742,74 @@
                 </div>
 
                 <div class="sentences">
-                  <p><strong>Physical Packages:</strong> In the past, software came in boxes with <input type="text"
-                      class="blank-input" data-answer="CDs">, <input type="text" class="blank-input" data-answer="DVDs">
+                  <p><strong>Physical Packages:</strong> In the past, software came in boxes with 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="CDs">
+    <span class="clear-btn">×</span>
+</span>
+
+, 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="DVDs">
+    <span class="clear-btn">×</span>
+</span>
+
+
                     manuals, and keys. People bought these at stores or online, then installed the software on their
                     computers.
                   </p>
-                  <p><strong>Perpetual Licensing</strong>: With this, users <input type="text" class="blank-input"
-                      data-answer="buy"> a license to use software forever. They pay a one-time fee upfront for access
+                  <p><strong>Perpetual Licensing</strong>: With this, users 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="buy">
+    <span class="clear-btn">×</span>
+</span>
+
+ a license to use software forever. They pay a one-time fee upfront for access
                     and updates. Sometimes, different licenses offer different features.</p>
-                  <p><strong>Software as a Service (SaaS)</strong>: SaaS offers software over the <input type="text"
-                      class="blank-input" data-answer="internet"> for a fee. Users access it online without installing
-                    it. The provider manages updates and security. Examples are Google Workspace, Salesforce, and <input
-                      type="text" class="blank-input" data-answer="Microsoft"> 365.
+                  <p><strong>Software as a Service (SaaS)</strong>: SaaS offers software over the 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="internet">
+    <span class="clear-btn">×</span>
+</span>
+
+ for a fee. Users access it online without installing
+                    it. The provider manages updates and security. Examples are Google Workspace, Salesforce, and 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="Microsoft">
+    <span class="clear-btn">×</span>
+</span>
+
+ 365.
                   </p>
-                  <p><strong>Subscription Pricing</strong>: Users pay a fee regularly to use the <input type="text"
-                      class="blank-input" data-answer="software">. They get updates and support. This way, costs are
-                    predictable, and users can adjust usage. Examples include Adobe Creative Cloud and<input type="text"
-                      class="blank-input" data-answer="Netflix">.
+                  <p><strong>Subscription Pricing</strong>: Users pay a fee regularly to use the 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="software">
+    <span class="clear-btn">×</span>
+</span>
+
+. They get updates and support. This way, costs are
+                    predictable, and users can adjust usage. Examples include Adobe Creative Cloud and
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="Netflix">
+    <span class="clear-btn">×</span>
+</span>
+
+.
                   </p>
-                  <p><strong>Freemium Pricing</strong>: Users get basic software for <input type="text"
-                      class="blank-input" data-answer="free"> and can upgrade for more features. This encourages users
-                    to pay for added benefits. Examples are Dropbox and <input type="text" class="blank-input"
-                      data-answer="Spotify">, which offer both free and paid versions
+                  <p><strong>Freemium Pricing</strong>: Users get basic software for 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="free">
+    <span class="clear-btn">×</span>
+</span>
+
+ and can upgrade for more features. This encourages users
+                    to pay for added benefits. Examples are Dropbox and 
+<span class="blank-input-container">
+    <input type="text" class="blank-input" placeholder="" data-answer="Spotify">
+    <span class="clear-btn">×</span>
+</span>
+
+, which offer both free and paid versions
                   </p>
 
 
@@ -894,9 +940,10 @@
           <img src="img/divisoria.png" class="divisoria no-print" alt="">
           <div class="container">
             <h3 class="no-print">Web Hosting</h3>
+            <p>Click or touch on the button below to play wordsearch:</p>
             <style>
               .bto-odas {
-                background-color: #007bff;
+                background-color: #fff;
                 color: white;
                 padding: 10px;
                 border-radius: 5px;
@@ -1193,7 +1240,7 @@
   <!--Atividade associar colunas-->
   <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
 
-  <script src="atividades/completar_frases/comp_frases.js"></script>
+  <script src="../assets/atividades/completa_frase/completa_frase.js"></script>
 
   <!--Atividade de jogo da memória-->
   <script src="atividades/jogo_memoria/jogoMemoria.js"></script>

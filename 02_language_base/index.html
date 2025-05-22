@@ -45,7 +45,7 @@
   <!--Atividade relacionar colunas-->
   <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
   <!-- novos -->
-  <link rel="stylesheet" href="../05_equipments_related/atividades/completar_frases/comp_frases.css">
+  <link rel="stylesheet" href="../assets/atividades/completa_frase/completa_frase.css">
   <link rel="stylesheet" href="../05_equipments_related/atividades/relacionar_colunas2/relacionar_col2.css">
   <!-- referencia ao arquivo css com estilos especificos da pagina -->
   <link href="css/custom.css" type="text/css" rel="stylesheet">
@@ -350,7 +350,7 @@
             <p>Find the words below in the wordsearch: </p>
             <style>
               .bto-odas {
-                background-color: #007bff;
+                background-color: #fff;
                 color: white;
                 padding: 10px;
                 border-radius: 5px;
@@ -686,20 +686,45 @@
                 <div class="mb-3">
                   <p><strong>Complete the sentences using the passive voice:
                     </strong></p>
-                  <div class="word-bank" data-words="functions,icons,computer,keyboards,systems"></div>
+                  <div class="word-bank" data-words="functions;icons;computer;keyboards;systems"></div>
                 </div>
 
                 <div class="sentences">
-                  <p>Operating systems, or OS, are crucial for managing a computer's <input type="text"
-                      class="blank-input" data-answer="functions">. </p>
+
+                  <p>Operating systems, or OS, are crucial for managing a computer's 
+                    <span class="blank-input-container">
+                        <input type="text" class="blank-input" placeholder="" data-answer="functions">
+                        <span class="clear-btn">×</span>
+                    </span>
+                  . </p>
+
                   <p>They oversee tasks like handling the graphical user interface (GUI), which includes windows,
-                    buttons, and <input type="text" class="blank-input" data-answer="icons">. for interacting with the
-                    <input type="text" class="blank-input" data-answer="computer">. </p>
+                    buttons, and 
+                    <span class="blank-input-container">
+                        <input type="text" class="blank-input" placeholder="" data-answer="icons">
+                        <span class="clear-btn">×</span>
+                    </span>
+                    . for interacting with the
+                     
+                    <span class="blank-input-container">
+                        <input type="text" class="blank-input" placeholder="" data-answer="computer">
+                        <span class="clear-btn">×</span>
+                    </span>
+                    . </p>
                   <p>The OS also manages memory, ensuring efficient usage for tasks. It handles storage, organizing
                     files and programs for easy access. Additionally, it coordinates hardware components like printers
-                    and <input type="text" class="blank-input" data-answer="keyboards">.</p>
+                    and 
+                    <span class="blank-input-container">
+                        <input type="text" class="blank-input" placeholder="" data-answer="keyboards">
+                        <span class="clear-btn">×</span>
+                    </span>
+                    .</p>
                   <p>Popular examples of OS include Microsoft Windows, OS X for Apple computers, and Linux. Overall,
-                    operating<input type="text" class="blank-input" data-answer="systems">. are vital as they control
+                    operating
+                    <span class="blank-input-container">
+                        <input type="text" class="blank-input" placeholder="" data-answer="systems">
+                        <span class="clear-btn">×</span>
+                    </span>. are vital as they control
                     every aspect of a computer's operation.</p>
 
 
@@ -1047,7 +1072,7 @@
   <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
 
   <!-- novos -->
-  <script src="../05_equipments_related/atividades/completar_frases/comp_frases.js"></script>
+  <script src="../assets/atividades/completa_frase/completa_frase.js"></script>
   <script src="../05_equipments_related/atividades/relacionar_colunas2/relacionar_col2.js"></script>
 
   <!--Atividade de jogo da memória-->
